@@ -1,0 +1,2723 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NTCS - Nanofibers Perfected</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="assets/js/script.js" defer></script>
+  </head>
+  <body>
+    <!-- Top Navigation Bar -->
+    <header class="fixed z-10 w-full">
+      <nav class="bg-white border-b border-gray-300">
+        <!-- Desktop Menu Container -->
+        <div class="desktop-menu-container">
+          <div class="flex items-center justify-between h-12 gap-1 mx-auto max-w-screen-2xl lg:h-16 lg:gap-8">
+            <!-- Logo -->
+            <div class="flex items-center h-full">
+              <a href="#" class="flex items-center h-full px-3 lg:px-4">
+                <img src="assets/images/desktop-logo.svg" alt="Desktop logo" class="w-[200px] h-12 lg:block hidden">
+                <img src="assets/images/mobile-logo.svg" alt="Mobile logo" class="lg:hidden block w-[43px] h-12">
+              </a>
+
+              <!-- Separator -->
+              <div class="hidden h-6 border-r border-gray-300 lg:block"></div>
+
+              <!-- Menu links -->
+              <ul class="hidden h-full lg:flex">
+                <li class="h-full desktop-dropdown-link" data-menu-id="desk-services-menu">
+                  <a href="javascript:void(0)" class="flex items-center h-full px-4 text-gray-600 hover:text-gray-900">
+                    Services
+                    <span class="ml-1 icon material-symbols-rounded">expand_more</span>
+                  </a>
+                </li>
+                <li class="h-full desktop-dropdown-link" data-menu-id="desk-industries-menu">
+                  <a href="javascript:void(0)" class="flex items-center h-full px-4 text-gray-600 hover:text-gray-900">
+                    Industries
+                    <span class="ml-1 icon material-symbols-rounded">expand_more</span>
+                  </a>
+                </li>
+                <li class="h-full desktop-dropdown-link" data-menu-id="desk-more-menu">
+                  <a href="javascript:void(0)" class="flex items-center h-full px-4 text-gray-600 hover:text-gray-900">
+                    More
+                    <span class="ml-1 icon material-symbols-rounded">expand_more</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Search bar -->
+            <div class="fixed top-0 left-0 z-30 hidden w-full h-full bg-black search-bg-overlay opacity-60"></div>
+            <div class="z-30 flex flex-1 search-wrapper h-9 lg:h-12">
+              <input type="search" placeholder="Search" class="w-full h-full px-4 bg-gray-100 border border-gray-700 outline-none">
+              <button class="flex items-center justify-center bg-gray-800 border-gray-800 cursor-pointer w-14 lg:w-16">
+                <span class="text-white material-symbols-rounded">search</span>
+              </button>
+            </div>
+
+            <!-- Language and hamburger button -->
+            <div class="relative z-50 flex items-center h-full hamburger-btn-wrapper">
+              <a href="javascript:void(0)" class="language-modal-opener items-center hidden h-full px-3 text-gray-600 lg:flex lg:px-4 hover:text-gray-900">
+                <span class="text-sm me-2">US-EN</span>
+                <span class="text-lg material-symbols-rounded">public</span>
+                <span class="text-xl icon material-symbols-rounded">expand_more</span>
+              </a>
+              <a href="javascript:void(0)" class="flex items-center h-full px-3 bg-white lg:px-4 lg:hidden" id="mobile-menu-toggler">
+                <span class="text-2xl material-symbols-rounded">menu</span>
+              </a>
+            </div>
+          </div>
+          </div>
+        </div>
+
+        <!-- Mobile Menu Container -->
+        <div class="fixed top-0 left-0 right-0 z-40 w-full h-full mobile-menu-container lg:block">
+          <div class="fixed right-0 h-full bg-white w-72 max-sm:w-full top-12">
+            <!-- Main Menu -->
+            <ul class="absolute w-full h-full pb-20 overflow-y-auto bg-white mobile-dropdown-menu show-menu">
+              <li class="px-4 mobile-dropdown-link" data-menu-id="mobile-services-menu">
+                <a href="javascript:void(0)" class="flex items-center justify-between py-3 text-gray-600">
+                  Services
+                  <span class="ml-1 material-symbols-rounded">chevron_right</span>
+                </a>
+              </li>
+              <li class="px-4 mobile-dropdown-link" data-menu-id="mobile-industries-menu">
+                <a href="javascript:void(0)" class="flex items-center justify-between py-3 text-gray-600">
+                  Industries
+                  <span class="ml-1 material-symbols-rounded">chevron_right</span>
+                </a>
+              </li>
+              <li class="px-4 mobile-dropdown-link" data-menu-id="mobile-more-menu">
+                <a href="javascript:void(0)" class="flex items-center justify-between py-3 text-gray-600">
+                  More
+                  <span class="ml-1 material-symbols-rounded">chevron_right</span>
+                </a>
+              </li>
+              <li class="px-4 mobile-dropdown-link" data-menu-id="mobile-language-menu">
+                <a href="javascript:void(0)" class="language-modal-opener flex items-center py-3 text-gray-600">
+                  <span class="text-sm me-2">US-EN</span>
+                  <span class="text-lg material-symbols-rounded">public</span>
+                  <span class="text-xl icon material-symbols-rounded">expand_more</span>
+                </a>
+              </li>
+            </ul>
+
+            <!-- Services Dropdown Menu -->
+            <ul class="absolute w-full h-full pb-20 overflow-y-auto bg-white mobile-dropdown-menu" id="mobile-services-menu">
+              <li class="px-4 back-button">
+                <a href="javascript:void(0)" class="flex items-center py-3 font-medium text-gray-900">
+                  <span class="material-symbols-rounded">chevron_left</span>
+                  <span class="flex justify-center flex-1">Services</span>
+                </a>
+              </li>
+              <li class="px-4 mobile-dropdown-link" data-menu-id="mob-services-nanofiber-machine-design-menu">
+                <a href="javascript:void(0)" class="flex items-center justify-between py-3 text-gray-600">
+                  Nanofiber Machine Design
+                  <span class="ml-1 material-symbols-rounded">chevron_right</span>
+                </a>
+              </li>
+              <li class="px-4 mobile-dropdown-link" data-menu-id="mob-services-web-handling-menu">
+                <a href="javascript:void(0)" class="flex items-center justify-between py-3 text-gray-600">
+                  Web Handling
+                  <span class="ml-1 material-symbols-rounded">chevron_right</span>
+                </a>
+              </li>
+              <li class="px-4 mobile-dropdown-link" data-menu-id="mob-services-machine-automation-menu">
+                <a href="javascript:void(0)" class="flex items-center justify-between py-3 text-gray-600">
+                  Machine Automation
+                  <span class="ml-1 material-symbols-rounded">chevron_right</span>
+                </a>
+              </li>
+              <li class="px-4 mobile-dropdown-link" data-menu-id="mob-services-component-design-menu">
+                <a href="javascript:void(0)" class="flex items-center justify-between py-3 text-gray-600">
+                  Component Design
+                  <span class="ml-1 material-symbols-rounded">chevron_right</span>
+                </a>
+              </li>
+              <li class="px-4 mobile-dropdown-link" data-menu-id="mob-services-engineering-menu">
+                <a href="javascript:void(0)" class="flex items-center justify-between py-3 text-gray-600">
+                  Engineering
+                  <span class="ml-1 material-symbols-rounded">chevron_right</span>
+                </a>
+              </li>
+              <li class="px-4 mobile-dropdown-link" data-menu-id="mob-services-precision-machining-menu">
+                <a href="javascript:void(0)" class="flex items-center justify-between py-3 text-gray-600">
+                  Precision Machining
+                  <span class="ml-1 material-symbols-rounded">chevron_right</span>
+                </a>
+              </li>
+              <li class="px-4 mobile-dropdown-link" data-menu-id="mob-services-auxiliary-process-menu">
+                <a href="javascript:void(0)" class="flex items-center justify-between py-3 text-gray-600">
+                  Auxiliary Process Design
+                  <span class="ml-1 material-symbols-rounded">chevron_right</span>
+                </a>
+              </li>
+              <li class="px-4 mobile-dropdown-link" data-menu-id="mob-services-product-development-menu">
+                <a href="javascript:void(0)" class="flex items-center justify-between py-3 text-gray-600">
+                  Product Development
+                  <span class="ml-1 material-symbols-rounded">chevron_right</span>
+                </a>
+              </li>
+              <li class="px-4 mobile-dropdown-link" data-menu-id="mob-services-process-optimization-menu">
+                <a href="javascript:void(0)" class="flex items-center justify-between py-3 text-gray-600">
+                  Process Optimization
+                  <span class="ml-1 material-symbols-rounded">chevron_right</span>
+                </a>
+              </li>
+              <li class="px-4 mobile-dropdown-link" data-menu-id="mob-services-recipe-menu">
+                <a href="javascript:void(0)" class="flex items-center justify-between py-3 text-gray-600">
+                  Recipe
+                  <span class="ml-1 material-symbols-rounded">chevron_right</span>
+                </a>
+              </li>
+              <li class="px-4 mobile-dropdown-link" data-menu-id="mob-services-training-menu">
+                <a href="javascript:void(0)" class="flex items-center justify-between py-3 text-gray-600">
+                  Training & Courses
+                  <span class="ml-1 material-symbols-rounded">chevron_right</span>
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-black">
+                  View all services
+                  <span class="ml-1 material-symbols-rounded">east</span>
+                </a>
+              </li>
+            </ul>
+
+            <!-- Services Nanofiber Machine Design Dropdown Menu -->
+            <ul class="absolute w-full h-full pb-20 overflow-y-auto bg-white mobile-dropdown-menu" id="mob-services-nanofiber-machine-design-menu">
+              <li class="px-4 back-button">
+                <a href="javascript:void(0)" class="flex items-center py-3 font-medium text-gray-900">
+                  <span class="material-symbols-rounded">chevron_left</span>
+                  <span class="flex justify-center flex-1">Nanofiber Machine Design</span>
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  General Overview
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Nanofiber Production Technologies
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  NTCS's Expertise
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  R & D
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Melt-Xpert
+                </a>
+              </li>
+            </ul>
+
+            <!-- Services Web Handling System Design Dropdown Menu -->
+            <ul class="absolute w-full h-full pb-20 overflow-y-auto bg-white mobile-dropdown-menu" id="mob-services-web-handling-menu">
+              <li class="px-4 back-button">
+                <a href="javascript:void(0)" class="flex items-center py-3 font-medium text-gray-900">
+                  <span class="material-symbols-rounded">chevron_left</span>
+                  <span class="flex justify-center flex-1">Web Handling</span>
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Winder System Design
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Unwinder System Design
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Nip Roll Station
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  OMEGA
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Web Accumulator
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Slitter Rewinder
+                </a>
+              </li>
+            </ul>
+
+            <!-- Services Machine Automation Dropdown Menu -->
+            <ul class="absolute w-full h-full pb-20 overflow-y-auto bg-white mobile-dropdown-menu" id="mob-services-machine-automation-menu">
+              <li class="px-4 back-button">
+                <a href="javascript:void(0)" class="flex items-center py-3 font-medium text-gray-900">
+                  <span class="material-symbols-rounded">chevron_left</span>
+                  <span class="flex justify-center flex-1">Machine Automation</span>
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Instrumentation Analysis
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  HMI Design
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  CSCID
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  CSAD
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Software Development
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Communication Technologies
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Safety Automation
+                </a>
+              </li>
+            </ul>
+
+            <!-- Services Component Design Dropdown Menu -->
+            <ul class="absolute w-full h-full pb-20 overflow-y-auto bg-white mobile-dropdown-menu" id="mob-services-component-design-menu">
+              <li class="px-4 back-button">
+                <a href="javascript:void(0)" class="flex items-center py-3 font-medium text-gray-900">
+                  <span class="material-symbols-rounded">chevron_left</span>
+                  <span class="flex justify-center flex-1">Component Design</span>
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  CDS
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Precision Pumps
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  HVIS
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Technical Rollers
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Heat Transfer Rollers
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Automatic Grounding Systems
+                </a>
+              </li>
+            </ul>
+
+            <!-- Services Engineering Dropdown Menu -->
+            <ul class="absolute w-full h-full pb-20 overflow-y-auto bg-white mobile-dropdown-menu" id="mob-services-engineering-menu">
+              <li class="px-4 back-button">
+                <a href="javascript:void(0)" class="flex items-center py-3 font-medium text-gray-900">
+                  <span class="material-symbols-rounded">chevron_left</span>
+                  <span class="flex justify-center flex-1">Engineering</span>
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  P&ID
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Technical Drawing
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Production Drawing
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  3D Design
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  CFD Analysis
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Mechanical Analysis
+                </a>
+              </li>
+            </ul>
+
+            <!-- Services Precision Machining Dropdown Menu -->
+            <ul class="absolute w-full h-full pb-20 overflow-y-auto bg-white mobile-dropdown-menu" id="mob-services-precision-machining-menu">
+              <li class="px-4 back-button">
+                <a href="javascript:void(0)" class="flex items-center py-3 font-medium text-gray-900">
+                  <span class="material-symbols-rounded">chevron_left</span>
+                  <span class="flex justify-center flex-1">Precision Machining</span>
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  5 Axis Milling
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  C-Y Axis Turning
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Manual Turning
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  OD Grinding
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Surface Grinding
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Plastic Welding
+                </a>
+              </li>
+            </ul>
+
+            <!-- Services Auxiliary Process Design Dropdown Menu -->
+            <ul class="absolute w-full h-full pb-20 overflow-y-auto bg-white mobile-dropdown-menu" id="mob-services-auxiliary-process-menu">
+              <li class="px-4 back-button">
+                <a href="javascript:void(0)" class="flex items-center py-3 font-medium text-gray-900">
+                  <span class="material-symbols-rounded">chevron_left</span>
+                  <span class="flex justify-center flex-1">Auxiliary Process Design</span>
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Air Conditioning System
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Dryer
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Mixing Units
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Effluent Treatment
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Thermo Calendering
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Lamination
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Adhesion Promotion
+                </a>
+              </li>
+            </ul>
+
+             <!-- Services Product Development Dropdown Menu -->
+             <ul class="absolute w-full h-full pb-20 overflow-y-auto bg-white mobile-dropdown-menu" id="mob-services-product-development-menu">
+              <li class="px-4 back-button">
+                <a href="javascript:void(0)" class="flex items-center py-3 font-medium text-gray-900">
+                  <span class="material-symbols-rounded">chevron_left</span>
+                  <span class="flex justify-center flex-1">Product Development</span>
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Air Filter Media
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Liquid Filtration Media
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Perfo Apparel Membrane
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Face Mask Media
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Battery Separator
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Cosmetic Mask
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Wound Dressing Material
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Syringe Filter
+                </a>
+              </li>
+            </ul>
+
+            <!-- Services Process Optimization Dropdown Menu -->
+            <ul class="absolute w-full h-full pb-20 overflow-y-auto bg-white mobile-dropdown-menu" id="mob-services-process-optimization-menu">
+              <li class="px-4 back-button">
+                <a href="javascript:void(0)" class="flex items-center py-3 font-medium text-gray-900">
+                  <span class="material-symbols-rounded">chevron_left</span>
+                  <span class="flex justify-center flex-1">Process Optimization</span>
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Quality Optimization
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Throughput Optimization
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Uptime Optimization
+                </a>
+              </li>
+            </ul>
+
+            <!-- Services Recipe Dropdown Menu -->
+            <ul class="absolute w-full h-full pb-20 overflow-y-auto bg-white mobile-dropdown-menu" id="mob-services-recipe-menu">
+              <li class="px-4 back-button">
+                <a href="javascript:void(0)" class="flex items-center py-3 font-medium text-gray-900">
+                  <span class="material-symbols-rounded">chevron_left</span>
+                  <span class="flex justify-center flex-1">Recipe</span>
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  PVDF
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  PA6
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  PAN
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  PBT
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  PP
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  PUR
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Chitosan
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Collagen
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Cellulose Acetate
+                </a>
+              </li>
+            </ul>
+
+            <!-- Services Training Dropdown Menu -->
+            <ul class="absolute w-full h-full pb-20 overflow-y-auto bg-white mobile-dropdown-menu" id="mob-services-training-menu">
+              <li class="px-4 back-button">
+                <a href="javascript:void(0)" class="flex items-center py-3 font-medium text-gray-900">
+                  <span class="material-symbols-rounded">chevron_left</span>
+                  <span class="flex justify-center flex-1">Training & Courses</span>
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Introduction to Nanofibers
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Fundementals of Electrospinning
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Fundementals of Electroblowing
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Safety on Nanofiber Processes
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Advanced topics on Electrospinning
+                </a>
+              </li>
+            </ul>
+
+            <!-- Industries Dropdown Menu -->
+            <ul class="absolute w-full h-full pb-20 overflow-y-auto bg-white mobile-dropdown-menu" id="mobile-industries-menu">
+              <li class="px-4 back-button">
+                <a href="javascript:void(0)" class="flex items-center py-3 font-medium text-gray-900">
+                  <span class="material-symbols-rounded">chevron_left</span>
+                  <span class="flex justify-center flex-1">Industries</span>
+                </a>
+              </li>
+              <li class="px-4 mobile-dropdown-link" data-menu-id="mob-industries-by-technology-menu">
+                <a href="javascript:void(0)" class="flex items-center justify-between py-3 text-gray-600">
+                  By technology
+                  <span class="ml-1 material-symbols-rounded">chevron_right</span>
+                </a>
+              </li>
+              <li class="px-4 mobile-dropdown-link" data-menu-id="mob-industries-by-business-function-menu">
+                <a href="javascript:void(0)" class="flex items-center justify-between py-3 text-gray-600">
+                  By business function
+                  <span class="ml-1 material-symbols-rounded">chevron_right</span>
+                </a>
+              </li>
+              <li class="px-4 mobile-dropdown-link" data-menu-id="mob-industries-featured-regions-menu">
+                <a href="javascript:void(0)" class="flex items-center justify-between py-3 text-gray-600">
+                  Featured regions
+                  <span class="ml-1 material-symbols-rounded">chevron_right</span>
+                </a>
+              </li>
+              <li class="px-4 mobile-dropdown-link" data-menu-id="mob-industries-special-interests-menu">
+                <a href="javascript:void(0)" class="flex items-center justify-between py-3 text-gray-600">
+                  Special interests
+                  <span class="ml-1 material-symbols-rounded">chevron_right</span>
+                </a>
+              </li>
+              <li class="px-4 mobile-dropdown-link" data-menu-id="mob-industries-by-industry-menu">
+                <a href="javascript:void(0)" class="flex items-center justify-between py-3 text-gray-600">
+                  By industry
+                  <span class="ml-1 material-symbols-rounded">chevron_right</span>
+                </a>
+              </li>
+              <li class="px-4 mobile-dropdown-link" data-menu-id="mob-industries-by-products-menu">
+                <a href="javascript:void(0)" class="flex items-center justify-between py-3 text-gray-600">
+                  By products
+                  <span class="ml-1 material-symbols-rounded">chevron_right</span>
+                </a>
+              </li>
+              <li class="px-4 mobile-dropdown-link" data-menu-id="mob-industries-by-services-menu">
+                <a href="javascript:void(0)" class="flex items-center justify-between py-3 text-gray-600">
+                  By services
+                  <span class="ml-1 material-symbols-rounded">chevron_right</span>
+                </a>
+              </li>
+              <li class="px-4 mobile-dropdown-link" data-menu-id="mob-industries-ibv-blog-menu">
+                <a href="javascript:void(0)" class="flex items-center justify-between py-3 text-gray-600">
+                  IBV blog
+                  <span class="ml-1 material-symbols-rounded">chevron_right</span>
+                </a>
+              </li>
+            </ul>
+
+            <!-- Industries's By technology Dropdown Menu -->
+            <ul class="absolute w-full h-full pb-20 overflow-y-auto bg-white mobile-dropdown-menu" id="mob-industries-by-technology-menu">
+              <li class="px-4 back-button">
+                <a href="javascript:void(0)" class="flex items-center py-3 font-medium text-gray-900">
+                  <span class="material-symbols-rounded">chevron_left</span>
+                  <span class="flex justify-center flex-1">By technology</span>
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Artificial Intelligence (AI)
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Automation and Robotics
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Blockchain
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Emerging technologies
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Generative AI
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Hybrid Cloud
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Internet of Things (IoT)
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Quantum computing
+                </a>
+              </li>
+            </ul>
+
+            <!-- Industries's By business function Dropdown Menu -->
+            <ul class="absolute w-full h-full pb-20 overflow-y-auto bg-white mobile-dropdown-menu" id="mob-industries-by-business-function-menu">
+              <li class="px-4 back-button">
+                <a href="javascript:void(0)" class="flex items-center py-3 font-medium text-gray-900">
+                  <span class="material-symbols-rounded">chevron_left</span>
+                  <span class="flex justify-center flex-1">By business function</span>
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Strategy and Management, CEO
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Finance and Risk, CFO
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Marketing and Sales, CMO
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Operations and Supply chain, COO, CSCO
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Talent and Skills, CHRO
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Technology and Security, CIO
+                </a>
+              </li>
+            </ul>
+
+             <!-- Industries's Featured regions Dropdown Menu -->
+             <ul class="absolute w-full h-full pb-20 overflow-y-auto bg-white mobile-dropdown-menu" id="mob-industries-featured-regions-menu">
+              <li class="px-4 back-button">
+                <a href="javascript:void(0)" class="flex items-center py-3 font-medium text-gray-900">
+                  <span class="material-symbols-rounded">chevron_left</span>
+                  <span class="flex justify-center flex-1">Featured regions</span>
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Canada
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  China
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Germany
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  India
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Japan
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Latin America
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Middle East and Africa
+                </a>
+              </li>
+            </ul>
+
+             <!-- Industries's Special interests Dropdown Menu -->
+             <ul class="absolute w-full h-full pb-20 overflow-y-auto bg-white mobile-dropdown-menu" id="mob-industries-special-interests-menu">
+              <li class="px-4 back-button">
+                <a href="javascript:void(0)" class="flex items-center py-3 font-medium text-gray-900">
+                  <span class="material-symbols-rounded">chevron_left</span>
+                  <span class="flex justify-center flex-1">Special interests</span>
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Digital transformation
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Diversity and Inclusion
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Future Shocks
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Sustainability
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Technology and the Global economy
+                </a>
+              </li>
+            </ul>
+
+            <!-- Industries's By industry Dropdown Menu -->
+            <ul class="absolute w-full h-full pb-20 overflow-y-auto bg-white mobile-dropdown-menu" id="mob-industries-by-industry-menu">
+              <li class="px-4 back-button">
+                <a href="javascript:void(0)" class="flex items-center py-3 font-medium text-gray-900">
+                  <span class="material-symbols-rounded">chevron_left</span>
+                  <span class="flex justify-center flex-1">By industry</span>
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Aerospace and Defense
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Automotive
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Banking and Financial Markets
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Chemicals and Petroleum
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Consumer products
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Education
+                </a>
+              </li>
+            </ul>
+
+            <!-- Industries's By products Dropdown Menu -->
+            <ul class="absolute w-full h-full pb-20 overflow-y-auto bg-white mobile-dropdown-menu" id="mob-industries-by-products-menu">
+              <li class="px-4 back-button">
+                <a href="javascript:void(0)" class="flex items-center py-3 font-medium text-gray-900">
+                  <span class="material-symbols-rounded">chevron_left</span>
+                  <span class="flex justify-center flex-1">By products</span>
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Electronics
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Energy and Utilities
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Government
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Healthcare
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Industrial products
+                </a>
+              </li>
+            </ul>
+
+            <!-- Industries's By services Dropdown Menu -->
+            <ul class="absolute w-full h-full pb-20 overflow-y-auto bg-white mobile-dropdown-menu" id="mob-industries-by-services-menu">
+              <li class="px-4 back-button">
+                <a href="javascript:void(0)" class="flex items-center py-3 font-medium text-gray-900">
+                  <span class="material-symbols-rounded">chevron_left</span>
+                  <span class="flex justify-center flex-1">By services</span>
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Insurance
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Life sciences
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Media and Entertainment
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Retail
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Telecommunications
+                </a>
+              </li>
+            </ul>
+
+            <!-- Industries's IBV blog Dropdown Menu -->
+            <ul class="absolute w-full h-full pb-20 overflow-y-auto bg-white mobile-dropdown-menu" id="mob-industries-ibv-blog-menu">
+              <li class="px-4 back-button">
+                <a href="javascript:void(0)" class="flex items-center py-3 font-medium text-gray-900">
+                  <span class="material-symbols-rounded">chevron_left</span>
+                  <span class="flex justify-center flex-1">IBV blog</span>
+                </a>
+              </li>
+              <li class="px-4">
+                <a class="text-sm flex items-center justify-between py-3 text-black">
+                  The IBM Institute for Business Value blog provides expert analysis on the latest research and trends at the intersection of business and technology.
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-black">
+                  Visit the blog
+                  <span class="ml-1 material-symbols-rounded">east</span>
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-black">
+                  Visit IBM Consulting home page
+                  <span class="ml-1 material-symbols-rounded">east</span>
+                </a>
+              </li>
+            </ul>
+
+            <!-- More Dropdown Menu -->
+            <ul class="absolute w-full h-full pb-20 overflow-y-auto bg-white mobile-dropdown-menu" id="mobile-more-menu">
+              <li class="px-4 back-button">
+                <a href="javascript:void(0)" class="flex items-center py-3 font-medium text-gray-900">
+                  <span class="material-symbols-rounded">chevron_left</span>
+                  <span class="flex justify-center flex-1">More</span>
+                </a>
+              </li>
+              <li class="px-4 mobile-dropdown-link" data-menu-id="mobile-more-about-ntcs-menu">
+                <a href="javascript:void(0)" class="flex items-center justify-between py-3 text-gray-600">
+                  About NTCS
+                  <span class="ml-1 material-symbols-rounded">chevron_right</span>
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Contact Us
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Cooperate With Us
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Careers
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center justify-between py-3 text-gray-600">
+                  Newsletter Subsciption
+                </a>
+              </li>
+              <li class="px-4 mobile-dropdown-link" data-menu-id="mobile-more-resources-menu">
+                <a href="javascript:void(0)" class="flex items-center justify-between py-3 text-gray-600">
+                  Resources
+                  <span class="ml-1 material-symbols-rounded">chevron_right</span>
+                </a>
+              </li>
+            </ul>
+
+            <!-- More's About NTCS Dropdown Menu -->
+            <ul class="absolute w-full h-full pb-20 overflow-y-auto bg-white mobile-dropdown-menu" id="mobile-more-about-ntcs-menu">
+              <li class="px-4 back-button">
+                <a href="javascript:void(0)" class="flex items-center py-3 font-medium text-gray-900">
+                  <span class="material-symbols-rounded">chevron_left</span>
+                  <span class="flex justify-center flex-1">About NTCS</span>
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center py-3 text-gray-600">
+                  Company
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center py-3 text-gray-600">
+                  The Brand
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center py-3 text-gray-600">
+                  Nanofibers Perfected
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center py-3 text-gray-600">
+                  Areas of Expertises
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center py-3 text-gray-600">
+                  Capabilities
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center py-3 text-gray-600">
+                  FAQs
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center py-3 text-gray-600">
+                  Nanofibers & Innovation
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center py-3 text-gray-600">
+                  News Center
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center py-3 text-gray-600">
+                  Sustainability
+                </a>
+              </li>
+            </ul>
+
+            <!-- More's Resources Dropdown Menu -->
+            <ul class="absolute w-full h-full pb-20 overflow-y-auto bg-white mobile-dropdown-menu" id="mobile-more-resources-menu">
+              <li class="px-4 back-button">
+                <a href="javascript:void(0)" class="flex items-center py-3 font-medium text-gray-900">
+                  <span class="material-symbols-rounded">chevron_left</span>
+                  <span class="flex justify-center flex-1">Resources</span>
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center py-3 text-gray-600">
+                  Blog
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center py-3 text-gray-600">
+                  Glossary
+                </a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="flex items-center py-3 text-gray-600">
+                  White Papers
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Desktop Dropdown Menu Container -->
+        <div class="desktop-dropdown-container fixed left-0 top-16 mt-[1px] w-full h-full">
+          <div class="bg-white shadow-md">
+            <div class="relative mx-auto max-w-screen-2xl">
+              <!-- Services Dropdown Menu -->
+              <div class="desktop-dropdown-menu" id="desk-services-menu">
+                <!-- Close Mega Menu Button -->
+                <div class="absolute text-gray-600 cursor-pointer menu-close-btn right-5 top-4 hover:text-gray-900" title="Close Menu">
+                  <span class="text-3xl material-symbols-rounded">close</span>
+                </div>
+                <div class="flex">
+                  <ul class="w-[450px] border-r pt-5 border-gray-300">
+                    <li class="flex desktop-dropdown-tab active" data-menu-id="desk-services-nanofiber-machine-design-menu">
+                      <a href="javascript:void(0)" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900">Nanofiber Machine Design</a>
+                    </li>
+                    <li class="flex desktop-dropdown-tab" data-menu-id="desk-services-web-handling-menu">
+                      <a href="javascript:void(0)" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900">Web Handling</a>
+                    </li>
+                    <li class="flex desktop-dropdown-tab" data-menu-id="desk-services-machine-automation-menu">
+                      <a href="javascript:void(0)" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900 ">Machine Automation</a>
+                    </li>
+                    <li class="flex desktop-dropdown-tab" data-menu-id="desk-services-component-design-menu">
+                      <a href="javascript:void(0)" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900 ">Component Design</a>
+                    </li>
+                    <li class="flex desktop-dropdown-tab" data-menu-id="desk-services-engineering-menu">
+                      <a href="javascript:void(0)" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900 ">Engineering</a>
+                    </li>
+                    <li class="flex desktop-dropdown-tab" data-menu-id="desk-services-precision-machining-menu">
+                      <a href="javascript:void(0)" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900 ">Precision Machining</a>
+                    </li>
+                    <li class="flex desktop-dropdown-tab" data-menu-id="desk-services-auxiliary-process-menu">
+                      <a href="javascript:void(0)" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900 ">Auxiliary Process Design</a>
+                    </li>
+                    <li class="flex desktop-dropdown-tab" data-menu-id="desk-services-product-development-menu">
+                      <a href="javascript:void(0)" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900 ">Product Development</a>
+                    </li>
+                    <li class="flex desktop-dropdown-tab" data-menu-id="desk-services-process-optimization-menu">
+                      <a href="javascript:void(0)" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900 ">Process Optimization</a>
+                    </li>
+                    <li class="flex desktop-dropdown-tab" data-menu-id="desk-services-recipe-menu">
+                      <a href="javascript:void(0)" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900 ">Recipe</a>
+                    </li>
+                    <li class="flex desktop-dropdown-tab" data-menu-id="desk-services-training-menu">
+                      <a href="javascript:void(0)" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900 ">Training & Courses</a>
+                    </li>
+                    <li class="mt-5 border-t border-gray-300">
+                      <a href="#" class="flex items-center gap-2 px-4 py-2 transition-all duration-200 ease-in-out hover:text-gray-900 ">
+                        <span class="text-black">View all services</span>
+                        <span class="text-black text-xl mt-0.5 material-symbols-rounded"> east </span>
+                      </a>
+                    </li>
+                  </ul>
+
+                  <!-- Services Nanofiber Machine Design Dropdown Menu -->
+                  <div class="w-full pt-5 desktop-dropdown-section show-menu" id="desk-services-nanofiber-machine-design-menu">
+                    <div class="px-4 text-gray-600">
+                      <h2 class="text-[1.35rem]">Nanofiber Machine Design</h2>
+                      <p>Nanofiber production machine design and consulting services</p>
+                    </div>
+                    <ul class="mt-5 grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-x-5">
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">General Overview</h2>
+                          <p class="text-sm">General overview of nanofiber production machine design services by NTCS</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">Nanofiber Production Technologies</h2>
+                          <p class="text-sm">Current nanofiber technologies available on the market for industrial production of nanofibers</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">NTCS's Expertise</h2>
+                          <p class="text-sm">Explore NTCS's nanofiber production machine design expertise</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">R & D</h2>
+                          <p class="text-sm">Research and development services for new nanofiber production technologies</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">Melt-Xpert</h2>
+                          <p class="text-sm">Breakthrough nanofiber production technology with melt processing capability and high-throughput</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <!-- Services Web Handling Dropdown Menu -->
+                  <div class="w-full pt-5 desktop-dropdown-section" id="desk-services-web-handling-menu">
+                    <div class="px-4 text-gray-600">
+                      <h2 class="text-[1.35rem]">Web Handling</h2>
+                      <p>Web Handling Equipment Design Service</p>
+                    </div>
+                    <ul class="mt-5 grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-x-5">
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">General Overview</h2>
+                          <p class="text-sm">General overview of web handling equipment design services by NTCS</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">Winder System Design</h2>
+                          <p class="text-sm">Single station, double station or turret winder designs for precise applications</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">Unwinder System Design</h2>
+                          <p class="text-sm">Single station, double station or turret winder designs with butt-splice units</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">Nip Roll Station</h2>
+                          <p class="text-sm">Nanofiber applications where there is no concern with touching both sides of the produc</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">OMEGA</h2>
+                          <p class="text-sm">The best master design where nanofiber delimination is a concern</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">Web Accumulator</h2>
+                          <p class="text-sm">Web handling technique to maximize storage space while reducing the equipment's footprint</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">Slitter Rewinder</h2>
+                          <p class="text-sm">Special slitter-rewinder design for handling delicate nanofiber-based products with care</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <!-- Services Machine Automation Dropdown Menu -->
+                  <div class="w-full pt-5 desktop-dropdown-section" id="desk-services-machine-automation-menu">
+                    <div class="px-4 text-gray-600">
+                      <h2 class="text-[1.35rem]">Machine Automation</h2>
+                      <p>Nanofiber production and auxiliary equipment automation design service</p>
+                    </div>
+                    <ul class="mt-5 grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-x-5">
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">Instrumentation Analysis</h2>
+                          <p class="text-sm">Comprehensive instrumentation analysis service for advanced nanofiber production processes</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">HMI Design</h2>
+                          <p class="text-sm">Human-machine interface design for easy usage of nanofiber operations</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">CSCID</h2>
+                          <p class="text-sm">Control system components and interconnection design for nanofiber machines</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">CSAD</h2>
+                          <p class="text-sm">Control system architecture design for nanofiber machines</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">Software Development</h2>
+                          <p class="text-sm">State of the art software development for nanofiber lines.</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">Communication Technologies</h2>
+                          <p class="text-sm">Specific communication protocols that we used in nanofiber machine automation</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">Safety Automation</h2>
+                          <p class="text-sm">Advanced safety automation system design for nanofiber production processes and machinery</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <!-- Services Component Design Dropdown Menu -->
+                  <div class="w-full pt-5 desktop-dropdown-section" id="desk-services-component-design-menu">
+                    <div class="px-4 text-gray-600">
+                      <h2 class="text-[1.35rem]">Component Design</h2>
+                      <p>Components tailored for advanced nanofiber production and its associated auxiliary methodologies</p>
+                    </div>
+                    <ul class="mt-5 grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-x-5">
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">CDS</h2>
+                          <p class="text-sm">Chemical distribution system design for easy operability and hassle-free operations</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">Precision Pumps</h2>
+                          <p class="text-sm">Precision-engineered pump systems ensuring accurate and consistent delivery</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">HVIS</h2>
+                          <p class="text-sm">High voltage insulation system design for safer electrospinning applications</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">Technical Rollers</h2>
+                          <p class="text-sm">Various roller designs for each step of nanofiber production</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">Heat Transfer Rollers</h2>
+                          <p class="text-sm">Special roller designs for exclusive nanofiber production processes</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">Automatic Grounding Systems</h2>
+                          <p class="text-sm">Safety system design primarily for electrospinning and electroblowing processes</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <!-- Services Engineering Dropdown Menu -->
+                  <div class="w-full pt-5 desktop-dropdown-section" id="desk-services-engineering-menu">
+                    <div class="px-4 text-gray-600">
+                      <h2 class="text-[1.35rem]">Engineering</h2>
+                      <p>Engineering services for nanofiber industry</p>
+                    </div>
+                    <ul class="mt-5 grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-x-5">
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">P&ID</h2>
+                          <p class="text-sm">Piping and instrumentation diagram generation for different processes</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">Technical Drawing</h2>
+                          <p class="text-sm">Premium technical drawing services compliant with ISO 128, ISO 129 and ASME Y14 standards</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">Production Drawing</h2>
+                          <p class="text-sm">Comprehensive design blueprints crafted for manufacturability of mechanical components</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">3D Design</h2>
+                          <p class="text-sm">Advanced 3D modeling of mechanical components, intricate mechanisms, and comprehensive assemblies utilizing CATIA V5 or Solidworks platforms</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">CFD Analysis</h2>
+                          <p class="text-sm">To solve complex nanofiber process flow and thermal problems across a broad range of situations</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">FEA Service</h2>
+                          <p class="text-sm">Optimization of design, analysis of failure points, and simulation under real-world loading conditions</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <!-- Services Databases Menu -->
+                  <div class="w-full pt-5 desktop-dropdown-section" id="desk-services-precision-machining-menu">
+                    <div class="px-4 text-gray-600">
+                      <h2 class="text-[1.35rem]">Precision Machining</h2>
+                      <p>Precision machining services for demanding tolerances and complex parts</p>
+                    </div>
+                    <ul class="mt-5 grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-x-5">
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">5 Axis Milling</h2>
+                          <p class="text-sm">State-of-the-art 5-axis simultaneous and 3+2 index milling services for the most sophisticated components</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">C-Y Axis Turning</h2>
+                          <p class="text-sm">C and Y axis turning with optional broaching and gear hobbing capability</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">Manual Turning</h2>
+                          <p class="text-sm">Manual turning service for medium-precision rollers and cylindrical parts with a length of up to 3800 mm</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">OD Grinding</h2>
+                          <p class="text-sm">Outer diameter grinding for cylindrical parts and technical rollers up to 780mm diameter and 4000mm length</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">Surface Grinding</h2>
+                          <p class="text-sm">Numerical controlled surface grinding up to 800mm length and 500mm width</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">Plastic Welding</h2>
+                          <p class="text-sm">Plastic welding service for PE, PP, PVC and PETG with rod and extruder systems</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- Services Databases Menu -->
+                  <div class="w-full pt-5 desktop-dropdown-section" id="desk-services-auxiliary-process-menu">
+                    <div class="px-4 text-gray-600">
+                      <h2 class="text-[1.35rem]">Auxiliary Process Design</h2>
+                      <p>Technology consulting service for nanofiber auxiliary processes</p>
+                    </div>
+                    <ul class="mt-5 grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-x-5">
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">Air Conditioning System</h2>
+                          <p class="text-sm">Distinct control over air temperature and humidity, ensuring stable output</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">Dryer</h2>
+                          <p class="text-sm">Enhance removal of residual solvents, VOC and curing of the nanofiber structure</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">Mixing Units</h2>
+                          <p class="text-sm">Properly mixing the recipe ingredients in a controlled environment</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">Effluent Treatment</h2>
+                          <p class="text-sm">Emissions from the nanofiber process must be treated to reduce air pollution</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">Thermo Calendering</h2>
+                          <p class="text-sm">Intended for use in thermal lamination and nanofiber membrane production</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">Lamination</h2>
+                          <p class="text-sm">Process for manufacturing multilayered nanofiber products like HVAC media</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">Adhesion Promotion</h2>
+                          <p class="text-sm">Essential supplementary process for enhancing the performance of surface filter media and separators</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <!-- Services Product Development Dropdown Menu -->
+                  <div class="w-full pt-5 desktop-dropdown-section" id="desk-services-product-development-menu">
+                    <div class="px-4 text-gray-600">
+                      <h2 class="text-[1.35rem]">Product Development</h2>
+                      <p>Nanofiber based industrial or conceptual product development services</p>
+                    </div>
+                    <ul class="mt-5 grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-x-5">
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">Air Filter Media</h2>
+                          <p class="text-sm">Nanofiber based air filter media development service</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">Liquid Filtration Membrane</h2>
+                          <p class="text-sm">Consulting service for engineered pore size and uniformly distributed membranes</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">Perfo Apparel Membrane</h2>
+                          <p class="text-sm">Specialized technology consulting services for optimizing high-performance nanofiber membranes in sports and military applications for niche products</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">Face Mask Media</h2>
+                          <p class="text-sm">FFP2 and FFP3 facemask media with mechanical filtration property</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">Battery Separator</h2>
+                          <p class="text-sm">Promising higher energy density, lower internal resistance, and an extended lifespan for Li-ion batteries</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">Cosmetic Mask</h2>
+                          <p class="text-sm">Customizable, enhanced absorption, moisture retention, improved comfort, and perfect barrier properties</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">Wound Dressing Material</h2>
+                          <p class="text-sm">Breathable, biocompatible, and enhanced absorption rate for conducive faster healing</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">Syringe Filter</h2>
+                          <p class="text-sm">End product with exceptional non-fouling characteristics and higher flux rate</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <!-- Services Process Optimization Dropdown Menu -->
+                  <div class="w-full pt-5 desktop-dropdown-section" id="desk-services-process-optimization-menu">
+                    <div class="px-4 text-gray-600">
+                      <h2 class="text-[1.35rem]">Process Optimization</h2>
+                      <p>Technology services for optimization nanofiber processes</p>
+                    </div>
+                    <ul class="mt-5 grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-x-5">
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">Quality Optimization</h2>
+                          <p class="text-sm">Our specialized process optimization service is dedicated to ensuring the creation of defect-free and uniformly structured nanofiber layers</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">Throughput Optimization</h2>
+                          <p class="text-sm">Optimization service is designed to facilitate the scalable production of nanofibers while maintaining precise control over their diameter scales</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">Uptime Optimization</h2>
+                          <p class="text-sm">NTCS's advanced expertise in nanofiber technology can achieve an impressive 95% uptime</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <!-- Services Recipe Dropdown Menu -->
+                  <div class="w-full pt-5 desktop-dropdown-section" id="desk-services-recipe-menu">
+                    <div class="px-4 text-gray-600">
+                      <h2 class="text-[1.35rem]">Recipe</h2>
+                      <p>Recipe generation service for different nanofiber production technologies</p>
+                    </div>
+                    <ul class="mt-5 grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-x-5">
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">PVDF</h2>
+                          <p class="text-sm">An exceptional polymer for various application areas, including battery separators, filtration media, membranes, and more</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">PA6</h2>
+                          <p class="text-sm">High production rates with ultrafine nanofiber diameters, primarily for air filtration applications</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">PAN</h2>
+                          <p class="text-sm">High thermal and mechanical stability polymer with low density</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">PBT</h2>
+                          <p class="text-sm">Melt-processed, chemically and dimensionally stable polymer with good UV resistance</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">PP</h2>
+                          <p class="text-sm">Low cost, chemically inert, naturally hydrophobic polymer for melt nanofiber spinning</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">PUR</h2>
+                          <p class="text-sm">High performance stretchable polymer mainly used for perfo apparel textile membranes</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">Chitosan</h2>
+                          <p class="text-sm">Biocompatible and biodegradable polymer for cosmetic mask and wound dressing application</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">Collagen</h2>
+                          <p class="text-sm">Specialty polymer for anti-aging cosmetic masks and regenerative medicine applications</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">Cellulose Acetate</h2>
+                          <p class="text-sm">Specially developed for nanofiber based syringe filter applications</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- Services Recipe Dropdown Menu -->
+                  <div class="w-full pt-5 desktop-dropdown-section" id="desk-services-training-menu">
+                    <div class="px-4 text-gray-600">
+                      <h2 class="text-[1.35rem]">Training & Courses</h2>
+                      <p>Industrial nanofiber technology courses and training</p>
+                    </div>
+                    <ul class="mt-5 grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-x-5">
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">Introduction to Nanofibers</h2>
+                          <p class="text-sm">An introductory overview of nanofiber technology is provided in a four-day program</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">Fundementals of Electrospinning</h2>
+                          <p class="text-sm">A 12-day course for beginner to intermediate electrospinning professionals</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">Fundementals of Electroblowing</h2>
+                          <p class="text-sm">A course specializing in electroblowing technology, featuring real-world industrial case studies</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">Safety on Nanofiber Processes</h2>
+                          <p class="text-sm">Covers general machine safety, HAZOP analysis, and practical information from real-world experiences. </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-3 text-gray-600 hover:text-gray-900">
+                          <h2 class="text-base font-semibold">Advanced topics on Electrospinning</h2>
+                          <p class="text-sm">This course is customized to align with specific client requirements and machine technologies, ensuring that the content and training provided are precisely attuned to meet your specific objectives and technological needs</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- Industries Dropdown Menu -->
+              <div class="desktop-dropdown-menu" id="desk-industries-menu">
+                <!-- Close Mega Menu Button -->
+                <div class="absolute text-gray-600 cursor-pointer menu-close-btn right-5 top-4 hover:text-gray-900" title="Close Menu">
+                  <span class="text-3xl material-symbols-rounded">close</span>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 overflow-y-auto max-h-[70vh]">
+                  <div class="border-r border-gray-300 pb-10">
+                    <h3 class="px-4 py-3 bg-gray-200 font-semibold text-xs text-fuchsia-500">By technology</h3>
+                    <ul class="pt-1">
+                      <li class="flex">
+                        <a href="#" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900">Artificial Intelligence (AI)</a>
+                      </li>
+                      <li class="flex desktop-dropdown-tab">
+                        <a href="#" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900">Automation and Robotics</a>
+                      </li>
+                      <li class="flex desktop-dropdown-tab">
+                        <a href="#" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900 ">Blockchain</a>
+                      </li>
+                      <li class="flex desktop-dropdown-tab">
+                        <a href="#" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900 ">Emerging technologies</a>
+                      </li>
+                      <li class="flex desktop-dropdown-tab">
+                        <a href="#" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900 ">Generative AI</a>
+                      </li>
+                      <li class="flex desktop-dropdown-tab">
+                        <a href="#" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900 ">Hybrid Cloud</a>
+                      </li>
+                      <li class="flex desktop-dropdown-tab">
+                        <a href="#" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900 ">Internet of Things (IoT)</a>
+                      </li>
+                      <li class="flex desktop-dropdown-tab">
+                        <a href="#" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900 ">Quantum computing</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h3 class="px-4 py-3 bg-gray-200 font-semibold text-xs text-fuchsia-500">By business function</h3>
+                    <ul class="pt-1">
+                      <li class="flex">
+                        <a href="#" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900">Strategy and Management, CEO</a>
+                      </li>
+                      <li class="flex desktop-dropdown-tab">
+                        <a href="#" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900">Finance and Risk, CFO</a>
+                      </li>
+                      <li class="flex desktop-dropdown-tab">
+                        <a href="#" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900 ">Marketing and Sales, CMO</a>
+                      </li>
+                      <li class="flex desktop-dropdown-tab">
+                        <a href="#" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900 ">Operations and Supply chain, COO, CSCO</a>
+                      </li>
+                      <li class="flex desktop-dropdown-tab">
+                        <a href="#" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900 ">Talent and Skills, CHRO</a>
+                      </li>
+                      <li class="flex desktop-dropdown-tab">
+                        <a href="#" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900 ">Technology and Security, CIO</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h3 class="px-4 py-3 bg-gray-200 font-semibold text-xs text-fuchsia-500">Featured regions</h3>
+                    <ul class="pt-1">
+                      <li class="flex">
+                        <a href="#" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900">Canada</a>
+                      </li>
+                      <li class="flex desktop-dropdown-tab">
+                        <a href="#" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900">China</a>
+                      </li>
+                      <li class="flex desktop-dropdown-tab">
+                        <a href="#" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900 ">Germany</a>
+                      </li>
+                      <li class="flex desktop-dropdown-tab">
+                        <a href="#" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900 ">India</a>
+                      </li>
+                      <li class="flex desktop-dropdown-tab">
+                        <a href="#" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900 ">Japan</a>
+                      </li>
+                      <li class="flex desktop-dropdown-tab">
+                        <a href="#" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900 ">Latin America</a>
+                      </li>
+                      <li class="flex desktop-dropdown-tab">
+                        <a href="#" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900 ">Middle East and Africa</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="bg-gray-100">
+                    <h3 class="px-4 py-3 font-semibold text-xs text-fuchsia-500">Special interests</h3>
+                    <ul class="pt-1">
+                      <li class="flex">
+                        <a href="#" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900">Digital transformation</a>
+                      </li>
+                      <li class="flex desktop-dropdown-tab">
+                        <a href="#" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900">Diversity and Inclusion</a>
+                      </li>
+                      <li class="flex desktop-dropdown-tab">
+                        <a href="#" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900 ">Future Shocks</a>
+                      </li>
+                      <li class="flex desktop-dropdown-tab">
+                        <a href="#" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900 ">Sustainability</a>
+                      </li>
+                      <li class="flex desktop-dropdown-tab">
+                        <a href="#" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900 ">Technology and the Global economy</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="border-r border-gray-300 pb-10">
+                    <h3 class="px-4 py-3 bg-gray-200 font-semibold text-xs text-fuchsia-500">By industry</h3>
+                    <ul class="pt-1">
+                      <li class="flex">
+                        <a href="#" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900">Aerospace and Defense</a>
+                      </li>
+                      <li class="flex desktop-dropdown-tab">
+                        <a href="#" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900">Automotive</a>
+                      </li>
+                      <li class="flex desktop-dropdown-tab">
+                        <a href="#" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900 ">Banking and Financial Markets</a>
+                      </li>
+                      <li class="flex desktop-dropdown-tab">
+                        <a href="#" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900 ">Chemicals and Petroleum</a>
+                      </li>
+                      <li class="flex desktop-dropdown-tab">
+                        <a href="#" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900 ">Consumer products</a>
+                      </li>
+                      <li class="flex desktop-dropdown-tab">
+                        <a href="#" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900 ">Education</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h3 class="px-4 py-3 bg-gray-200 font-semibold text-xs text-fuchsia-500">By products</h3>
+                    <ul class="pt-1">
+                      <li class="flex">
+                        <a href="#" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900">Electronics</a>
+                      </li>
+                      <li class="flex desktop-dropdown-tab">
+                        <a href="#" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900">Energy and Utilities</a>
+                      </li>
+                      <li class="flex desktop-dropdown-tab">
+                        <a href="#" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900 ">Government</a>
+                      </li>
+                      <li class="flex desktop-dropdown-tab">
+                        <a href="#" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900 ">Healthcare</a>
+                      </li>
+                      <li class="flex desktop-dropdown-tab">
+                        <a href="#" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900 ">Industrial products</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h3 class="px-4 py-3 bg-gray-200 font-semibold text-xs text-fuchsia-500">By services</h3>
+                    <ul class="pt-1">
+                      <li class="flex">
+                        <a href="#" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900">Insurance</a>
+                      </li>
+                      <li class="flex desktop-dropdown-tab">
+                        <a href="#" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900">Life sciences</a>
+                      </li>
+                      <li class="flex desktop-dropdown-tab">
+                        <a href="#" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900 ">Media and Entertainment</a>
+                      </li>
+                      <li class="flex desktop-dropdown-tab">
+                        <a href="#" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900 ">Retail</a>
+                      </li>
+                      <li class="flex desktop-dropdown-tab">
+                        <a href="#" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900 ">Telecommunications</a>
+                      </li>
+                      <li class="flex desktop-dropdown-tab">
+                        <a href="#" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900 ">Travel and Transportation</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="bg-gray-200">
+                    <h3 class="px-4 py-3 font-semibold text-xs">IBV blog</h3>
+                    <div class="px-4">
+                      <p class="text-sm mb-10 mt-4">
+                        The IBM Institute for Business Value blog provides expert analysis on the latest research and trends at the intersection of business and technology.
+                      </p>
+                      <a href="#" class="flex underline-on-hover items-center text-fuchsia-500">
+                        <span>Visit the blog</span>
+                        <span class="text-2xl ml-3 material-symbols-rounded">east</span>
+                      </a>
+                      <a href="#" class="flex mt-3 underline-on-hover items-center text-fuchsia-500">
+                        <span>Visit IBM Consulting home page</span>
+                        <span class="text-2xl ml-3 material-symbols-rounded">east</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- More Dropdown Menu -->
+              <div class="desktop-dropdown-menu" id="desk-more-menu">
+                <!-- Close Mega Menu Button -->
+                <div class="absolute text-gray-600 cursor-pointer menu-close-btn right-5 top-4 hover:text-gray-900" title="Close Menu">
+                  <span class="text-3xl material-symbols-rounded">close</span>
+                </div>
+                <div class="grid pt-5 pb-10 grid-cols-[repeat(auto-fill,minmax(500px,1fr))] gap-5">
+                  <div>
+                    <a href="javascript:void(0)" class="px-4 flex items-center gap-3 text-gray-600;">
+                      <span class="text-[1.3rem] font-normal;">About NTCS</span>
+                    </a>
+                    <ul class="mt-5">
+                      <li class="flex">
+                        <a href="#" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900 ">Company</a>
+                      </li>
+                      <li class="flex">
+                        <a href="#" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900 ">The Brand</a>
+                      </li>
+                      <li class="flex">
+                        <a href="#" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900 ">Strategy</a>
+                      </li>
+                      <li class="flex">
+                        <a href="#" class="w-full px-4 py-1 text-gray-600 border-2 border-transparent hover:text-gray-900 ">Nanofibers Perfected</a>
+                      </li>
+                      <li class="flex">
+                        <a href="#" class="w-full px-4 py-1 text-gray-600 border-2 border-transparent hover:text-gray-900 ">Areas of Expertises</a>
+                      </li>
+                      <li class="flex">
+                        <a href="#" class="w-full px-4 py-1 text-gray-600 border-2 border-transparent hover:text-gray-900 ">Capabilities</a>
+                      </li>
+                      <li class="flex">
+                        <a href="#" class="w-full px-4 py-1 text-gray-600 border-2 border-transparent hover:text-gray-900 ">FAQs</a>
+                      </li>
+                      <li class="flex">
+                        <a href="#" class="w-full px-4 py-1 text-gray-600 border-2 border-transparent hover:text-gray-900 ">Nanofibers & Innovation</a>
+                      </li>
+                      <li class="flex">
+                        <a href="#" class="w-full px-4 py-1 text-gray-600 border-2 border-transparent hover:text-gray-900 ">News Center</a>
+                      </li>
+                      <li class="flex">
+                        <a href="#" class="w-full px-4 py-1 text-gray-600 border-2 border-transparent hover:text-gray-900 ">Sustainability</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <div>
+                      <a href="#" class="flex items-center gap-3 px-4 text-gray-600 hover:text-gray-900">
+                        <span class="text-[1.3rem] font-normal hover:underline">Contact Us</span>
+                        <span class="text-2xl mt-0.5 material-symbols-rounded">east</span>
+                      </a>
+                    </div>
+                    <div class="my-8">
+                      <a href="#" class="flex items-center gap-3 px-4 text-gray-600 hover:text-gray-900">
+                        <span class="text-[1.3rem] font-normal hover:underline">Cooperate With Us</span>
+                        <span class="text-2xl mt-0.5 material-symbols-rounded">east</span>
+                      </a>
+                    </div>
+                    <div class="my-8">
+                      <a href="#" class="flex items-center gap-3 px-4 text-gray-600 hover:text-gray-900">
+                        <span class="text-[1.3rem] font-normal hover:underline">Careers</span>
+                        <span class="text-2xl mt-0.5 material-symbols-rounded">east</span>
+                      </a>
+                    </div>
+                    <div class="my-8">
+                      <a href="#" class="flex items-center gap-3 px-4 text-gray-600 hover:text-gray-900">
+                        <span class="text-[1.3rem] font-normal hover:underline">Newsletter Subscription</span>
+                        <span class="text-2xl mt-0.5 material-symbols-rounded">east</span>
+                      </a>
+                    </div>
+                    <div class="mb-8">
+                      <a href="javascript:void(0)" class="flex items-center gap-3 px-4 text-gray-600 hover:text-gray-900">
+                        <span class="text-[1.3rem] font-normal">Resources</span>
+                        
+                      </a>
+                      <ul class="my-4">
+                        <li class="flex">
+                          <a href="#" class="w-full px-4 py-1 text-gray-600 border-2 border-transparent hover:text-gray-900 ">Blog</a>
+                        </li>
+                        <li class="flex">
+                          <a href="#" class="w-full px-4 py-1 text-gray-600 border-2 border-transparent hover:text-gray-900 ">Glossary</a>
+                        </li>
+                        <li class="flex">
+                          <a href="#" class="w-full px-4 py-1 text-gray-600 border-2 border-transparent hover:text-gray-900 ">White Papers</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Language Popup Modal -->
+        <div class="language-popup-modal fixed left-0 top-0 bg-black w-full h-full z-50 bg-opacity-50 flex items-center justify-center">
+          <div class="modal-wrapper relative bg-white max-sm:w-full max-sm:h-full max-sm:max-h-full max-w-7xl w-[96%] max-h-[96%] sm:px-7 py-10">
+            <!-- Close Modal Button -->
+            <div class="language-modal-close-btn absolute text-gray-600 cursor-pointer right-5 top-4 hover:text-gray-900" title="Close Modal">
+              <span class="text-2xl material-symbols-rounded">close</span>
+            </div>
+            <h2 class="max-sm:px-7 text-3xl font-light">Select a region and language</h2>
+            <ul class="max-sm:mt-6 max-sm:pb-10 mt-12 mb-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-sm:h-[70vh] overflow-y-auto">
+              <li class="flex flex-col justify-between p-4 border-b border-gray-300 bg-gray-100 hover:bg-gray-200">
+                <h3 class="text-lg">EMEA</h3>
+                <div class="max-sm:mt-14 mt-24 flex flex-col gap-1">
+                  <a href="#" class="flex underline-on-hover items-center text-fuchsia-500">
+                    <span>EMEA in English</span>
+                    <span class="text-xl ml-3 material-symbols-rounded">east</span>
+                  </a>
+                  <a href="#" class="flex underline-on-hover items-center text-fuchsia-500">
+                    <span>EMEA in German</span>
+                    <span class="text-xl ml-3 material-symbols-rounded">east</span>
+                  </a>
+                </div>
+              </li>
+              <li class="flex flex-col justify-between p-4 border border-t-transparent border-gray-300 max-sm:border-r-0 bg-gray-100 hover:bg-gray-200">
+                <h3 class="text-lg">Greater China Group</h3>
+                <div class="max-sm:mt-14 mt-24 flex flex-col gap-1">
+                  <a href="#" class="flex underline-on-hover items-center text-fuchsia-500">
+                    <span>Greater China Group in Simplified Chinese</span>
+                    <span class="text-xl ml-3 material-symbols-rounded">east</span>
+                  </a>
+                </div>
+              </li>
+              <li class="flex flex-col justify-between p-4 border-b border-gray-300 bg-gray-100 hover:bg-gray-200">
+                <h3 class="text-lg">Latin America</h3>
+                <div class="max-sm:mt-14 mt-24 flex flex-col gap-1">
+                  <a href="#" class="flex underline-on-hover items-center text-fuchsia-500">
+                    <span>Latin America in Portuguese</span>
+                    <span class="text-xl ml-3 material-symbols-rounded">east</span>
+                  </a>
+                  <a href="#" class="flex underline-on-hover items-center text-fuchsia-500">
+                    <span>Latin America in Spanish</span>
+                    <span class="text-xl ml-3 material-symbols-rounded">east</span>
+                  </a>
+                </div>
+              </li>
+              <li class="flex flex-col justify-between p-4 max-lg:border-l max-lg:border-b max-lg:border-gray-300 bg-gray-100 hover:bg-gray-200">
+                <h3 class="text-lg">Asia Pacific & Japan</h3>
+                <div class="max-sm:mt-14 mt-24 flex flex-col gap-1">
+                  <a href="#" class="flex underline-on-hover items-center text-fuchsia-500">
+                    <span>Asia Pacific in Japanese</span>
+                    <span class="text-xl ml-3 material-symbols-rounded">east</span>
+                  </a>
+                  <a href="#" class="flex underline-on-hover items-center text-fuchsia-500">
+                    <span>Asia Pacific in English</span>
+                    <span class="text-xl ml-3 material-symbols-rounded">east</span>
+                  </a>
+                </div>
+              </li>
+              <li class="flex flex-col justify-between p-4 border border-y-transparent border-x-gray-300 max-lg:border-x-transparent bg-gray-100 hover:bg-gray-200">
+                <h3 class="text-lg">India</h3>
+                <div class="max-sm:mt-14 mt-24 flex flex-col gap-1">
+                  <a href="#" class="flex underline-on-hover items-center text-fuchsia-500">
+                    <span>India in English</span>
+                    <span class="text-xl ml-3 material-symbols-rounded">east</span>
+                  </a>
+                </div>
+              </li>
+              <li class="flex flex-col justify-between p-4 max-sm:border-t max-lg:border-l max-lg:border-gray-300 bg-gray-100 hover:bg-gray-200">
+                <h3 class="text-lg">North America</h3>
+                <div class="max-sm:mt-14 mt-24 flex flex-col gap-1">
+                  <a href="#" class="flex underline-on-hover items-center text-fuchsia-500">
+                    <span>North America in Canadian French</span>
+                    <span class="text-xl ml-3 material-symbols-rounded">east</span>
+                  </a>
+                  <a href="#" class="flex underline-on-hover items-center text-fuchsia-500">
+                    <span>North America in English</span>
+                    <span class="text-xl ml-3 material-symbols-rounded">east</span>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero-section sm:pt-14 pt-4">
+      <div class="grid w-full grid-cols-12 gap-10 px-3 mx-auto mt-16 max-w-screen-2xl max-sm:gap-x-0">
+        <!-- Left link section -->
+        <div class="order-3 col-span-2 link-section max-lg:col-span-8 max-sm:col-span-12 lg:order-1">
+          <a href="#" class="block underline-on-hover w-full pb-4 border-b border-gray-300 max-lg:px-0 max-lg:pb-10">
+            <p class="text-fuchsia-600">What's new</p>
+            <p class="mt-1 text-base text-black">The NCTS's New Brand Identity</p>
+            <span class="mt-3 text-2xl text-black material-symbols-rounded"> east </span>
+          </a>
+          <a href="#" class="block underline-on-hover w-full pb-4 mt-6 border-b border-gray-300 max-lg:px-0 max-lg:pb-10">
+            <p class="text-fuchsia-600">Register now</p>
+            <p class="mt-1 text-base text-black">Introduction to Nanofibers Course, 11-15 December 2023</p>
+            <span class="text-black text-2xl mt-0.5 material-symbols-rounded"> east </span>
+          </a>
+        </div>
+
+        <!-- Center video section -->
+        <div class="relative order-2 col-span-6 max-lg:col-span-12 lg:order-2">
+          <div class="relative cursor-pointer video-wrapper">
+            <div class="relative thumbnail">
+              <img src="assets/images/hero-video-img.jpg" alt="Hero Video Image">
+              <div class="absolute inset-0 flex items-center justify-center w-full">
+                <div class="flex items-center justify-center w-16 h-16 rounded-full cursor-pointer play-icon">
+                  <span class="text-6xl text-white material-symbols-rounded">play_arrow</span>
+                </div>
+              </div>
+            </div>
+            <iframe class="w-full aspect-video lg:h-[45.75rem] hidden" src="https://www.youtube.com/embed/IPwCsMG-JJg?si=h1-UuASEEKQXBGNl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <p class="mt-2 text-sm tex-gray-600">Introducing the new nanofiber production technology, Melt-Xpert (2:19)</p>
+        </div>
+
+        <!-- Right content section -->
+        <div class="flex flex-col justify-between order-1 w-full col-span-4 mb-7 max-lg:col-span-12 lg:order-3">
+          <h2 class="text-5xl max-lg:text-4xl leading-[1.2] font-light pe-28 max-w-[550px] max-[1200px]:pe-0">
+            Nanofiber technologies that make an
+            <b class="font-semibold underline decoration-fuchsia-500">impact</b>
+          </h2>
+          <div>
+            <h3 class="text-2xl max-lg:mt-10 max-lg:text-xl">NTCS delivers consulting services to help build superior nanofiber products.</h3>
+            <div class="flex gap-4 mt-7 max-sm:flex-col">
+              <a href="#" class="flex items-center py-2 text-white transition-all max-sm:w-full max-sm:justify-between bg-fuchsia-600 px-7 hover:bg-fuchsia-700">
+                About NTCS
+                <span class="text-xl mt-0.5 ms-3 material-symbols-rounded"> east </span>
+              </a>
+              <a href="#" class="flex items-center py-2 transition-all border text-fuchsia-600 max-sm:w-full max-sm:justify-between border-fuchsia-600 px-7 hover:bg-fuchsia-600 hover:text-white">
+                Nanofibers Perfected
+                <span class="text-xl mt-0.5 ms-3 material-symbols-rounded"> east </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommended Section -->
+    <section class="recommended-section sm:pt-16 pt-10">
+      <div class="max-w-screen-2xl mx-auto px-0 lg:px-3">
+        <h2 class="font-semibold px-3 lg:px-0">Recommended for you</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 mt-5">
+          <a href="#" class="flex border border-gray-300 p-4 gap-6 transition-all hover:bg-zinc-200">
+            <img class="w-1/2" src="assets/images/recommended-section-img-1.jpg" alt="watsonx.ai">
+            <div class="flex flex-col justify-between">
+              <div>
+                <p class="text-sm text-gray-600">watsonx.ai</p>
+                <h3 class="mt-2 text-gray-700">Free trail-build enterprise-grade AI models</h3>
+              </div>
+              <span class="text-2xl text-fuchsia-500 material-symbols-rounded">east</span>
+            </div>
+          </a>
+          <a href="#" class="flex border border-gray-300 p-4 gap-6 transition-all hover:bg-zinc-200">
+            <img class="w-1/2" src="assets/images/recommended-section-img-2.jpg" alt="Security">
+            <div class="flex flex-col justify-between">
+              <div>
+                <p class="text-sm text-gray-600">Security</p>
+                <h3 class="mt-2 text-gray-700">Broad protection for cloud applications</h3>
+              </div>
+              <span class="text-2xl text-fuchsia-500 material-symbols-rounded">east</span>
+            </div>
+          </a>
+          <a href="#" class="flex border border-gray-300 p-4 gap-6 transition-all hover:bg-zinc-200">
+            <img class="w-1/2" src="assets/images/recommended-section-img-3.png" alt="Buy now">
+            <div class="flex flex-col justify-between">
+              <div>
+                <p class="text-sm text-gray-600">Buy now</p>
+                <h3 class="mt-2 text-gray-700">Save 10% on SPSS Statistics subscription</h3>
+              </div>
+              <span class="text-2xl text-fuchsia-500 material-symbols-rounded">east</span>
+            </div>
+          </a>
+          <a href="#" class="flex border border-gray-300 p-4 gap-6 transition-all hover:bg-zinc-200">
+            <img class="w-1/2" src="assets/images/recommended-section-img-4.jpg" alt="IBM Envizi">
+            <div class="flex flex-col justify-between">
+              <div>
+                <p class="text-sm text-gray-600">IBM Envizi</p>
+                <h3 class="mt-2 text-gray-700">Simplify and track ESG data on AWS</h3>
+              </div>
+              <span class="text-2xl text-fuchsia-500 material-symbols-rounded">east</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Overview + Capabilities Section -->
+    <section class="overview-section sm:pt-16 pt-10">
+      <div class="max-w-screen-2xl mx-auto px-3">
+        <!-- Overview Section -->
+        <div>
+          <div class="flex gap-5 max-lg:flex-col">
+            <div>
+              <h2 class="text-5xl font-light mb-10">Overview</h2>
+              <h3 class="text-3xl mb-8">Payments services and consulting</h3>
+              <p class="max-w-4xl">
+                The IBM Payments Center™ can help accelerate your payments modernization initiatives, including industry expertise in payments consulting and services, and business process outsourcing with our Payments-as-a-Service (PAYaaS) platform.
+              </p>
+            </div>
+            <img class="max-lg:w-full w-1/2" src="assets/images/overview-section-img-1.jpg" alt="Overview Image">
+          </div>
+          <div class="border-y border-gray-400 py-14 mt-16">
+            <div class="max-w-full lg:max-w-6xl flex flex-col lg:flex-row lg:items-center justify-between">
+              <h3 class="text-3xl max-w-3xl">Nacha Announces IBM as a Preferred Partner for Enterprise Payments Solutions</h3>
+              <div class="lg:border-l border-gray-300 flex flex-col lg:ps-5 mt-8 lg:mt-0 gap-2">
+                <a href="#" class="flex underline-on-hover items-center text-fuchsia-500">
+                  <span>Read the press release</span>
+                  <span class="text-2xl ml-3 material-symbols-rounded">east</span>
+                </a>
+                <a href="#" class="flex underline-on-hover items-center text-fuchsia-500">
+                  <span>Contact us</span>
+                  <span class="text-2xl ml-3 material-symbols-rounded">east</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+         <!-- Capabilities Section -->
+        <div class="mt-20">
+          <h2 class="text-5xl font-light mb-12">Capabilities</h2>
+          <ul class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-y-8 xl:gap-14">
+            <li class="border-b xl:border-b-0 flex flex-col justify-between border-gray-300 pb-10 xl:pb-0 sm:pe-6 xl:pe-0">
+              <div>
+                <h3 class="font-semibold mb-3">Connectivity and services integration</h3>
+                <p>
+                  The IBM Service Bureau for SWIFT delivers innovation by providing SWIFT connectivity to financial institutions and corporations to establish or modernize their SWIFT messaging capabilities, accomplished by removing the challenges and high costs with SWIFT requirements for message vehicles, protocols, controls and procedures.
+                </p>
+              </div>
+              <a href="#" class="flex underline-on-hover items-center text-fuchsia-500 mt-5">
+                <span>Read the ebook</span>
+                <span class="ml-3 material-symbols-rounded">east</span>
+              </a>
+            </li>
+            <li class="border-b xl:border-b-0 flex flex-col justify-between border-gray-300 pb-10 xl:pb-0 sm:ps-6 xl:ps-0">
+              <div>
+                <h3 class="font-semibold mb-3">Payments management services</h3>
+                <p>
+                  IPC offers a set of innovative and flexible automated processing payment services and excels at integrating with other payments ecosystems. Financial institutions (FIs) seeking to modernize their payments infrastructure and operations can benefit from these robust services.
+                </p>
+              </div>
+              <a href="#" class="flex underline-on-hover items-center text-fuchsia-500 mt-5">
+                <span>Contact us</span>
+                <span class="ml-3 material-symbols-rounded">east</span>
+              </a>
+            </li>
+            <li class="border-b xl:border-b-0 flex flex-col justify-between border-gray-300 pb-10 xl:pb-0 sm:pe-6 xl:pe-0">
+              <div>
+                <h3 class="font-semibold mb-3">Outsourcing payments services</h3>
+                <p>
+                  The Payments-as-a-Service options include automated clearing house (ACH), automated funds transfer (AFT), checks, wires and real-time payments. Outsourcing your payments can help lower your cost of operations and improve margins.
+                </p>
+              </div>
+              <a href="#" class="flex underline-on-hover items-center text-fuchsia-500 mt-5">
+                <span>Contact us</span>
+                <span class="ml-3 material-symbols-rounded">east</span>
+              </a>
+            </li>
+            <li class="border-b xl:border-b-0 flex flex-col justify-between border-gray-300 pb-10 xl:pb-0 sm:ps-6 xl:ps-0">
+              <div>
+                <h3 class="font-semibold mb-3">Low-value payment solutions</h3>
+                <p>
+                  Low-value payments types include ACH and AFT, from payment initiation and receipt and API user interface, to delivery and receiving with clearing and settlement mechanisms. A Checks-as-a-Service solution is available for countries using checks.
+                </p>
+              </div>
+            </li>
+            <li class="border-b sm:border-b-0 flex flex-col justify-between border-gray-300 pb-10 xl:pb-0 sm:pe-6 xl:pe-0">
+              <div>
+                <h3 class="font-semibold mb-3">High-value payment solutions</h3>
+                <p>
+                  High-value payment types include wire payments processing. The IPC manages end-to-end processing of payment messages, including integration with foreign exchange (FX) services, SWIFT, core banking applications and domestic messaging and clearing systems.
+                </p>
+              </div>
+            </li>
+            <li class="flex flex-col justify-between sm:ps-6 xl:ps-0">
+              <div>
+                <h3 class="font-semibold mb-3">Real-time payment solutions</h3>
+                <p>
+                  Real-time payments are becoming the target payment type for many payments systems. Yet, FIs may face barriers in adopting real-time payments using their existing infrastructures. The IPC offers capabilities such as instant processing and posting mechanisms that can help.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+     <!-- Features Section -->
+    <section class="features-section sm:pt-16 pt-10">
+      <div class="max-w-screen-2xl mx-auto px-3">
+        <h2 class="text-5xl font-light mb-10">Features</h2>
+        <div>
+          <!-- Mobile Tab Content with Tab Buttons -->
+          <ul class="mobile-tab-wrapper grid grid-cols-1 lg:grid-cols-5">
+            <li class="max-lg:border-t max-lg:border-t-gray-300">
+              <button class="tab-button active w-full lg:h-full lg:border-2 lg:border-transparent lg:border-b-gray-300 lg:hover:border-b-gray-400 p-2 lg:p-3 text-left flex items-center justify-between focus:border-fuchsia-500 max-lg:hover:bg-gray-200" data-tab-id="capital-planning-management">
+                <span>Capital Planning Management</span>
+                <span class="lg:hidden icon material-symbols-rounded">expand_more</span>
+              </button>
+              <div class="tab-content active mt-6 mb-16 px-2" id="capital-planning-management">
+                <div class="max-w-xl">
+                  <p>
+                    Provides complete enterprise-wide project and program management including the required tools to ensure efficient, cost-effective delivery of capital, facility, and environmental projects.
+                  </p>
+                  <a href="#" class="flex mt-10 underline-on-hover items-center text-fuchsia-500">
+                    <span>Explore capital planning lease management software</span>
+                    <span class="text-2xl ml-3 material-symbols-rounded">east</span>
+                  </a>
+                </div>
+                <img class="sm:w-9/12 mt-10" src="assets/images/features-section-img-1.jpg" alt="Capital Planning Management">
+              </div>
+            </li>
+            <li class="max-lg:border-t max-lg:border-t-gray-300">
+              <button class="tab-button w-full lg:h-full lg:border-2 lg:border-transparent lg:border-b-gray-300 lg:hover:border-b-gray-400 p-2 lg:p-3 text-left flex items-center justify-between focus:border-fuchsia-500 max-lg:hover:bg-gray-200" data-tab-id="real-estate-management">
+                <span>Real Estate Management</span>
+                <span class="lg:hidden icon material-symbols-rounded">expand_more</span>
+              </button>
+              <div class="tab-content mt-6 mb-16 px-2" id="capital-planning-management">
+                <div class="max-w-xl">
+                  <p>
+                    Helps organizations improve the effectiveness of real estate portfolio planning, improve returns from real estate transactions, avoid lease penalties and overpayments, and streamline lease accounting.
+                  </p>
+                  <a href="#" class="flex mt-10 underline-on-hover items-center text-fuchsia-500">
+                    <span>Explore operational efficiency with TRIRIGA</span>
+                    <span class="text-2xl ml-3 material-symbols-rounded">east</span>
+                  </a>
+                </div>
+                <img class="sm:w-9/12 mt-10" src="assets/images/features-section-img-2.jpg" alt="Real Estate Management">
+              </div>
+            </li>
+            <li class="max-lg:border-t max-lg:border-t-gray-300">
+              <button class="tab-button w-full lg:h-full lg:border-2 lg:border-transparent lg:border-b-gray-300 lg:hover:border-b-gray-400 p-2 lg:p-3 text-left flex items-center justify-between focus:border-fuchsia-500 max-lg:hover:bg-gray-200" data-tab-id="facility-management">
+                <span>Facility Management</span>
+                <span class="lg:hidden icon material-symbols-rounded">expand_more</span>
+              </button>
+              <div class="tab-content mt-6 mb-16 px-2" id="capital-planning-management">
+                <div class="max-w-xl">
+                  <p>
+                    Increases the utilization of valuable real estate and building infrastructure assets through the use of advanced space planning, space management, and move planning. It provides space management and audit tools; space use agreements and chargeback tools; as well as move planning and move execution management.
+                  </p>
+                  <a href="#" class="flex mt-10 underline-on-hover items-center text-fuchsia-500">
+                    <span>Explore space planning solutions</span>
+                    <span class="text-2xl ml-3 material-symbols-rounded">east</span>
+                  </a>
+                </div>
+                <img class="sm:w-9/12 mt-10" src="assets/images/features-section-img-4.jpg" alt="Facility Management">
+              </div>
+            </li>
+            <li class="max-lg:border-t max-lg:border-t-gray-300">
+              <button class="tab-button w-full lg:h-full lg:border-2 lg:border-transparent lg:border-b-gray-300 lg:hover:border-b-gray-400 p-2 lg:p-3 text-left flex items-center justify-between focus:border-fuchsia-500 max-lg:hover:bg-gray-200" data-tab-id="workplace-management">
+                <span>Workplace Management</span>
+                <span class="lg:hidden icon material-symbols-rounded">expand_more</span>
+              </button>
+              <div class="tab-content mt-6 mb-16 px-2" id="capital-planning-management">
+                <div class="max-w-xl">
+                  <p>
+                    Delivers facility maintenance software to help maintain critical facilities assets throughout their lifecycle and reduce maintenance costs. It automates the management of corrective maintenance services to deliver higher-quality services more efficiently. It also automates preventive and condition-based maintenance processes to improve the condition of critical facilities assets and extend their life.
+                  </p>
+                  <a href="#" class="flex mt-10 underline-on-hover items-center text-fuchsia-500">
+                    <span>Explore workplace experience with TRIRIGA</span>
+                    <span class="text-2xl ml-3 material-symbols-rounded">east</span>
+                  </a>
+                </div>
+                <img class="sm:w-9/12 mt-10" src="assets/images/features-section-img-3.jpg" alt="Workplace Management">
+              </div>
+            </li>
+            <li class="max-lg:border-y max-lg:border-y-gray-300">
+              <button class="tab-button w-full lg:h-full lg:border-2 lg:border-transparent lg:border-b-gray-300 lg:hover:border-b-gray-400 p-2 lg:p-3 text-left flex items-center justify-between focus:border-fuchsia-500 max-lg:hover:bg-gray-200" data-tab-id="environmental-management">
+                <span>Environmental Management</span>
+                <span class="lg:hidden icon material-symbols-rounded">expand_more</span>
+              </button>
+              <div class="tab-content mt-6 mb-16 px-2" id="capital-planning-management">
+                <div class="max-w-xl">
+                  <p>
+                    Identify resource intensive facilities and processes, analyze financial and environmental benefits of environmental sustainability investments, and automate carbon reduction actions to reduce energy costs and achieve environmental and energy management strategies.
+                  </p>
+                  <a href="#" class="flex mt-10 underline-on-hover items-center text-fuchsia-500">
+                    <span>Explore sustainability solutions</span>
+                    <span class="text-2xl ml-3 material-symbols-rounded">east</span>
+                  </a>
+                </div>
+                <img class="sm:w-9/12 mt-10" src="assets/images/features-section-img-5.jpg" alt="Environmental Management">
+              </div>
+            </li>
+          </ul>
+
+          <!-- Desktop Tab Content -->
+          <ul class="max-lg:hidden desktop-tab-wrapper">
+            <li class="tab-content active flex mt-10 justify-between" id="capital-planning-management">
+              <div class="mt-10 max-w-xl">
+                <p>
+                  Provides complete enterprise-wide project and program management including the required tools to ensure efficient, cost-effective delivery of capital, facility, and environmental projects.
+                </p>
+                <a href="#" class="flex mt-10 underline-on-hover items-center text-fuchsia-500">
+                  <span>Explore capital planning lease management software</span>
+                  <span class="text-2xl ml-3 material-symbols-rounded">east</span>
+                </a>
+              </div>
+              <img class="w-1/2" src="assets/images/features-section-img-1.jpg" alt="Capital Planning Management">
+            </li>
+            <li class="tab-content mt-10 justify-between" id="real-estate-management">
+              <div class="mt-10 max-w-xl">
+                <p>
+                  Helps organizations improve the effectiveness of real estate portfolio planning, improve returns from real estate transactions, avoid lease penalties and overpayments, and streamline lease accounting.
+                </p>
+                <a href="#" class="flex mt-10 underline-on-hover items-center text-fuchsia-500">
+                  <span>Explore operational efficiency with TRIRIGA</span>
+                  <span class="text-2xl ml-3 material-symbols-rounded">east</span>
+                </a>
+              </div>
+              <img class="w-1/2" src="assets/images/features-section-img-2.jpg" alt="Real Estate Management">
+            </li>
+            <li class="tab-content mt-10 justify-between" id="facility-management">
+              <div class="mt-10 max-w-xl">
+                <p>
+                  Increases the utilization of valuable real estate and building infrastructure assets through the use of advanced space planning, space management, and move planning. It provides space management and audit tools; space use agreements and chargeback tools; as well as move planning and move execution management.
+                </p>
+                <a href="#" class="flex mt-10 underline-on-hover items-center text-fuchsia-500">
+                  <span>Explore space planning solutions</span>
+                  <span class="text-2xl ml-3 material-symbols-rounded">east</span>
+                </a>
+              </div>
+              <img class="w-1/2" src="assets/images/features-section-img-3.jpg" alt="Facility Management">
+            </li>
+            <li class="tab-content mt-10 justify-between" id="workplace-management">
+              <div class="mt-10 max-w-xl">
+                <p>
+                  Delivers facility maintenance software to help maintain critical facilities assets throughout their lifecycle and reduce maintenance costs. It automates the management of corrective maintenance services to deliver higher-quality services more efficiently. It also automates preventive and condition-based maintenance processes to improve the condition of critical facilities assets and extend their life.
+                </p>
+                <a href="#" class="flex mt-10 underline-on-hover items-center text-fuchsia-500">
+                  <span>Explore workplace experience with TRIRIGA</span>
+                  <span class="text-2xl ml-3 material-symbols-rounded">east</span>
+                </a>
+              </div>
+              <img class="w-1/2" src="assets/images/features-section-img-4.jpg" alt="Workplace Management">
+            </li>
+            <li class="tab-content mt-10 justify-between" id="environmental-management">
+              <div class="mt-10 max-w-xl">
+                <p>
+                  Identify resource intensive facilities and processes, analyze financial and environmental benefits of environmental sustainability investments, and automate carbon reduction actions to reduce energy costs and achieve environmental and energy management strategies.
+                </p>
+                <a href="#" class="flex mt-10 underline-on-hover items-center text-fuchsia-500">
+                  <span>Explore sustainability solutions</span>
+                  <span class="text-2xl ml-3 material-symbols-rounded">east</span>
+                </a>
+              </div>
+              <img class="w-1/2" src="assets/images/features-section-img-5.jpg" alt="Environmental Management">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefit Section -->
+    <section class="benefits-section sm:py-16 py-10">
+      <div class="max-w-screen-2xl mx-auto px-3">
+        <h2 class="text-5xl font-light mb-12">Benefits</h2>
+        <ul class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 border-b border-gray-300 gap-8 sm:gap-12 pb-12">
+          <li class="border-b border-gray-300 sm:border-b-0 pb-10">
+            <svg class="ml-[-10px]" width="80" fill="#333" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+              <path d="M202-797.5V-540v-1 378.5-635V-653v-144.5ZM308.5-429H456q5-7 10-13.022t10.5-12.478h-168v25.5Zm0 159h112q-.5-6.5-.738-13-.237-6.5-.254-12.5H308.5v25.5Zm-74.627 133q-24.311 0-40.842-16.531T176.5-194.28v-571.44q0-24.218 16.531-40.749Q209.562-823 234-823h312l157.5 157v128.5q-6.373-1.059-12.936-1.529-6.564-.471-12.444-.785V-653H533.5v-144.5H234q-12 0-22 10t-10 22v571q0 12 10 22t22 10h228.5q4.214 6.923 9.107 12.962Q476.5-143.5 481.5-137H233.873ZM660-183q49.5 0 83.5-33.75t34-83.25q0-49.5-34-83.5t-83.5-34q-49.5 0-83.25 34T543-300q0 49.5 33.75 83.25T660-183ZM864-79 752.419-190.5Q733.5-174.5 710-166q-23.5 8.5-50 8.5-59.958 0-101.229-41.279-41.271-41.28-41.271-101.25 0-59.971 41.279-101.471 41.28-41.5 101.25-41.5Q720-443 761.5-401.479 803-359.958 803-300q0 26.5-8.625 50T769.5-208l112 112L864-79Z"/>
+            </svg>
+            <h2 class="font-semibold mt-5 mb-3">Optimize space management</h2>
+            <p>
+              Capture and analyze floor plan data to make the most strategic space planning decisions to maximize workspace utilization and give occupants the spaces they need.
+            </p>
+          </li>
+          <li class="border-b border-gray-300 sm:border-b-0 pb-10">
+            <svg class="ml-[-10px]" width="80" fill="#333" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+              <path d="M407-173.307v-217.466L460.5-544q1.5-2.5 3.212-3.75Q465.424-549 471-549h282q4.053 0 6.947 1.038 2.895 1.039 3.553 3.962L817-390.773v217.388q0 5.808-3.75 9.597Q809.5-160 803.56-160h.675q-5.658 0-9.447-3.683Q791-167.365 791-173.744V-230H433v56.378q0 6.045-3.75 9.834Q425.5-160 419.56-160h.675q-5.658 0-9.447-3.839-3.788-3.838-3.788-9.468ZM445-418h334l-36.192-104.5H481L445-418Zm-11.5 26v136-136Zm63.5 97.5q13.95 0 23.725-9.775Q530.5-314.05 530.5-328q0-13.95-9.775-23.725Q510.95-361.5 497-361.5q-13.95 0-23.725 9.775Q463.5-341.95 463.5-328q0 13.95 9.775 23.725Q483.05-294.5 497-294.5Zm230 0q13.95 0 23.725-9.775Q760.5-314.05 760.5-328q0-13.95-9.775-23.725Q740.95-361.5 727-361.5q-13.95 0-23.725 9.775Q693.5-341.95 693.5-328q0 13.95 9.775 23.725Q713.05-294.5 727-294.5Zm-466.5-183V-532H315v54.5h-54.5ZM405-662v-54.5h54.5v54.5H405ZM260.5-318.5V-373H315v54.5h-54.5Zm0 158.5v-54.5H315v54.5h-54.5ZM143-160v-489.5h144.5v-184H577V-641h-25.5v-167H313v184H168.5v464H143Zm290.5-96h357v-136h-357v136Z"/>
+            </svg>
+            <h2 class="font-semibold mt-5 mb-3">Create the right workplace experience</h2>
+            <p>
+              Deliver an office space experience that focuses on employee health and well-being, and keeps users safe, connected and productive.
+            </p>
+          </li>
+          <li>
+            <svg class="ml-[-10px]" width="80" fill="#333" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+              <path d="M130.5-178v-645.5H466v155h363.5V-178h-699Zm25.5-25.5h284.5V-333H156v129.5Zm0-155h284.5V-488H156v129.5Zm0-155h284.5V-643H156v129.5Zm0-155h284.5V-798H156v129.5Zm310 465h338V-643H466v439.5ZM563.5-488v-25.5h123v25.5h-123Zm0 155v-25.5h123v25.5h-123Z"/>
+            </svg>
+            <h2 class="font-semibold mt-5 mb-3">Right-size your real estate portfolio</h2>
+            <p>
+              Streamline lease accounting and administration to optimize cost savings and better assess financial impacts of potential disruptions.
+            </p>
+          </li>
+        </ul>
+        <ul class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8 sm:gap-12 pt-8 sm:pt-12">
+          <li class="border-b border-gray-300 sm:border-b-0 pb-10">
+            <div class="flex flex-col justify-between">
+              <svg class="ml-[-10px]" width="80" fill="#333" viewBox="0 -960 960 960">
+                <path d="m419-137-14-110.5q-16-4-42-18T314-298l-101 43-61.5-108 88-66q-2.5-11.975-3.75-24.487Q234.5-466 234.5-479q0-10.5 1.5-23.25l3.5-29.75-88-66L213-703.5 314-661q19.5-16.5 43-30.25t47-21.25l15-111h122.5l14 111.5q26 9 45.75 20.75T642-661l105.5-42.5L809-598l-93.5 70.041Q719-514 719.75-503t.75 22.75q0 10.75-1 22.088-1 11.337-4 28.162l91 67L745-255l-103-44.5q-20.5 18-41 30.5t-45.5 20.5l-14 111.5H419Zm21.181-25.5h77.417L533.223-272q29.277-8 52.027-21t48.25-38L734-287.5l39.5-67.256L685-421q4.5-18 6.25-31.84 1.75-13.841 1.75-27.41 0-14.75-1.5-27.25T685-537l90.5-68.5-39-67.5-104 43.5q-16-18-46.5-36t-54-23L520-798h-80l-11.5 108.535Q397.5-683 373.75-670t-50.25 39.5L224-673l-40 67.5 87 64.5q-5 13.5-7 29.319-2 15.819-2 32.151 0 15.03 1.75 29.53 1.75 14.5 5.75 29.5L184-355l39.859 67.5 98.641-42q24.5 24.5 49 38t55.777 21l12.904 108Zm36.81-232q36.009 0 60.759-24.775 24.75-24.776 24.75-60.75 0-35.975-24.768-60.725T477-565.5q-36 0-60.75 24.775-24.75 24.776-24.75 60.75 0 35.975 24.75 60.725t60.741 24.75Zm3.009-86Z"/>
+              </svg>
+              <h2 class="font-semibold mt-5 mb-3">Maximize operations and maintenance efficiency</h2>
+              <p>
+                Use conditions-based and preventative maintenance for better decision making and to reduce operating costs.
+              </p>
+            </div>
+            <a href="#" class="flex underline-on-hover items-center text-fuchsia-500 mt-5">
+              <span>Read - The true value of IWMS</span>
+              <span class="ml-3 material-symbols-rounded">east</span>
+            </a>
+          </li>
+          <li class="border-b border-gray-300 sm:border-b-0 pb-10">
+            <svg class="ml-[-10px]" width="80" fill="#333" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+              <path d="M480-97q-123 0-219.75-68.25T118.5-350.5V-209H93v-185.5h185.5v25.5h-138q36 112 130.5 179.25t208.891 67.25Q550-122.5 612-147.25q62-24.75 109.75-68.5t78-104.5Q830-381 836.5-452.5H862q-5.5 74.769-37.5 139.634-32 64.866-83 113.116t-118.25 75.5Q556-97 480-97Zm-15-126v-47.413q-38.5-9.087-66.5-29.388-28-20.302-46.5-58.699l24-11q18 35.5 46.75 55.25T486-294.5q35.5 0 68.75-19.75T588-379q0-35-21.25-54.25T481-476.5q-66-24-92.5-48.25T362-590.801Q362-625.5 388.5-655t78.5-36.5V-737h28v45.472q29.5 2.028 55.5 18.778t41.5 43.324L568-620q-14-21-35.337-34.25-21.338-13.25-50.493-13.25-41.17 0-66.67 22.366T390-591q0 32 16.5 49t84.5 41q72.1 25.389 97.55 52.663Q614-421.063 614-378.934q0 27.934-11.5 48.684Q591-309.5 573.25-296t-39 20.25Q513-269 493.211-268.455V-223H465ZM98-507.5q7.5-79.5 40.706-144.893 33.207-65.393 85-112.25Q275.5-811.5 341.492-837.25 407.483-863 480.112-863 600.5-863 700-794t141.5 189v-146H867v185.5H681.5V-591h138Q787-698 691.75-767.75T480.109-837.5Q414-837.5 352.5-813.75T242.25-747q-48.75 43-80.5 104T123.5-507.5H98Z"/>
+            </svg>
+            <h2 class="font-semibold mt-5 mb-3">Manage and extend capital projects</h2>
+            <p>
+              Improve project cycle time, eliminate budget over-runs, remove resource bottlenecks and analyze projects risks to improve planning decisions.
+            </p>
+          </li>
+          <li>
+            <svg class="ml-[-10px]" width="80" fill="#333" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+              <path d="M479.761-137q-70.761 0-133.31-26.908-62.548-26.908-109.092-73.451-46.543-46.544-73.451-109.092Q137-409 137-479.761 137-551 163.908-613.42q26.908-62.421 73.451-109.045 46.544-46.625 109.092-73.58Q409-823 479.761-823 551-823 613.42-796.037q62.421 26.962 109.045 73.599 46.625 46.638 73.58 109.076Q823-550.925 823-480q0 71-26.955 133.549-26.955 62.548-73.58 109.092-46.624 46.543-109.045 73.451Q551-137 479.761-137Zm.239-23q38.609-47.789 62.555-93.645Q566.5-299.5 582-356.5H378.5Q395-295 418.445-249.645 441.891-204.289 480-160Zm-32-3.5q-31.5-34-57.75-86.5t-38.342-106.5H187.5q36 83 105.25 133.75T448-163.5Zm64 0q85.5-8 155-59t106-134H608.592Q591-301.5 564.75-249T512-163.5ZM178-382h168q-5-26-7-50.75T337-480q0-22.5 2-47.25t7-50.75H178q-7.5 21.5-11.5 47.338-4 25.837-4 50.662t4 50.663Q170.5-403.5 178-382Zm194 0h216.5q4.5-26 6.75-49.587 2.25-23.588 2.25-48.413 0-24.825-2.25-48.412Q593-552 588.5-578H372q-5 26-7.25 49.588-2.25 23.587-2.25 48.412t2.25 48.413Q367-408 372-382Zm242 0h168.5q7-21.5 11-47.337 4-25.838 4-50.663 0-24.825-4-50.662-4-25.838-11-47.338H614q5 26 7 50.75t2 47.25q0 22.5-2 47.25T614-382Zm-5.408-221.5H773Q736-688 669-737.25T512-797.5q31.5 39 57 90t39.592 104Zm-230.092 0H582q-17-60-41.945-108.105Q515.109-759.711 480-800q-35.109 40.289-60.055 88.395Q395-663.5 378.5-603.5Zm-191 0h164.408q13.592-53 39.092-104t57-90q-90.5 11.5-157.25 60.75T187.5-603.5Z"/>
+            </svg>
+            <h2 class="font-semibold mt-5 mb-3">Improve energy management</h2>
+            <p>
+              Identify and evaluate opportunities to reduce energy consumption, emissions and the overall carbon footprint of your real estate portfolio.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Featured Industry Section -->
+    <section class="featured-industry-section bg-gray-200 sm:py-16 py-10">
+      <div class="max-w-screen-2xl mx-auto px-3">
+        <h2 class="text-3xl font-light mb-12">Featured Industry Client Stories</h2>
+        <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <li class="flex flex-col bg-white border border-gray-300">
+            <div>
+              <img class="h-[200px] w-full object-cover" src="assets/images/featured-industry-section-img-1.jpg" alt="Sund & Baelt">
+            </div>
+            <div class="p-5 h-full flex flex-col justify-between">
+              <h3 class="font-medium text-xl">Sund & Baelt - Building bridges to better insight</h3>
+              <div class="mt-8 mb-4 inline-flex">
+                <a class="block text-white bg-zinc-700 py-3 px-5 hover:bg-black" href="#">Featured Story</a>
+              </div>
+            </div>
+          </li>
+          <li class="flex flex-col bg-white border border-gray-300">
+            <div>
+              <img class="h-[200px] w-full object-cover" class="h-[200px] w-full object-cover" src="assets/images/featured-industry-section-img-2.jpg" alt="HealthPartners">
+            </div>
+            <div class="p-5 h-full flex flex-col justify-between">
+              <h3 class="font-medium text-xl">HealthPartners - No time for downtime</h3>
+              <div class="mt-8 mb-4 inline-flex">
+                <a class="block text-white bg-zinc-700 py-3 px-5 hover:bg-black" href="#">Featured Story</a>
+              </div>
+            </div>
+          </li>
+          <li class="flex flex-col bg-white border border-gray-300">
+            <div>
+              <img class="h-[200px] w-full object-cover" src="assets/images/featured-industry-section-img-3.jpg" alt="Bic Camera">
+            </div>
+            <div class="p-5 h-full flex flex-col justify-between">
+              <h3 class="font-medium text-xl">Bic Camera, Inc. - A monumental upgrade</h3>
+              <div class="mt-8 mb-4 inline-flex">
+                <a class="block text-white bg-zinc-700 py-3 px-5 hover:bg-black" href="#">Featured Story</a>
+              </div>
+            </div>
+          </li>
+          <li class="flex flex-col bg-white border border-gray-300">
+            <div>
+              <img class="h-[200px] w-full object-cover" src="assets/images/featured-industry-section-img-4.jpeg" alt="Home Trust">
+            </div>
+            <div class="p-5 h-full flex flex-col justify-between">
+              <h3 class="font-medium text-xl">Home Trust - Rising to the challenge</h3>
+              <div class="mt-8 mb-4 inline-flex">
+                <a class="block text-white bg-zinc-700 py-3 px-5 hover:bg-black" href="#">Featured Story</a>
+              </div>
+            </div>
+          </li>
+          <li class="flex flex-col bg-white border border-gray-300">
+            <div>
+              <img class="h-[200px] w-full object-cover" src="assets/images/featured-industry-section-img-5.jpg" alt="Dubber">
+            </div>
+            <div class="p-5 h-full flex flex-col justify-between">
+              <h3 class="font-medium text-xl">Dubber - Bring AI into the discussion</h3>
+              <div class="mt-8 mb-4 inline-flex">
+                <a class="block text-white bg-zinc-700 py-3 px-5 hover:bg-black" href="#">Featured Story</a>
+              </div>
+            </div>
+          </li>
+          <li class="flex flex-col bg-white border border-gray-300">
+            <div>
+              <img class="h-[200px] w-full object-cover" src="assets/images/featured-industry-section-img-6.jpg" alt="IBM Global Chief">
+            </div>
+            <div class="p-5 h-full flex flex-col justify-between">
+              <h3 class="font-medium text-xl">IBM Global Chief Data Office</h3>
+              <div class="mt-8 mb-4 inline-flex">
+                <a class="block text-white bg-zinc-700 py-3 px-5 hover:bg-black" href="#">Featured Story</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Next Steps Section -->
+    <section class="next-steps-section bg-gray-200 sm:py-16 py-10">
+      <div class="max-w-screen-2xl mx-auto px-3 text-center">
+        <h2 class="text-5xl font-light mb-10">Next steps</h2>
+        <p>Discover how you can use these integration solutions to achieve new levels of business performance</p>
+        <div class="flex justify-center gap-4 my-10 flex-col sm:flex-row">
+          <a href="#" class="flex items-center py-2 text-white transition-all max-sm:w-full max-sm:justify-between bg-fuchsia-600 px-7 hover:bg-fuchsia-700">
+            Try IBM API Connect
+            <span class="text-xl mt-0.5 ms-3 material-symbols-rounded"> east </span>
+          </a>
+          <a href="#" class="flex items-center py-2 transition-all border text-fuchsia-600 max-sm:w-full max-sm:justify-between border-fuchsia-600 px-7 hover:bg-fuchsia-600 hover:text-white">
+            Try IBM App Connect
+            <span class="text-xl mt-0.5 ms-3 material-symbols-rounded"> east </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-[#262626]">
+      <div class="py-10 px-4 mx-auto text-white max-w-screen-2xl">
+        <!-- Footer Top Content -->
+        <div class="grid grid-cols-1 pb-10 md:grid-cols-2 xl:grid-cols-4 max-xl:gap-y-12">
+          <div>
+            <div class="flex items-center justify-between pb-3 border-b cursor-pointer border-zinc-400 md:pb-0 md:cursor-text md:border-b-0 footer-menu-toggler" data-menu-id="footer-about-ti-menu">
+              <h3 class="text-sm font-semibold text-zinc-400">About NTCS</h3>
+              <span class="block icon material-symbols-rounded md:hidden">expand_more</span>
+            </div>
+            <ul class="hidden pt-4 text-sm md:block footer-menu" id="footer-about-ti-menu">
+              <li><a href="#" class="inline-block mt-2 hover:underline">Company</a></li>
+              <li><a href="#" class="inline-block mt-4 hover:underline md:mt-3">The Brand</a></li>
+              <li><a href="#" class="inline-block mt-4 hover:underline md:mt-3">Areas of Expertises</a></li>
+              <li><a href="#" class="inline-block mt-4 hover:underline md:mt-3">Nanofibers Perfected</a></li>
+              <li><a href="#" class="inline-block mt-4 hover:underline md:mt-3">News Center</a></li>
+              <li><a href="#" class="inline-block mt-4 hover:underline md:mt-3">Sustainability</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="flex items-center justify-between pb-3 border-b cursor-pointer border-zinc-400 md:pb-0 md:cursor-text md:border-b-0 footer-menu-toggler" data-menu-id="footer-quick-links-menu">
+              <h3 class="text-sm font-semibold text-zinc-400">Quick links</h3>
+              <span class="block icon material-symbols-rounded md:hidden">expand_more</span>
+            </div>
+            <ul class="hidden pt-4 text-sm md:block footer-menu" id="footer-quick-links-menu">
+              <li><a href="#" class="inline-block mt-4 hover:underline md:mt-3">Careers</a></li>
+              <li><a href="#" class="inline-block mt-2 hover:underline">Contact Us</a></li>
+              <li><a href="#" class="inline-block mt-4 hover:underline md:mt-3">Cooperate With Us</a></li>
+              <li><a href="#" class="inline-block mt-4 hover:underline md:mt-3">Newsletter Subscription</a></li>
+              <li><a href="#" class="inline-block mt-4 hover:underline md:mt-3">Site Map</a></li>
+              <li><a href="#" class="inline-block mt-4 hover:underline md:mt-3">Imprint</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="flex items-center justify-between pb-3 border-b cursor-pointer border-zinc-400 md:pb-0 md:cursor-text md:border-b-0 footer-menu-toggler" data-menu-id="footer-buying-menu">
+              <h3 class="text-sm font-semibold text-zinc-400">Resources</h3>
+              <span class="block icon material-symbols-rounded md:hidden">expand_more</span>
+            </div>
+            <ul class="hidden pt-4 text-sm md:block footer-menu" id="footer-buying-menu">
+              <li><a href="#" class="inline-block mt-2 hover:underline">Blog</a></li>
+              <li><a href="#" class="inline-block mt-4 hover:underline md:mt-3">Glossary</a></li>
+              <li><a href="#" class="inline-block mt-4 hover:underline md:mt-3">FAQs</a></li>
+              <li><a href="#" class="inline-block mt-4 hover:underline md:mt-3">White Papers</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="pb-3 text-sm font-semibold text-zinc-400 md:pb-0">Connect with us</h3>
+            <ul class="flex justify-between mt-6 md:grid md:grid-cols-3 gap-y-8">
+              <li><a href="#" class="text-[1.3rem]">
+                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="white">
+                  <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                </svg>
+              </a></li>
+              <li><a href="#" class="text-[1.3rem]">
+                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="white">
+                  <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/>
+                </svg>
+              </a></li>
+              <li><a href="#" class="text-[1.3rem]">
+                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="white">
+                  <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/>
+                </svg>
+              </a></li>
+              <li><a href="#" class="text-[1.3rem]">
+                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="white">
+                  <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/>
+                </svg>
+              </a></li>
+              <li><a href="#" class="text-[1.3rem]">
+                
+                <svg idth="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="white">
+                  <path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/>
+                </svg>
+              </a></li>
+              <li><a href="#" class="text-[1.3rem]">
+                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="white">
+                  <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/>
+                </svg>
+              </a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Footer Bottom Content -->
+        <div class="pt-10 border-t border-zinc-600">
+          <div class="flex flex-col justify-between gap-7 lg:flex-row lg:gap-0">
+            <a href="#">
+              <img class="w-[280px]" src="assets/images/desktop-logo-white.svg" alt="NTCS logo">
+            </a>
+            <p class="text-zinc-300 w-full lg:w-[70%] text-sm">
+              Nanofiber Technology Consulting Services has been providing solutions to the nanofiber industry. We are a talented consulting company that designs machines, optimizes processes, innovates new production methods, and improves the quality of end products in various application areas. Our solutions assist our customers in efficiently producing nanofiber-based products and in bringing superior quality, innovative end-products to both the industry and everyday life.
+            </p>
+          </div>
+          <div class="flex flex-wrap mt-12 text-sm gap-y-8">
+            <ul class="flex flex-wrap gap-3 footer-bottom-links">
+              <li><a href="#" class="block border-r border-zinc-500 pe-3 hover:underline">Accessibility</a></li>
+              <li><a href="#" class="block border-r border-zinc-500 pe-3 hover:underline">Cookie Policy</a></li>
+              <li><a href="#" class="block border-r border-zinc-500 pe-3 hover:underline">Privacy Policy</a></li>
+              <li><a href="#" class="block pe-3 hover:underline">Cookie Management</a></li>
+            </ul>
+            <div>
+              <a href="#" class="hover:underline">© Copyright 2022-2023</a>
+               <span class="text-zinc-300">Nanofiber Technology Consulting Services. All rights reserved.</span>
+            </div>
+          
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  </body>
+</html>

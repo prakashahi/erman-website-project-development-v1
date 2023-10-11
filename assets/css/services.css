@@ -1,7 +1,7 @@
 /* Only services page styling */
 
 .hero-section .top-row {
-    background: url("/assets/images/services__hero-bg-landscape.jpg");
+    background: url("../images/services__hero-bg-landscape.jpg");
     background-size: cover;
     background-position: center;
 }

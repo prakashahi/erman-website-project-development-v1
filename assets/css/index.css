@@ -1,0 +1,44 @@
+/* Only index page styling */
+
+.hero-section .video-wrapper.show-video iframe {
+  display: block;
+}
+
+.hero-section .video-wrapper .play-icon {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-section .video-wrapper:hover .play-icon {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.features-section .mobile-tab-wrapper .tab-button .icon {
+  transition: transform 0.2s ease;
+}
+
+.features-section .mobile-tab-wrapper .tab-button.active .icon {
+  transform: rotate(-180deg);
+}
+
+.features-section .mobile-tab-wrapper .tab-button.active {
+  font-weight: 500;
+  border-bottom-color: rgb(217 70 239);
+}
+
+.features-section :where(.mobile-tab-wrapper, .desktop-tab-wrapper) .tab-content {
+  display: none;
+}
+
+.features-section .desktop-tab-wrapper .tab-content.active {
+  display: flex;
+}
+
+.features-section .mobile-tab-wrapper .tab-content.active {
+  display: block;
+}
+
+@media (min-width: 1024px) {
+  .features-section .mobile-tab-wrapper li .tab-content {
+    display: none !important;
+  }
+}

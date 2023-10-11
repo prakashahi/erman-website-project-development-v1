@@ -1,0 +1,58 @@
+/* Only services page styling */
+
+.hero-section .top-row {
+    background: url("/assets/images/services__hero-bg-landscape.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+section .custom-video-modal {
+    display: none;
+}
+
+.custom-video-modal.active {
+    display: flex;
+}
+
+.use-cases-section .tab-button.active {
+    border-bottom-color: rgb(217 70 239);
+}
+
+.use-cases-section .tab-button-list .tab-content {
+    display: none;
+}
+
+.use-cases-section .tab-button-list .tab-content.active {
+    display: block;
+}
+
+.use-cases-section .tab-button-list .tab-button .icon {
+    transition: transform 0.2s ease;
+}
+  
+.use-cases-section .tab-button-list .tab-button.active .icon {
+    transform: rotate(-180deg);
+}
+
+.use-cases-section .tab-content-list .tab-content {
+    display: none;
+}
+
+.use-cases-section .tab-content-list .tab-content.active {
+    display: flex;
+}
+
+.testimonials-section .swiper .swiper-pagination-bullet-active {
+    background: rgb(217 70 239)!important;
+}
+
+:where(.resources-section, .related-products-section) .swiper button[disabled] {
+    cursor: no-drop;
+    opacity: 0.5;
+}
+
+@media (min-width: 1024px) {
+    .use-cases-section .tab-button-list .tab-content {
+      display: none !important;
+    }
+}

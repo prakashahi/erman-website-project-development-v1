@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NTCS - Nanofibers Perfected</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="assets/css/global.css">
-    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/services.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="assets/js/global.js" defer></script>
-    <script src="assets/js/index.js" defer></script>
   </head>
   <body>
     <!-- Top Navigation Bar -->
@@ -2074,543 +2075,507 @@
         </div>
       </nav>
     </header>
-    
+
+    <!-- Breadcrumbs -->
+    <nav class="max-md:pt-12 pt-16">
+      <ul class="mx-auto max-w-screen-2xl px-4 py-3 flex flex-wrap items-center gap-1">
+        <li class="flex items-center">
+          <div class="flex items-center gap-1 text-gray-400 transition-all hover:text-fuchsia-500">
+            <span class="text-xl mt-[-2px] material-symbols-rounded">home</span>
+            <a href="#">Home</a>
+          </div>
+        </li>
+        <li class="flex items-center text-gray-400 gap-1">
+        <span class="text-xl material-symbols-rounded">chevron_right</span>
+          <div class="flex items-center transition-all hover:text-fuchsia-500">
+            <a href="#">Services</a>
+          </div>
+        </li>
+        <li class="flex items-center text-gray-400 gap-1">
+        <span class="text-xl material-symbols-rounded">chevron_right</span>
+          <div class="flex items-center transition-all hover:text-fuchsia-500">
+            <a href="#">Resources</a>
+          </div>
+        </li>
+        <li class="flex items-center text-gray-400">
+        <span class="text-xl material-symbols-rounded">chevron_right</span>
+          <div class="flex items-center transition-all hover:text-fuchsia-500">
+            <a href="#">Page</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
     <!-- Hero Section -->
-    <section class="hero-section sm:pt-14 pt-4">
-      <div class="grid w-full grid-cols-12 gap-10 px-3 mx-auto mt-16 max-w-screen-2xl max-sm:gap-x-0">
-        <!-- Left link section -->
-        <div class="order-3 col-span-2 link-section max-lg:col-span-8 max-sm:col-span-12 lg:order-1">
-          <a href="#" class="block underline-on-hover w-full pb-4 border-b border-gray-300 max-lg:px-0 max-lg:pb-10">
-            <p class="text-fuchsia-600">What's new</p>
-            <p class="mt-1 text-base text-black">The NCTS's New Brand Identity</p>
-            <span class="mt-3 text-2xl text-black material-symbols-rounded"> east </span>
-          </a>
-          <a href="#" class="block underline-on-hover w-full pb-4 mt-6 border-b border-gray-300 max-lg:px-0 max-lg:pb-10">
-            <p class="text-fuchsia-600">Register now</p>
-            <p class="mt-1 text-base text-black">Introduction to Nanofibers Course, 11-15 December 2023</p>
-            <span class="text-black text-2xl mt-0.5 material-symbols-rounded"> east </span>
-          </a>
-        </div>
-
-        <!-- Center video section -->
-        <div class="relative order-2 col-span-6 max-lg:col-span-12 lg:order-2">
-          <div class="relative cursor-pointer video-wrapper">
-            <div class="relative thumbnail">
-              <img src="assets/images/index__hero-video-img.jpg" alt="Hero Video Image">
-              <div class="absolute inset-0 flex items-center justify-center w-full">
-                <div class="flex items-center justify-center w-16 h-16 rounded-full cursor-pointer play-icon">
-                  <span class="text-6xl text-white material-symbols-rounded">play_arrow</span>
-                </div>
-              </div>
-            </div>
-            <iframe class="w-full aspect-video lg:h-[45.75rem] hidden" src="https://www.youtube.com/embed/IPwCsMG-JJg?si=h1-UuASEEKQXBGNl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </div>
-          <p class="mt-2 text-sm tex-gray-600">Introducing the new nanofiber production technology, Melt-Xpert (2:19)</p>
-        </div>
-
-        <!-- Right content section -->
-        <div class="flex flex-col justify-between order-1 w-full col-span-4 mb-7 max-lg:col-span-12 lg:order-3">
-          <h2 class="text-5xl max-lg:text-4xl leading-[1.2] font-light pe-28 max-w-[550px] max-[1200px]:pe-0">
-            Nanofiber technologies that make an
-            <b class="font-semibold underline decoration-fuchsia-500">impact</b>
-          </h2>
-          <div>
-            <h3 class="text-2xl max-lg:mt-10 max-lg:text-xl">NTCS delivers consulting services to help build superior nanofiber products.</h3>
-            <div class="flex gap-4 mt-7 max-sm:flex-col">
-              <a href="#" class="flex items-center py-2 text-white transition-all max-sm:w-full max-sm:justify-between bg-fuchsia-600 px-7 hover:bg-fuchsia-700">
-                About NTCS
-                <span class="text-xl mt-0.5 ms-3 material-symbols-rounded"> east </span>
-              </a>
-              <a href="#" class="flex items-center py-2 transition-all border text-fuchsia-600 max-sm:w-full max-sm:justify-between border-fuchsia-600 px-7 hover:bg-fuchsia-600 hover:text-white">
-                Nanofibers Perfected
-                <span class="text-xl mt-0.5 ms-3 material-symbols-rounded"> east </span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Recommended Section -->
-    <section class="recommended-section sm:pt-16 pt-10">
-      <div class="max-w-screen-2xl mx-auto px-0 lg:px-3">
-        <h2 class="font-semibold px-3 lg:px-0">Recommended for you</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 mt-5">
-          <a href="#" class="flex border border-gray-300 p-4 gap-6 transition-all hover:bg-zinc-200">
-            <img class="w-1/2" src="assets/images/index__recommended-section-img-1.jpg" alt="watsonx.ai">
-            <div class="flex flex-col justify-between">
-              <div>
-                <p class="text-sm text-gray-600">watsonx.ai</p>
-                <h3 class="mt-2 text-gray-700">Free trail-build enterprise-grade AI models</h3>
-              </div>
-              <span class="text-2xl text-fuchsia-500 material-symbols-rounded">east</span>
-            </div>
-          </a>
-          <a href="#" class="flex border border-gray-300 p-4 gap-6 transition-all hover:bg-zinc-200">
-            <img class="w-1/2" src="assets/images/index__recommended-section-img-2.jpg" alt="Security">
-            <div class="flex flex-col justify-between">
-              <div>
-                <p class="text-sm text-gray-600">Security</p>
-                <h3 class="mt-2 text-gray-700">Broad protection for cloud applications</h3>
-              </div>
-              <span class="text-2xl text-fuchsia-500 material-symbols-rounded">east</span>
-            </div>
-          </a>
-          <a href="#" class="flex border border-gray-300 p-4 gap-6 transition-all hover:bg-zinc-200">
-            <img class="w-1/2" src="assets/images/index__recommended-section-img-3.png" alt="Buy now">
-            <div class="flex flex-col justify-between">
-              <div>
-                <p class="text-sm text-gray-600">Buy now</p>
-                <h3 class="mt-2 text-gray-700">Save 10% on SPSS Statistics subscription</h3>
-              </div>
-              <span class="text-2xl text-fuchsia-500 material-symbols-rounded">east</span>
-            </div>
-          </a>
-          <a href="#" class="flex border border-gray-300 p-4 gap-6 transition-all hover:bg-zinc-200">
-            <img class="w-1/2" src="assets/images/index__recommended-section-img-4.jpg" alt="IBM Envizi">
-            <div class="flex flex-col justify-between">
-              <div>
-                <p class="text-sm text-gray-600">IBM Envizi</p>
-                <h3 class="mt-2 text-gray-700">Simplify and track ESG data on AWS</h3>
-              </div>
-              <span class="text-2xl text-fuchsia-500 material-symbols-rounded">east</span>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Overview + Capabilities Section -->
-    <section class="overview-section sm:pt-16 pt-10">
-      <div class="max-w-screen-2xl mx-auto px-3">
-        <!-- Overview Section -->
-        <div>
-          <div class="flex gap-5 max-lg:flex-col">
+    <section class="hero-section">
+      <div class="top-row sm:py-14 py-10 max-sm:h-[70vh] h-[50vh] bg-black">
+        <div class="mx-auto max-w-screen-2xl h-full px-4">
+          <div class="max-w-2xl flex flex-col justify-between h-full">
+            <h1 class="text-white max-sm:text-3xl text-5xl">IBM WebSphere Hybrid Edition</h1>
             <div>
-              <h2 class="text-5xl font-light mb-10">Overview</h2>
-              <h3 class="text-3xl mb-8">Payments services and consulting</h3>
-              <p class="max-w-4xl">
-                The IBM Payments Center™ can help accelerate your payments modernization initiatives, including industry expertise in payments consulting and services, and business process outsourcing with our Payments-as-a-Service (PAYaaS) platform.
+              <h3 class="text-xl text-gray-300">
+                Discover how to drive cloud-native development, application modernization and support for existing applications with IBM® WebSphere® Hybrid Edition
+              </h3>
+              <div class="flex gap-4 mt-7 max-sm:flex-col">
+                <a href="#" class="flex items-center py-2 text-white transition-all max-sm:w-full max-sm:justify-between bg-fuchsia-600 px-7 hover:bg-fuchsia-700">
+                  Booking a meeting
+                  <span class="text-xl mt-0.5 ms-3 material-symbols-rounded"> east </span>
+                </a>
+                <a href="#" class="flex items-center py-2 transition-all border text-white max-sm:w-full max-sm:justify-between border-white px-7 hover:bg-white hover:text-black">
+                  Read the client story
+                  <span class="text-xl mt-0.5 ms-3 material-symbols-rounded"> east </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center justify-between mx-auto max-w-screen-2xl py-9 max-lg:py-10 px-4 max-lg:flex-col max-lg:items-start">
+        <h2 class="text-2xl max-w-2xl">
+          Startup cloud-native Java applications incredibly fast with Liberty InstantOn
+        </h2>
+        <div class="flex flex-col gap-4 flex-1 max-w-xs max-lg:mt-5 w-full max-sm:max-w-full">
+          <a href="#" class="flex items-center justify-between py-2 text-white transition-all max-sm:w-full bg-fuchsia-600 px-5 hover:bg-fuchsia-700">
+            Read the blog
+            <span class="text-xl material-symbols-rounded">book_3</span>
+          </a>
+          <a href="javascript:void(0)" class="video-modal-opener flex items-center justify-between py-2 transition-all border text-fuchsia-600 max-sm:w-full border-fuchsia-600 px-5 hover:bg-fuchsia-600 hover:text-white" data-video-id="hero-section-video">
+            Hear from an expert (5:11)
+            <span class="text-xl material-symbols-rounded">play_circle</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Video Modal Popup -->
+      <div class="custom-video-modal fixed top-0 left-0 z-30 w-full h-full bg-black bg-opacity-80 flex items-center justify-center px-2" id="hero-section-video">
+        <div class="relative bg-white aspect-video max-w-4xl w-full p-1 md:p-3">
+          <div class="close-btn absolute right-0 top-0 cursor-pointer bg-white flex items-center justify-center h-10 w-10">
+            <span class="material-symbols-rounded">close</span>
+          </div>
+          <iframe class="w-full h-full" src="https://www.youtube.com/embed/IPwCsMG-JJg?si=h1-UuASEEKQXBGNl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="overview-section py-10 pb-20 bg-slate-100">
+      <div class="mx-auto max-w-screen-2xl px-4">
+        <div class="flex max-lg:flex-col max-lg:gap-7">
+          <div class="w-1/4">
+            <h2 class="font-medium">Overview</h2>
+          </div>
+          <div class="flex flex-1 gap-32 max-lg:flex-col max-lg:gap-10">
+            <div class="w-2/3 max-lg:w-full">
+              <h3 class="text-3xl">What is it?</h3>
+              <p class="my-6">
+                WebSphere Hybrid Edition is the comprehensive collection of WebSphere application runtimes and modernization tools that provides support for on-premise and major public cloud deployments, in virtual machines, containers and Kubernetes. Choose any WebSphere edition and deploy Liberty and application modernization tools to help you move to a cloud-native architecture, modernize your existing applications and support your existing WebSphere estate.
               </p>
+              <a href="#" class="flex underline-on-hover items-center text-fuchsia-500 mt-5">
+                <span>Increase WebSphere ROI (250 KB)</span>
+                <span class="ml-3 material-symbols-rounded">east</span>
+              </a>
             </div>
-            <img class="max-lg:w-full w-1/2" src="assets/images/index__overview-section-img-1.jpg" alt="Overview Image">
-          </div>
-          <div class="border-y border-gray-400 py-14 mt-16">
-            <div class="max-w-full lg:max-w-6xl flex flex-col lg:flex-row lg:items-center justify-between">
-              <h3 class="text-3xl max-w-3xl">Nacha Announces IBM as a Preferred Partner for Enterprise Payments Solutions</h3>
-              <div class="lg:border-l border-gray-300 flex flex-col lg:ps-5 mt-8 lg:mt-0 gap-2">
-                <a href="#" class="flex underline-on-hover items-center text-fuchsia-500">
-                  <span>Read the press release</span>
-                  <span class="text-2xl ml-3 material-symbols-rounded">east</span>
-                </a>
-                <a href="#" class="flex underline-on-hover items-center text-fuchsia-500">
-                  <span>Contact us</span>
-                  <span class="text-2xl ml-3 material-symbols-rounded">east</span>
-                </a>
-              </div>
+            <div class="w-1/2 max-w-lg max-lg:w-full">
+              <img  src="assets/images/services__overview-img.jpg" alt="Overview Image">
             </div>
           </div>
-        </div>
-
-         <!-- Capabilities Section -->
-        <div class="mt-20">
-          <h2 class="text-5xl font-light mb-12">Capabilities</h2>
-          <ul class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-y-8 xl:gap-14">
-            <li class="border-b xl:border-b-0 flex flex-col justify-between border-gray-300 pb-10 xl:pb-0 sm:pe-6 xl:pe-0">
-              <div>
-                <h3 class="font-semibold mb-3">Connectivity and services integration</h3>
-                <p>
-                  The IBM Service Bureau for SWIFT delivers innovation by providing SWIFT connectivity to financial institutions and corporations to establish or modernize their SWIFT messaging capabilities, accomplished by removing the challenges and high costs with SWIFT requirements for message vehicles, protocols, controls and procedures.
-                </p>
-              </div>
-              <a href="#" class="flex underline-on-hover items-center text-fuchsia-500 mt-5">
-                <span>Read the ebook</span>
-                <span class="ml-3 material-symbols-rounded">east</span>
-              </a>
-            </li>
-            <li class="border-b xl:border-b-0 flex flex-col justify-between border-gray-300 pb-10 xl:pb-0 sm:ps-6 xl:ps-0">
-              <div>
-                <h3 class="font-semibold mb-3">Payments management services</h3>
-                <p>
-                  IPC offers a set of innovative and flexible automated processing payment services and excels at integrating with other payments ecosystems. Financial institutions (FIs) seeking to modernize their payments infrastructure and operations can benefit from these robust services.
-                </p>
-              </div>
-              <a href="#" class="flex underline-on-hover items-center text-fuchsia-500 mt-5">
-                <span>Contact us</span>
-                <span class="ml-3 material-symbols-rounded">east</span>
-              </a>
-            </li>
-            <li class="border-b xl:border-b-0 flex flex-col justify-between border-gray-300 pb-10 xl:pb-0 sm:pe-6 xl:pe-0">
-              <div>
-                <h3 class="font-semibold mb-3">Outsourcing payments services</h3>
-                <p>
-                  The Payments-as-a-Service options include automated clearing house (ACH), automated funds transfer (AFT), checks, wires and real-time payments. Outsourcing your payments can help lower your cost of operations and improve margins.
-                </p>
-              </div>
-              <a href="#" class="flex underline-on-hover items-center text-fuchsia-500 mt-5">
-                <span>Contact us</span>
-                <span class="ml-3 material-symbols-rounded">east</span>
-              </a>
-            </li>
-            <li class="border-b xl:border-b-0 flex flex-col justify-between border-gray-300 pb-10 xl:pb-0 sm:ps-6 xl:ps-0">
-              <div>
-                <h3 class="font-semibold mb-3">Low-value payment solutions</h3>
-                <p>
-                  Low-value payments types include ACH and AFT, from payment initiation and receipt and API user interface, to delivery and receiving with clearing and settlement mechanisms. A Checks-as-a-Service solution is available for countries using checks.
-                </p>
-              </div>
-            </li>
-            <li class="border-b sm:border-b-0 flex flex-col justify-between border-gray-300 pb-10 xl:pb-0 sm:pe-6 xl:pe-0">
-              <div>
-                <h3 class="font-semibold mb-3">High-value payment solutions</h3>
-                <p>
-                  High-value payment types include wire payments processing. The IPC manages end-to-end processing of payment messages, including integration with foreign exchange (FX) services, SWIFT, core banking applications and domestic messaging and clearing systems.
-                </p>
-              </div>
-            </li>
-            <li class="flex flex-col justify-between sm:ps-6 xl:ps-0">
-              <div>
-                <h3 class="font-semibold mb-3">Real-time payment solutions</h3>
-                <p>
-                  Real-time payments are becoming the target payment type for many payments systems. Yet, FIs may face barriers in adopting real-time payments using their existing infrastructures. The IPC offers capabilities such as instant processing and posting mechanisms that can help.
-                </p>
-              </div>
-            </li>
-          </ul>
         </div>
       </div>
     </section>
 
-     <!-- Features Section -->
-    <section class="features-section sm:pt-16 pt-10">
-      <div class="max-w-screen-2xl mx-auto px-3">
-        <h2 class="text-5xl font-light mb-10">Features</h2>
-        <div>
-          <!-- Mobile Tab Content with Tab Buttons -->
-          <ul class="mobile-tab-wrapper grid grid-cols-1 lg:grid-cols-5">
-            <li class="max-lg:border-t max-lg:border-t-gray-300">
-              <button class="tab-button active w-full lg:h-full lg:border-2 lg:border-transparent lg:border-b-gray-300 lg:hover:border-b-gray-400 p-2 lg:p-3 text-left flex items-center justify-between focus:border-fuchsia-500 max-lg:hover:bg-gray-200" data-tab-id="capital-planning-management">
-                <span>Capital Planning Management</span>
-                <span class="lg:hidden icon material-symbols-rounded">expand_more</span>
-              </button>
-              <div class="tab-content active mt-6 mb-16 px-2" id="capital-planning-management">
-                <div class="max-w-xl">
+    <!-- Use Cases Section -->
+    <section class="use-cases-section py-10">
+      <div class="mx-auto max-w-screen-2xl px-4">
+        <div class="flex max-lg:flex-col max-lg:gap-7">
+          <div class="w-1/4">
+            <h2 class="font-medium">Use cases</h2>
+          </div>
+          <div class="flex flex-col flex-1">
+            <ul class="tab-button-list flex gap-8 max-lg:gap-0 max-lg:flex-col">
+              <li class="max-lg:border-t max-lg:border-t-gray-300">
+                <button class="tab-button active flex items-center justify-between text-left text-sm w-full lg:h-full lg:border-2 border-transparent py-2 max-lg:py-4 lg:focus:border-fuchsia-500 lg:hover:border-b-gray-300 transition-all" data-tab-id="cloud-native-development">
+                  <span>Cloud native development</span>
+                  <span class="lg:hidden icon material-symbols-rounded">expand_more</span>
+                </button>
+                <div class="tab-content active mt-6 mb-16 px-2" id="cloud-native-development">
+                  <div class="max-w-xl">
+                    <h3 class="text-3xl mb-5">Cloud native development</h3>
+                    <p>
+                      Build new cloud-native applications with WebSphere Liberty. The highly efficient runtime is ideal for container and Kubernetes-based deployments.
+                    </p>
+                    <a href="#" class="flex mt-10 underline-on-hover items-center text-fuchsia-500">
+                      <span>Explore Liberty</span>
+                      <span class="text-2xl ml-3 material-symbols-rounded">east</span>
+                    </a>
+                  </div>
+                  <img class="sm:w-9/12 mt-10" src="assets/images/services__usecases-img-1.jpg" alt="Cloud native development">
+                </div>
+              </li>
+              <li class="max-lg:border-t max-lg:border-t-gray-300">
+                <button class="tab-button flex items-center justify-between text-left text-sm w-full lg:h-full lg:border-2 border-transparent py-2 max-lg:py-4 lg:focus:border-fuchsia-500 lg:hover:border-b-gray-300 transition-all" data-tab-id="application-modernization">
+                  <span>Application modernization</span>
+                  <span class="lg:hidden icon material-symbols-rounded">expand_more</span>
+                </button>
+                <div class="tab-content mt-6 mb-16 px-2" id="application-modernization">
+                  <div class="max-w-xl">
+                    <h3 class="text-3xl mb-5">Application modernization</h3>
+                    <p>
+                      Reduce modernization risk, assess cloud readiness and refactor monolithic applications with IBM Cloud® Transformation Advisor and IBM Mono2Micro.
+                    </p>
+                    <a href="#" class="flex mt-10 underline-on-hover items-center text-fuchsia-500">
+                      <span>Read the customer story</span>
+                      <span class="text-2xl ml-3 material-symbols-rounded">east</span>
+                    </a>
+                  </div>
+                  <img class="sm:w-9/12 mt-10" src="assets/images/services__usecases-img-2.jpg" alt="Application modernization">
+                </div>
+              </li>
+              <li class="max-lg:border-y max-lg:border-y-gray-300">
+                <button class="tab-button flex items-center justify-between text-left text-sm w-full lg:h-full lg:border-2 border-transparent py-2 max-lg:py-4 lg:focus:border-fuchsia-500 lg:hover:border-b-gray-300 transition-all" data-tab-id="support-n-existing-apps">
+                  <span>Support and optimize existing applications</span>
+                  <span class="lg:hidden icon material-symbols-rounded">expand_more</span>
+                </button>
+                <div class="tab-content mt-6 mb-16 px-2" id="support-n-existing-apps">
+                  <div class="max-w-xl">
+                    <h3 class="text-3xl mb-5">Support and optimize existing applications</h3>
+                    <p>
+                      Get the most out of your existing and future applications by taking advantage of flexible entitlements and modernization tools.
+                    </p>
+                    <a href="#" class="flex mt-10 underline-on-hover items-center text-fuchsia-500">
+                      <span>Applications to receive ROI</span>
+                      <span class="text-2xl ml-3 material-symbols-rounded">east</span>
+                    </a>
+                  </div>
+                  <img class="sm:w-9/12 mt-10" src="assets/images/services__usecases-img-3.jpg" alt="Support and optimize existing applications">
+                </div>
+              </li>
+            </ul>
+            <ul class="tab-content-list max-lg:hidden mt-3">
+              <li class="tab-content active flex gap-10 mt-10 justify-between" id="cloud-native-development">
+                <img class="w-3/5" src="assets/images/services__usecases-img-1.jpg" alt="Cloud native development">
+                <div class="mt-6 max-w-xl">
+                  <h3 class="text-3xl mb-10">Cloud native development</h3>
                   <p>
-                    Provides complete enterprise-wide project and program management including the required tools to ensure efficient, cost-effective delivery of capital, facility, and environmental projects.
+                    Build new cloud-native applications with WebSphere Liberty. The highly efficient runtime is ideal for container and Kubernetes-based deployments.
                   </p>
                   <a href="#" class="flex mt-10 underline-on-hover items-center text-fuchsia-500">
-                    <span>Explore capital planning lease management software</span>
+                    <span>Explore Liberty</span>
                     <span class="text-2xl ml-3 material-symbols-rounded">east</span>
                   </a>
                 </div>
-                <img class="sm:w-9/12 mt-10" src="assets/images/index__features-section-img-1.jpg" alt="Capital Planning Management">
-              </div>
-            </li>
-            <li class="max-lg:border-t max-lg:border-t-gray-300">
-              <button class="tab-button w-full lg:h-full lg:border-2 lg:border-transparent lg:border-b-gray-300 lg:hover:border-b-gray-400 p-2 lg:p-3 text-left flex items-center justify-between focus:border-fuchsia-500 max-lg:hover:bg-gray-200" data-tab-id="real-estate-management">
-                <span>Real Estate Management</span>
-                <span class="lg:hidden icon material-symbols-rounded">expand_more</span>
-              </button>
-              <div class="tab-content mt-6 mb-16 px-2" id="capital-planning-management">
-                <div class="max-w-xl">
+              </li>
+              <li class="tab-content flex gap-10 mt-10 justify-between" id="application-modernization">
+                <img class="w-3/5" src="assets/images/services__usecases-img-2.jpg" alt="Application modernization">
+                <div class="mt-6 max-w-xl">
+                  <h3 class="text-3xl mb-10">Application modernization</h3>
                   <p>
-                    Helps organizations improve the effectiveness of real estate portfolio planning, improve returns from real estate transactions, avoid lease penalties and overpayments, and streamline lease accounting.
+                    Reduce modernization risk, assess cloud readiness and refactor monolithic applications with IBM Cloud® Transformation Advisor and IBM Mono2Micro.
                   </p>
                   <a href="#" class="flex mt-10 underline-on-hover items-center text-fuchsia-500">
-                    <span>Explore operational efficiency with TRIRIGA</span>
+                    <span>Read the customer story</span>
                     <span class="text-2xl ml-3 material-symbols-rounded">east</span>
                   </a>
                 </div>
-                <img class="sm:w-9/12 mt-10" src="assets/images/index__features-section-img-2.jpg" alt="Real Estate Management">
-              </div>
-            </li>
-            <li class="max-lg:border-t max-lg:border-t-gray-300">
-              <button class="tab-button w-full lg:h-full lg:border-2 lg:border-transparent lg:border-b-gray-300 lg:hover:border-b-gray-400 p-2 lg:p-3 text-left flex items-center justify-between focus:border-fuchsia-500 max-lg:hover:bg-gray-200" data-tab-id="facility-management">
-                <span>Facility Management</span>
-                <span class="lg:hidden icon material-symbols-rounded">expand_more</span>
-              </button>
-              <div class="tab-content mt-6 mb-16 px-2" id="capital-planning-management">
-                <div class="max-w-xl">
+              </li>
+              <li class="tab-content flex gap-10 mt-10 justify-between" id="support-n-existing-apps">
+                <img class="w-3/5" src="assets/images/services__usecases-img-3.jpg" alt="Support and optimize existing applications">
+                <div class="mt-6 max-w-xl">
+                  <h3 class="text-3xl mb-10">Support and optimize existing applications</h3>
                   <p>
-                    Increases the utilization of valuable real estate and building infrastructure assets through the use of advanced space planning, space management, and move planning. It provides space management and audit tools; space use agreements and chargeback tools; as well as move planning and move execution management.
+                    Get the most out of your existing and future applications by taking advantage of flexible entitlements and modernization tools.
                   </p>
                   <a href="#" class="flex mt-10 underline-on-hover items-center text-fuchsia-500">
-                    <span>Explore space planning solutions</span>
+                    <span>Applications to receive ROI</span>
                     <span class="text-2xl ml-3 material-symbols-rounded">east</span>
                   </a>
                 </div>
-                <img class="sm:w-9/12 mt-10" src="assets/images/index__features-section-img-4.jpg" alt="Facility Management">
-              </div>
-            </li>
-            <li class="max-lg:border-t max-lg:border-t-gray-300">
-              <button class="tab-button w-full lg:h-full lg:border-2 lg:border-transparent lg:border-b-gray-300 lg:hover:border-b-gray-400 p-2 lg:p-3 text-left flex items-center justify-between focus:border-fuchsia-500 max-lg:hover:bg-gray-200" data-tab-id="workplace-management">
-                <span>Workplace Management</span>
-                <span class="lg:hidden icon material-symbols-rounded">expand_more</span>
-              </button>
-              <div class="tab-content mt-6 mb-16 px-2" id="capital-planning-management">
-                <div class="max-w-xl">
-                  <p>
-                    Delivers facility maintenance software to help maintain critical facilities assets throughout their lifecycle and reduce maintenance costs. It automates the management of corrective maintenance services to deliver higher-quality services more efficiently. It also automates preventive and condition-based maintenance processes to improve the condition of critical facilities assets and extend their life.
-                  </p>
-                  <a href="#" class="flex mt-10 underline-on-hover items-center text-fuchsia-500">
-                    <span>Explore workplace experience with TRIRIGA</span>
-                    <span class="text-2xl ml-3 material-symbols-rounded">east</span>
-                  </a>
-                </div>
-                <img class="sm:w-9/12 mt-10" src="assets/images/index__features-section-img-3.jpg" alt="Workplace Management">
-              </div>
-            </li>
-            <li class="max-lg:border-y max-lg:border-y-gray-300">
-              <button class="tab-button w-full lg:h-full lg:border-2 lg:border-transparent lg:border-b-gray-300 lg:hover:border-b-gray-400 p-2 lg:p-3 text-left flex items-center justify-between focus:border-fuchsia-500 max-lg:hover:bg-gray-200" data-tab-id="environmental-management">
-                <span>Environmental Management</span>
-                <span class="lg:hidden icon material-symbols-rounded">expand_more</span>
-              </button>
-              <div class="tab-content mt-6 mb-16 px-2" id="capital-planning-management">
-                <div class="max-w-xl">
-                  <p>
-                    Identify resource intensive facilities and processes, analyze financial and environmental benefits of environmental sustainability investments, and automate carbon reduction actions to reduce energy costs and achieve environmental and energy management strategies.
-                  </p>
-                  <a href="#" class="flex mt-10 underline-on-hover items-center text-fuchsia-500">
-                    <span>Explore sustainability solutions</span>
-                    <span class="text-2xl ml-3 material-symbols-rounded">east</span>
-                  </a>
-                </div>
-                <img class="sm:w-9/12 mt-10" src="assets/images/index__features-section-img-5.jpg" alt="Environmental Management">
-              </div>
-            </li>
-          </ul>
-
-          <!-- Desktop Tab Content -->
-          <ul class="max-lg:hidden desktop-tab-wrapper">
-            <li class="tab-content active flex mt-10 justify-between" id="capital-planning-management">
-              <div class="mt-10 max-w-xl">
-                <p>
-                  Provides complete enterprise-wide project and program management including the required tools to ensure efficient, cost-effective delivery of capital, facility, and environmental projects.
-                </p>
-                <a href="#" class="flex mt-10 underline-on-hover items-center text-fuchsia-500">
-                  <span>Explore capital planning lease management software</span>
-                  <span class="text-2xl ml-3 material-symbols-rounded">east</span>
-                </a>
-              </div>
-              <img class="w-1/2" src="assets/images/index__features-section-img-1.jpg" alt="Capital Planning Management">
-            </li>
-            <li class="tab-content mt-10 justify-between" id="real-estate-management">
-              <div class="mt-10 max-w-xl">
-                <p>
-                  Helps organizations improve the effectiveness of real estate portfolio planning, improve returns from real estate transactions, avoid lease penalties and overpayments, and streamline lease accounting.
-                </p>
-                <a href="#" class="flex mt-10 underline-on-hover items-center text-fuchsia-500">
-                  <span>Explore operational efficiency with TRIRIGA</span>
-                  <span class="text-2xl ml-3 material-symbols-rounded">east</span>
-                </a>
-              </div>
-              <img class="w-1/2" src="assets/images/index__features-section-img-2.jpg" alt="Real Estate Management">
-            </li>
-            <li class="tab-content mt-10 justify-between" id="facility-management">
-              <div class="mt-10 max-w-xl">
-                <p>
-                  Increases the utilization of valuable real estate and building infrastructure assets through the use of advanced space planning, space management, and move planning. It provides space management and audit tools; space use agreements and chargeback tools; as well as move planning and move execution management.
-                </p>
-                <a href="#" class="flex mt-10 underline-on-hover items-center text-fuchsia-500">
-                  <span>Explore space planning solutions</span>
-                  <span class="text-2xl ml-3 material-symbols-rounded">east</span>
-                </a>
-              </div>
-              <img class="w-1/2" src="assets/images/index__features-section-img-3.jpg" alt="Facility Management">
-            </li>
-            <li class="tab-content mt-10 justify-between" id="workplace-management">
-              <div class="mt-10 max-w-xl">
-                <p>
-                  Delivers facility maintenance software to help maintain critical facilities assets throughout their lifecycle and reduce maintenance costs. It automates the management of corrective maintenance services to deliver higher-quality services more efficiently. It also automates preventive and condition-based maintenance processes to improve the condition of critical facilities assets and extend their life.
-                </p>
-                <a href="#" class="flex mt-10 underline-on-hover items-center text-fuchsia-500">
-                  <span>Explore workplace experience with TRIRIGA</span>
-                  <span class="text-2xl ml-3 material-symbols-rounded">east</span>
-                </a>
-              </div>
-              <img class="w-1/2" src="assets/images/index__features-section-img-4.jpg" alt="Workplace Management">
-            </li>
-            <li class="tab-content mt-10 justify-between" id="environmental-management">
-              <div class="mt-10 max-w-xl">
-                <p>
-                  Identify resource intensive facilities and processes, analyze financial and environmental benefits of environmental sustainability investments, and automate carbon reduction actions to reduce energy costs and achieve environmental and energy management strategies.
-                </p>
-                <a href="#" class="flex mt-10 underline-on-hover items-center text-fuchsia-500">
-                  <span>Explore sustainability solutions</span>
-                  <span class="text-2xl ml-3 material-symbols-rounded">east</span>
-                </a>
-              </div>
-              <img class="w-1/2" src="assets/images/index__features-section-img-5.jpg" alt="Environmental Management">
-            </li>
-          </ul>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Benefit Section -->
-    <section class="benefits-section sm:py-16 py-10">
-      <div class="max-w-screen-2xl mx-auto px-3">
-        <h2 class="text-5xl font-light mb-12">Benefits</h2>
-        <ul class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 border-b border-gray-300 gap-8 sm:gap-12 pb-12">
-          <li class="border-b border-gray-300 sm:border-b-0 pb-10">
-            <svg class="ml-[-10px]" width="80" fill="#333" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
-              <path d="M202-797.5V-540v-1 378.5-635V-653v-144.5ZM308.5-429H456q5-7 10-13.022t10.5-12.478h-168v25.5Zm0 159h112q-.5-6.5-.738-13-.237-6.5-.254-12.5H308.5v25.5Zm-74.627 133q-24.311 0-40.842-16.531T176.5-194.28v-571.44q0-24.218 16.531-40.749Q209.562-823 234-823h312l157.5 157v128.5q-6.373-1.059-12.936-1.529-6.564-.471-12.444-.785V-653H533.5v-144.5H234q-12 0-22 10t-10 22v571q0 12 10 22t22 10h228.5q4.214 6.923 9.107 12.962Q476.5-143.5 481.5-137H233.873ZM660-183q49.5 0 83.5-33.75t34-83.25q0-49.5-34-83.5t-83.5-34q-49.5 0-83.25 34T543-300q0 49.5 33.75 83.25T660-183ZM864-79 752.419-190.5Q733.5-174.5 710-166q-23.5 8.5-50 8.5-59.958 0-101.229-41.279-41.271-41.28-41.271-101.25 0-59.971 41.279-101.471 41.28-41.5 101.25-41.5Q720-443 761.5-401.479 803-359.958 803-300q0 26.5-8.625 50T769.5-208l112 112L864-79Z"/>
-            </svg>
-            <h2 class="font-semibold mt-5 mb-3">Optimize space management</h2>
-            <p>
-              Capture and analyze floor plan data to make the most strategic space planning decisions to maximize workspace utilization and give occupants the spaces they need.
-            </p>
-          </li>
-          <li class="border-b border-gray-300 sm:border-b-0 pb-10">
-            <svg class="ml-[-10px]" width="80" fill="#333" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
-              <path d="M407-173.307v-217.466L460.5-544q1.5-2.5 3.212-3.75Q465.424-549 471-549h282q4.053 0 6.947 1.038 2.895 1.039 3.553 3.962L817-390.773v217.388q0 5.808-3.75 9.597Q809.5-160 803.56-160h.675q-5.658 0-9.447-3.683Q791-167.365 791-173.744V-230H433v56.378q0 6.045-3.75 9.834Q425.5-160 419.56-160h.675q-5.658 0-9.447-3.839-3.788-3.838-3.788-9.468ZM445-418h334l-36.192-104.5H481L445-418Zm-11.5 26v136-136Zm63.5 97.5q13.95 0 23.725-9.775Q530.5-314.05 530.5-328q0-13.95-9.775-23.725Q510.95-361.5 497-361.5q-13.95 0-23.725 9.775Q463.5-341.95 463.5-328q0 13.95 9.775 23.725Q483.05-294.5 497-294.5Zm230 0q13.95 0 23.725-9.775Q760.5-314.05 760.5-328q0-13.95-9.775-23.725Q740.95-361.5 727-361.5q-13.95 0-23.725 9.775Q693.5-341.95 693.5-328q0 13.95 9.775 23.725Q713.05-294.5 727-294.5Zm-466.5-183V-532H315v54.5h-54.5ZM405-662v-54.5h54.5v54.5H405ZM260.5-318.5V-373H315v54.5h-54.5Zm0 158.5v-54.5H315v54.5h-54.5ZM143-160v-489.5h144.5v-184H577V-641h-25.5v-167H313v184H168.5v464H143Zm290.5-96h357v-136h-357v136Z"/>
-            </svg>
-            <h2 class="font-semibold mt-5 mb-3">Create the right workplace experience</h2>
-            <p>
-              Deliver an office space experience that focuses on employee health and well-being, and keeps users safe, connected and productive.
-            </p>
-          </li>
-          <li>
-            <svg class="ml-[-10px]" width="80" fill="#333" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
-              <path d="M130.5-178v-645.5H466v155h363.5V-178h-699Zm25.5-25.5h284.5V-333H156v129.5Zm0-155h284.5V-488H156v129.5Zm0-155h284.5V-643H156v129.5Zm0-155h284.5V-798H156v129.5Zm310 465h338V-643H466v439.5ZM563.5-488v-25.5h123v25.5h-123Zm0 155v-25.5h123v25.5h-123Z"/>
-            </svg>
-            <h2 class="font-semibold mt-5 mb-3">Right-size your real estate portfolio</h2>
-            <p>
-              Streamline lease accounting and administration to optimize cost savings and better assess financial impacts of potential disruptions.
-            </p>
-          </li>
-        </ul>
-        <ul class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8 sm:gap-12 pt-8 sm:pt-12">
-          <li class="border-b border-gray-300 sm:border-b-0 pb-10">
-            <div class="flex flex-col justify-between">
-              <svg class="ml-[-10px]" width="80" fill="#333" viewBox="0 -960 960 960">
-                <path d="m419-137-14-110.5q-16-4-42-18T314-298l-101 43-61.5-108 88-66q-2.5-11.975-3.75-24.487Q234.5-466 234.5-479q0-10.5 1.5-23.25l3.5-29.75-88-66L213-703.5 314-661q19.5-16.5 43-30.25t47-21.25l15-111h122.5l14 111.5q26 9 45.75 20.75T642-661l105.5-42.5L809-598l-93.5 70.041Q719-514 719.75-503t.75 22.75q0 10.75-1 22.088-1 11.337-4 28.162l91 67L745-255l-103-44.5q-20.5 18-41 30.5t-45.5 20.5l-14 111.5H419Zm21.181-25.5h77.417L533.223-272q29.277-8 52.027-21t48.25-38L734-287.5l39.5-67.256L685-421q4.5-18 6.25-31.84 1.75-13.841 1.75-27.41 0-14.75-1.5-27.25T685-537l90.5-68.5-39-67.5-104 43.5q-16-18-46.5-36t-54-23L520-798h-80l-11.5 108.535Q397.5-683 373.75-670t-50.25 39.5L224-673l-40 67.5 87 64.5q-5 13.5-7 29.319-2 15.819-2 32.151 0 15.03 1.75 29.53 1.75 14.5 5.75 29.5L184-355l39.859 67.5 98.641-42q24.5 24.5 49 38t55.777 21l12.904 108Zm36.81-232q36.009 0 60.759-24.775 24.75-24.776 24.75-60.75 0-35.975-24.768-60.725T477-565.5q-36 0-60.75 24.775-24.75 24.776-24.75 60.75 0 35.975 24.75 60.725t60.741 24.75Zm3.009-86Z"/>
-              </svg>
-              <h2 class="font-semibold mt-5 mb-3">Maximize operations and maintenance efficiency</h2>
+    <!-- Impact Section -->
+    <section class="impact-section py-12 lg:py-20 lg:pb-32">
+      <div class="mx-auto max-w-screen-2xl px-4">
+        <div class="flex max-lg:flex-col">
+          <div class="w-1/4 lg:pe-32 max-lg:w-full">
+            <h2 class="font-medium">Impact</h2>
+            <p class="text-sm mt-5">See how IBM WebSphere Hybrid Edition has benefited our customers</p>
+          </div>
+          <div class="flex flex-1 max-lg:mt-14">
+            <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-20">
+              <li>
+                <div class="flex flex-col justify-between mb-5 lg:h-3/4">
+                  <h3 class="text-3xl max-lg:text-2xl">Reduce time spent on code deployment</h3>
+                  <h3 class="text-6xl font-semibold max-lg:text-4xl max-lg:mt-7">70%</h3>
+                </div>
+                <p>Decreased time for Blue Cross Blue Shield of South Carolina</p>
+                <a href="#" class="flex mt-6 underline-on-hover items-center text-fuchsia-500">
+                  <span>Learn more</span>
+                  <span class="text-2xl ml-3 material-symbols-rounded">east</span>
+                </a>
+              </li>
+              <li class="max-sm:border-y max-sm:py-10 border-gray-300">
+                <div class="flex flex-col justify-between mb-5 lg:h-3/4">
+                  <h3 class="text-3xl max-lg:text-2xl">Reduce app modernization and migration efforts</h3>
+                  <h3 class="text-6xl font-semibold max-lg:text-4xl max-lg:mt-7"> >99%</h3>
+                </div>
+                <p>Reduced full deployment cycle for FlowFactor</p>
+                <a href="#" class="flex mt-6 underline-on-hover items-center text-fuchsia-500">
+                  <span>Learn more</span>
+                  <span class="text-2xl ml-3 material-symbols-rounded">east</span>
+                </a>
+              </li>
+              <li>
+                <div class="flex flex-col justify-between mb-5 lg:h-3/4">
+                  <h3 class="text-3xl max-lg:text-2xl">Infrastructure utilization</h3>
+                  <h3 class="text-6xl font-semibold max-lg:text-4xl max-lg:mt-7">50%</h3>
+                </div>
+                <p>Improved server utilization for Blue Cross Blue Shield of South Carolina</p>
+                <a href="#" class="flex mt-6 underline-on-hover items-center text-fuchsia-500">
+                  <span>Learn more</span>
+                  <span class="text-2xl ml-3 material-symbols-rounded">east</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Client Success Stories Section -->
+    <section class="client-success-stories-section bg-slate-100 py-12 lg:pb-32">
+      <div class="mx-auto max-w-screen-2xl px-4">
+        <div class="flex max-lg:flex-col">
+          <div class="w-1/4 lg:pe-32 max-lg:w-full">
+            <h2 class="font-medium">Client success stories</h2>
+            <p class="text-sm mt-5">See how IBM WebSphere Hybrid Edition helps run, modernize and create new Java applications</p>
+          </div>
+          <div class="flex flex-1 max-lg:mt-14">
+            <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+              <li class="h-full flex flex-col">
+                <h3 class="text-3xl mb-7">FlowFactor</h3>
+                <a class="h-full flex flex-col justify-between" href="#">
+                  <img src="assets/images/services__client-logo-1.jpg" alt="FlowFactor">
+                  <p class="mt-6">
+                    FlowFactor helped a transport provider modernize apps and cut deployment times >99% with WebSphere Hybrid Edition.
+                  </p>
+                  <a href="#" class="flex mt-8 underline-on-hover items-center text-fuchsia-500">
+                    <span>Read case study</span>
+                    <span class="text-2xl ml-3 material-symbols-rounded">east</span>
+                  </a>
+                </a>
+              </li>
+              <li class="h-full flex flex-col max-sm:border-y max-sm:py-10 border-gray-300">
+                <h3 class="text-3xl mb-7">Hera</h3>
+                <a class="h-full flex flex-col justify-between" href="#">
+                  <img src="assets/images/services__client-logo-2.jpg" alt="Hera">
+                  <p class="mt-6">
+                    WebSphere Liberty helped Hera convert a monolithic application to a flexible microservice architecture.
+                  </p>
+                  <a href="#" class="flex mt-8 underline-on-hover items-center text-fuchsia-500">
+                    <span>Read case study</span>
+                    <span class="text-2xl ml-3 material-symbols-rounded">east</span>
+                  </a>
+                </a>
+              </li>
+              <li class="h-full flex flex-col">
+                <h3 class="text-3xl mb-7">GBM</h3>
+                <a class="h-full flex flex-col justify-between" href="#">
+                  <img src="assets/images/services__client-logo-3.jpg" alt="GBM">
+                  <p class="mt-6">
+                    WebSphere Liberty helped GBM provide an environment for customers to modernize their applications.
+                  </p>
+                  <a href="#" class="flex mt-8 underline-on-hover items-center text-fuchsia-500">
+                    <span>Read case study</span>
+                    <span class="text-2xl ml-3 material-symbols-rounded">east</span>
+                  </a>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section py-10 lg:pb-20">
+      <div class="mx-auto max-w-screen-2xl px-4">
+        <div class="flex max-lg:flex-col max-lg:gap-7">
+          <div class="w-1/4">
+            <h2 class="font-medium">Testimonials</h2>
+          </div>
+          <div class="testimonials-swiper swiper flex w-full pb-32 flex-1 gap-32 max-lg:flex-col max-lg:gap-10">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide w-2/3 max-lg:w-full">
+                <h3 class="text-3xl">
+                  “WAS is a robust and extremely reliable product. There is, however, a new competitor and that is WebSphere Liberty.”
+                </h3>
+                <h4 class="mt-8 font-medium">Sean Boyd</h4>
+                <p>Architect at a large bank in Saudi Arabia</p>
+              </div>
+              <div class="swiper-slide w-2/3 max-lg:w-full">
+                <h3 class="text-3xl">
+                  “As soon as we start delivering some first candidates of the applications to be modernized, they notice the advantage.”
+                </h3>
+                <h4 class="mt-8 font-medium">Kilian Niemegeerts</h4>
+                <p>Co-founder, Belgium</p>
+              </div>
+              <div class="swiper-slide w-2/3 max-lg:w-full">
+                <h3 class="text-3xl">
+                  “With just one setup, we can provision and orchestrate many different environments. That reduces our operational expenses in this area by half.”
+                </h3>
+                <h4 class="mt-8 font-medium">Alex Mathews</h4>
+                <p>Business Services, Central America</p>
+              </div>
+            </div>
+            <div class="swiper-pagination lg:text-left"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievement Section -->
+    <section class="achievement-section py-12 pb-20 bg-slate-100">
+      <div class="mx-auto max-w-screen-2xl px-4">
+        <div class="flex max-lg:flex-col max-lg:gap-7">
+          <div class="w-1/4 lg:pe-32 max-lg:w-full">
+            <h2 class="font-medium">IBM WebSphere Hybrid Edition named G2 Leader</h2>
+          </div>
+          <div class="flex flex-1 gap-32 max-lg:flex-col-reverse max-lg:gap-10">
+            <div class="w-1/3 max-lg:w-full">
               <p>
-                Use conditions-based and preventative maintenance for better decision making and to reduce operating costs.
+                G2 recognizes IBM WebSphere Hybrid Edition as a Leader in building, deploying and modernizing applications.
               </p>
+              <a href="#" class="flex underline-on-hover items-center text-fuchsia-500 mt-5">
+                <span>Find out why and read the reviews</span>
+                <span class="ml-3 material-symbols-rounded">east</span>
+              </a>
             </div>
-            <a href="#" class="flex underline-on-hover items-center text-fuchsia-500 mt-5">
-              <span>Read - The true value of IWMS</span>
-              <span class="ml-3 material-symbols-rounded">east</span>
-            </a>
-          </li>
-          <li class="border-b border-gray-300 sm:border-b-0 pb-10">
-            <svg class="ml-[-10px]" width="80" fill="#333" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
-              <path d="M480-97q-123 0-219.75-68.25T118.5-350.5V-209H93v-185.5h185.5v25.5h-138q36 112 130.5 179.25t208.891 67.25Q550-122.5 612-147.25q62-24.75 109.75-68.5t78-104.5Q830-381 836.5-452.5H862q-5.5 74.769-37.5 139.634-32 64.866-83 113.116t-118.25 75.5Q556-97 480-97Zm-15-126v-47.413q-38.5-9.087-66.5-29.388-28-20.302-46.5-58.699l24-11q18 35.5 46.75 55.25T486-294.5q35.5 0 68.75-19.75T588-379q0-35-21.25-54.25T481-476.5q-66-24-92.5-48.25T362-590.801Q362-625.5 388.5-655t78.5-36.5V-737h28v45.472q29.5 2.028 55.5 18.778t41.5 43.324L568-620q-14-21-35.337-34.25-21.338-13.25-50.493-13.25-41.17 0-66.67 22.366T390-591q0 32 16.5 49t84.5 41q72.1 25.389 97.55 52.663Q614-421.063 614-378.934q0 27.934-11.5 48.684Q591-309.5 573.25-296t-39 20.25Q513-269 493.211-268.455V-223H465ZM98-507.5q7.5-79.5 40.706-144.893 33.207-65.393 85-112.25Q275.5-811.5 341.492-837.25 407.483-863 480.112-863 600.5-863 700-794t141.5 189v-146H867v185.5H681.5V-591h138Q787-698 691.75-767.75T480.109-837.5Q414-837.5 352.5-813.75T242.25-747q-48.75 43-80.5 104T123.5-507.5H98Z"/>
-            </svg>
-            <h2 class="font-semibold mt-5 mb-3">Manage and extend capital projects</h2>
-            <p>
-              Improve project cycle time, eliminate budget over-runs, remove resource bottlenecks and analyze projects risks to improve planning decisions.
-            </p>
-          </li>
-          <li>
-            <svg class="ml-[-10px]" width="80" fill="#333" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
-              <path d="M479.761-137q-70.761 0-133.31-26.908-62.548-26.908-109.092-73.451-46.543-46.544-73.451-109.092Q137-409 137-479.761 137-551 163.908-613.42q26.908-62.421 73.451-109.045 46.544-46.625 109.092-73.58Q409-823 479.761-823 551-823 613.42-796.037q62.421 26.962 109.045 73.599 46.625 46.638 73.58 109.076Q823-550.925 823-480q0 71-26.955 133.549-26.955 62.548-73.58 109.092-46.624 46.543-109.045 73.451Q551-137 479.761-137Zm.239-23q38.609-47.789 62.555-93.645Q566.5-299.5 582-356.5H378.5Q395-295 418.445-249.645 441.891-204.289 480-160Zm-32-3.5q-31.5-34-57.75-86.5t-38.342-106.5H187.5q36 83 105.25 133.75T448-163.5Zm64 0q85.5-8 155-59t106-134H608.592Q591-301.5 564.75-249T512-163.5ZM178-382h168q-5-26-7-50.75T337-480q0-22.5 2-47.25t7-50.75H178q-7.5 21.5-11.5 47.338-4 25.837-4 50.662t4 50.663Q170.5-403.5 178-382Zm194 0h216.5q4.5-26 6.75-49.587 2.25-23.588 2.25-48.413 0-24.825-2.25-48.412Q593-552 588.5-578H372q-5 26-7.25 49.588-2.25 23.587-2.25 48.412t2.25 48.413Q367-408 372-382Zm242 0h168.5q7-21.5 11-47.337 4-25.838 4-50.663 0-24.825-4-50.662-4-25.838-11-47.338H614q5 26 7 50.75t2 47.25q0 22.5-2 47.25T614-382Zm-5.408-221.5H773Q736-688 669-737.25T512-797.5q31.5 39 57 90t39.592 104Zm-230.092 0H582q-17-60-41.945-108.105Q515.109-759.711 480-800q-35.109 40.289-60.055 88.395Q395-663.5 378.5-603.5Zm-191 0h164.408q13.592-53 39.092-104t57-90q-90.5 11.5-157.25 60.75T187.5-603.5Z"/>
-            </svg>
-            <h2 class="font-semibold mt-5 mb-3">Improve energy management</h2>
-            <p>
-              Identify and evaluate opportunities to reduce energy consumption, emissions and the overall carbon footprint of your real estate portfolio.
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Featured Industry Section -->
-    <section class="featured-industry-section bg-gray-200 sm:py-16 py-10">
-      <div class="max-w-screen-2xl mx-auto px-3">
-        <h2 class="text-3xl font-light mb-12">Featured Industry Client Stories</h2>
-        <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          <li class="flex flex-col bg-white border border-gray-300">
-            <div>
-              <img class="h-[200px] w-full object-cover" src="assets/images/index__featured-industry-section-img-1.jpg" alt="Sund & Baelt">
+            <div class="w-3/4 max-lg:w-full aspect-video">
+              <img class="w-full h-full object-cover" src="assets/images/services__achievment-img.jpg" alt="Achivement Image">
             </div>
-            <div class="p-5 h-full flex flex-col justify-between">
-              <h3 class="font-medium text-xl">Sund & Baelt - Building bridges to better insight</h3>
-              <div class="mt-8 mb-4 inline-flex">
-                <a class="block text-white bg-zinc-700 py-3 px-5 hover:bg-black" href="#">Featured Story</a>
-              </div>
-            </div>
-          </li>
-          <li class="flex flex-col bg-white border border-gray-300">
-            <div>
-              <img class="h-[200px] w-full object-cover" class="h-[200px] w-full object-cover" src="assets/images/index__featured-industry-section-img-2.jpg" alt="HealthPartners">
-            </div>
-            <div class="p-5 h-full flex flex-col justify-between">
-              <h3 class="font-medium text-xl">HealthPartners - No time for downtime</h3>
-              <div class="mt-8 mb-4 inline-flex">
-                <a class="block text-white bg-zinc-700 py-3 px-5 hover:bg-black" href="#">Featured Story</a>
-              </div>
-            </div>
-          </li>
-          <li class="flex flex-col bg-white border border-gray-300">
-            <div>
-              <img class="h-[200px] w-full object-cover" src="assets/images/index__featured-industry-section-img-3.jpg" alt="Bic Camera">
-            </div>
-            <div class="p-5 h-full flex flex-col justify-between">
-              <h3 class="font-medium text-xl">Bic Camera, Inc. - A monumental upgrade</h3>
-              <div class="mt-8 mb-4 inline-flex">
-                <a class="block text-white bg-zinc-700 py-3 px-5 hover:bg-black" href="#">Featured Story</a>
-              </div>
-            </div>
-          </li>
-          <li class="flex flex-col bg-white border border-gray-300">
-            <div>
-              <img class="h-[200px] w-full object-cover" src="assets/images/index__featured-industry-section-img-4.jpeg" alt="Home Trust">
-            </div>
-            <div class="p-5 h-full flex flex-col justify-between">
-              <h3 class="font-medium text-xl">Home Trust - Rising to the challenge</h3>
-              <div class="mt-8 mb-4 inline-flex">
-                <a class="block text-white bg-zinc-700 py-3 px-5 hover:bg-black" href="#">Featured Story</a>
-              </div>
-            </div>
-          </li>
-          <li class="flex flex-col bg-white border border-gray-300">
-            <div>
-              <img class="h-[200px] w-full object-cover" src="assets/images/index__featured-industry-section-img-5.jpg" alt="Dubber">
-            </div>
-            <div class="p-5 h-full flex flex-col justify-between">
-              <h3 class="font-medium text-xl">Dubber - Bring AI into the discussion</h3>
-              <div class="mt-8 mb-4 inline-flex">
-                <a class="block text-white bg-zinc-700 py-3 px-5 hover:bg-black" href="#">Featured Story</a>
-              </div>
-            </div>
-          </li>
-          <li class="flex flex-col bg-white border border-gray-300">
-            <div>
-              <img class="h-[200px] w-full object-cover" src="assets/images/index__featured-industry-section-img-6.jpg" alt="IBM Global Chief">
-            </div>
-            <div class="p-5 h-full flex flex-col justify-between">
-              <h3 class="font-medium text-xl">IBM Global Chief Data Office</h3>
-              <div class="mt-8 mb-4 inline-flex">
-                <a class="block text-white bg-zinc-700 py-3 px-5 hover:bg-black" href="#">Featured Story</a>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Next Steps Section -->
-    <section class="next-steps-section bg-gray-200 sm:py-16 py-10">
-      <div class="max-w-screen-2xl mx-auto px-3 text-center">
-        <h2 class="text-5xl font-light mb-10">Next steps</h2>
-        <p>Discover how you can use these integration solutions to achieve new levels of business performance</p>
-        <div class="flex justify-center gap-4 my-10 flex-col sm:flex-row">
-          <a href="#" class="flex items-center py-2 text-white transition-all max-sm:w-full max-sm:justify-between bg-fuchsia-600 px-7 hover:bg-fuchsia-700">
-            Try IBM API Connect
-            <span class="text-xl mt-0.5 ms-3 material-symbols-rounded"> east </span>
-          </a>
-          <a href="#" class="flex items-center py-2 transition-all border text-fuchsia-600 max-sm:w-full max-sm:justify-between border-fuchsia-600 px-7 hover:bg-fuchsia-600 hover:text-white">
-            Try IBM App Connect
-            <span class="text-xl mt-0.5 ms-3 material-symbols-rounded"> east </span>
-          </a>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- Resources Section -->
+    <section class="resources-section py-12 lg:py-16">
+      <div class="mx-auto max-w-screen-2xl px-4">
+        <div class="flex max-lg:flex-col max-lg:gap-7">
+          <div class="w-1/4">
+            <h2 class="font-medium">Resources</h2>
+          </div>
+          <div class="resources-swiper swiper flex flex-col w-full flex-1">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide bg-[#262626] h-auto">
+                <a class="video-modal-opener flex flex-col justify-between h-full gap-10 bg-[#262626] text-white p-4" href="javascript:void(0)" data-video-id="resources-section-video">
+                  <h3 class="text-2xl mb-5">Bridge the app development gap</h3>
+                  <p>Modernize development with one of the most flexible, security-rich and  reliable platforms available.</p>
+                  <p class="flex items-center gap-2">
+                    4:53 <span class="material-symbols-rounded">play_circle</span>
+                  </p>
+                </a>
+              </li>
+              <li class="swiper-slide bg-[#262626] h-auto">
+                <a class="flex flex-col justify-between h-full gap-10 bg-[#262626] text-white p-4" href="#">
+                  <h3 class="text-2xl mb-5">Join the WebSphere Community</h3>
+                  <p>Learn about new releases, updates and best practices from our SMEs. Have a question? We have the answer.</p>
+                  <p class="flex items-center gap-2">
+                    <span class="material-symbols-rounded">east</span>
+                  </p>
+                </a>
+              </li>
+              <li class="swiper-slide bg-[#262626] h-auto">
+                <a class="flex flex-col justify-between h-full gap-10 bg-[#262626] text-white p-4" href="#">
+                  <h3 class="text-2xl mb-5">Reference architecture</h3>
+                  <p>See a step-by-step example of how you could modernize your applications.</p>
+                  <p class="flex items-center gap-2">
+                    <span class="material-symbols-rounded">east</span>
+                  </p>
+                </a>
+              </li>
+            </ul>
+            <div class="flex gap-3 mt-10 justify-center md:justify-end">
+              <button class="swiper-custom-btn-prev border border-gray-300 text-gray-800 h-10 w-10 material-symbols-rounded">chevron_left</button>
+              <button class="swiper-custom-btn-next border border-gray-300 text-gray-800 h-10 w-10 material-symbols-rounded">chevron_right</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video Modal Popup -->
+      <div class="custom-video-modal fixed top-0 left-0 z-30 w-full h-full bg-black bg-opacity-80 flex items-center justify-center px-2" id="resources-section-video">
+        <div class="relative bg-white aspect-video max-w-4xl w-full p-1 md:p-3">
+          <div class="close-btn absolute right-0 top-0 cursor-pointer bg-white flex items-center justify-center h-10 w-10">
+            <span class="material-symbols-rounded">close</span>
+          </div>
+          <iframe class="w-full h-full" src="https://www.youtube.com/embed/IPwCsMG-JJg?si=h1-UuASEEKQXBGNl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Related Products Section -->
+    <section class="related-products-section py-12 lg:py-16">
+      <div class="mx-auto max-w-screen-2xl px-4">
+        <div class="flex max-lg:flex-col max-lg:gap-7">
+          <div class="max-sm:w-full w-1/4">
+            <h2 class="font-medium">Related products</h2>
+          </div>
+          <div class="resources-swiper swiper flex flex-col w-full flex-1">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide bg-slate-100 h-auto">
+                <a class="flex flex-col justify-between h-full gap-10  p-4" href="#">
+                  <h3 class="text-2xl mb-5">IBM WebSphere Automation</h3>
+                  <p>Reduce costs and security risks by automating threat identification and remediation for your entire WebSphere estate.</p>
+                  <span class="text-fuchsia-500 material-symbols-rounded">east</span>
+                </a>
+              </li>
+              <li class="swiper-slide bg-slate-100 h-auto">
+                <a class="flex flex-col justify-between h-full gap-10 p-4" href="#">
+                  <h3 class="text-2xl mb-5">IBM Mono2Micro</h3>
+                  <p>Utilize the power of AI to refactor Java monoliths into Liberty microservices</p>
+                  <span class="text-fuchsia-500 material-symbols-rounded">east</span>
+                </a>
+              </li>
+              <li class="swiper-slide bg-slate-100 h-auto">
+                <a class="flex flex-col justify-between h-full gap-10 p-4" href="#">
+                  <h3 class="text-2xl mb-5">IBM WebSphere Liberty</h3>
+                  <p>This cloud-native runtime leverages and extends your existing developer skills to deliver new cloud-native applications quickly, reliably and securely.</p>
+                  <span class="text-fuchsia-500 material-symbols-rounded">east</span>
+                </a>
+              </li>
+            </ul>
+            <div class="flex gap-3 mt-10 justify-center md:justify-end">
+              <button class="swiper-custom-btn-prev border border-gray-300 text-gray-800 h-10 w-10 material-symbols-rounded">chevron_left</button>
+              <button class="swiper-custom-btn-next border border-gray-300 text-gray-800 h-10 w-10 material-symbols-rounded">chevron_right</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Next Step Section -->
+    <section class="next-step-section bg-black py-9 max-lg:py-10">
+      <div class="flex items-center justify-between mx-auto max-w-screen-2xl px-4 max-lg:flex-col max-lg:items-start">
+        <div>
+          <h2 class="text-white text-2xl font-semibold">Next step</h2>
+          <h3 class="text-white text-2xl max-w-2xl mt-4">
+            Book a 1-on-1 consultation with an IBM expert to discuss how IBM WebSphere Hybrid Edition can help you create new Java applications.
+          </h3>
+        </div>
+        <div class="flex flex-col gap-4 flex-1 max-w-xs max-lg:mt-10 w-full max-sm:max-w-full">
+          <a href="#" class="flex items-center justify-between py-3 text-white transition-all max-sm:w-full bg-fuchsia-600 px-5 hover:bg-fuchsia-700">
+            Book a consultation
+            <span class="text-xl material-symbols-rounded">east</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    
     <!-- Footer Section -->
     <footer class="bg-[#262626]">
       <div class="py-10 px-4 mx-auto text-white max-w-screen-2xl">
@@ -2723,24 +2688,62 @@
     
     <script>
       $(document).ready(function() {
-          // Video wrapper click
-          $(".video-wrapper").on("click", function() {
-              $(this).addClass("show-video");
+        // Video modal opener or link click
+        $(".video-modal-opener").on("click", function() {
+          const videoId = $(this).data("video-id");
+          const videoModal = $(`.custom-video-modal#${videoId}`);
+          videoModal.addClass("active");
+
+          $(videoModal).find(".close-btn").on("click", function() {
+            videoModal.removeClass("active");
           });
+        });
 
-          // Features tabs click
-          $(".features-section .tab-button").on("click", function() {
-              $(".features-section .tab-button.active").removeClass("active");
-              $(this).addClass("active");
+        // Use cases section's tabs click
+        $(".use-cases-section .tab-button").on("click", function() {
+          $(".use-cases-section .tab-button.active").removeClass("active");
+          $(this).addClass("active");
 
-              const tabId = $(this).data("tab-id");
-              if($(window).outerWidth() >= 1024) {
-                  $(".features-section .desktop-tab-wrapper .tab-content.active").removeClass("active");
-                  $(`.features-section .desktop-tab-wrapper #${tabId}`).addClass("active");
-              } else {
-                  $(".features-section .mobile-tab-wrapper .tab-content").removeClass("active");
-                  $(this).parent().find(".tab-content").addClass("active");
-              }
+          const tabId = $(this).data("tab-id");
+          if($(window).outerWidth() >= 1024) {
+                $(".use-cases-section .tab-content-list .tab-content.active").removeClass("active");
+                $(`.use-cases-section .tab-content-list #${tabId}`).toggleClass("active");
+            } else {
+                $(".use-cases-section .tab-button-list .tab-content").removeClass("active");
+                $(this).parent().find(".tab-content").addClass("active");
+            }
+        });
+
+        // Initialize Testimonials Swiper slider
+        new Swiper('.testimonials-swiper', {
+          loop: true,
+          pagination: {
+            el: '.testimonials-swiper .swiper-pagination',
+          }
+        });
+
+        // Initialize Resources & Products Swiper slider
+        new Swiper('.resources-swiper', {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            navigation: {
+              nextEl: '.resources-swiper .swiper-custom-btn-next',
+              prevEl: '.resources-swiper .swiper-custom-btn-prev',
+            },
+            breakpoints: {
+              0: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+              },
+            },
           });
       });
     </script>

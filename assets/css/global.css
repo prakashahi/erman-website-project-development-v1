@@ -1,0 +1,190 @@
+/* Global css styling for header/navbar and footer +
+Define the 'Graphik' font family with different weights */
+
+/* Thin (font-weight: 100) */
+@font-face {
+    font-family: 'Graphik';
+    src: local('Graphik Thin'), local('Graphik-Thin'),
+        url('../fonts/Graphik-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+}
+
+/* Extra Light (font-weight: 200) */
+@font-face {
+    font-family: 'Graphik';
+    src: local('Graphik Extralight'), local('Graphik-Extralight'),
+        url('../fonts/Graphik-Extralight.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+}
+
+/* Light (font-weight: 300) */
+@font-face {
+    font-family: 'Graphik';
+    src: local('Graphik Light'), local('Graphik-Light'),
+        url('../fonts/Graphik-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Regular (font-weight: 400) */
+@font-face {
+    font-family: 'Graphik';
+    src: local('Graphik Regular'), local('Graphik-Regular'),
+        url('../fonts/Graphik-Regular.woff2') format('woff2');
+    font-weight: normal;
+    /* You can omit this line as 'normal' is the default */
+    font-style: normal;
+}
+
+/* Medium (font-weight: 500) */
+@font-face {
+    font-family: 'Graphik';
+    src: local('Graphik Medium'), local('Graphik-Medium'),
+        url('../fonts/Graphik-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Semibold (font-weight: 600) */
+@font-face {
+    font-family: 'Graphik';
+    src: local('Graphik Semibold'), local('Graphik-Semibold'),
+        url('../fonts/Graphik-Semibold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Black (font-weight: 900) */
+@font-face {
+    font-family: 'Graphik';
+    src: local('Graphik Black'), local('Graphik-Black'),
+        url('../fonts/Graphik-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Graphik', sans-serif;
+}
+
+.material-symbols-rounded {
+    font-variation-settings: "FILL" 1, "wght" 300, "GRAD" 0, "opsz" 24;
+}
+
+/* Common styling for header/navbar */
+
+.desktop-menu-container a,
+.desktop-dropdown-container li a {
+    outline: none;
+    border: 2px solid transparent;
+    transition: background 0.2s ease;
+}
+
+.desktop-menu-container a:hover,
+.desktop-menu-container .desktop-dropdown-link.active,
+.desktop-dropdown-container li a:hover,
+.desktop-dropdown-container #desk-language-menu li:hover,
+.mobile-menu-container li:hover,
+.desktop-dropdown-container .desktop-dropdown-tab.active {
+    background: rgb(229 231 235);
+}
+
+.desktop-menu-container a:focus,
+.desktop-dropdown-container li a:focus {
+    border: 2px solid rgb(51 51 51);
+}
+
+.desktop-menu-container :where(.desktop-dropdown-link, .language-modal-opener) .icon {
+    transition: transform 0.3s ease;
+}
+
+.desktop-menu-container :where(.desktop-dropdown-link, .language-modal-opener).active .icon {
+    transform: rotate(-180deg);
+}
+
+.mobile-menu-container,
+.desktop-dropdown-container {
+    display: none !important;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.language-popup-modal {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+}
+
+.language-popup-modal.active {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.1s ease;
+}
+
+.language-popup-modal .modal-wrapper {
+    opacity: 0;
+    transform: translateY(-5%);
+    transition: 0.3s ease;
+}
+
+.language-popup-modal.active .modal-wrapper {
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+.mobile-menu-container.active,
+.mobile-menu-container .mobile-dropdown-menu.show-menu,
+.desktop-dropdown-container.active {
+    display: block !important;
+}
+
+.mobile-menu-container li a {
+    border-bottom: 1px solid rgb(209 213 219);
+}
+
+.mobile-menu-container .mobile-dropdown-menu {
+    display: none !important;
+}
+
+.desktop-dropdown-container .desktop-dropdown-menu,
+.desktop-dropdown-container .desktop-dropdown-section,
+.hero-section .video-wrapper.show-video .thumbnail {
+    display: none;
+}
+
+.desktop-dropdown-container .desktop-dropdown-section.show-menu {
+    display: block;
+}
+
+a.underline-on-hover:hover :where(p:nth-child(2), span:first-child) {
+    text-decoration: underline;
+}
+
+/* Common styling for footer */
+
+footer .footer-menu-toggler .icon {
+  transition: transform 0.2s ease;
+}
+
+footer .footer-menu-toggler.active .icon {
+    transform: rotate(-180deg);
+}
+
+@media (min-width: 343px) and (max-width: 496px) {
+  footer .footer-bottom-links li:nth-child(3) a {
+    border-right-width: 0;
+  }
+}
+
+@media (max-width: 342px) {
+  footer .footer-bottom-links li:nth-child(2) a {
+    border-right-width: 0;
+  }
+}
+
+@media (max-width: 284px) {
+  footer .footer-bottom-links li:nth-child(3) a {
+    border-right-width: 0;
+  }
+}

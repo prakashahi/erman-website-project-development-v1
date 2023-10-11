@@ -1,3 +1,5 @@
+// Global JavaScript code for header/navbar and footer
+
 $(document).ready(function() {
     // Mobile menu toggler
     $("#mobile-menu-toggler").on("click", function() {
@@ -75,11 +77,6 @@ $(document).ready(function() {
         });
     })
 
-    // Video wrapper click
-    $(".video-wrapper").on("click", function() {
-        $(this).addClass("show-video");
-    });
-
     // Search input focus and blur
     $(".search-wrapper input").on("focus", function() {
         $(".search-bg-overlay").show();
@@ -87,21 +84,6 @@ $(document).ready(function() {
     }).on("blur", function() {
         $(".search-bg-overlay").hide();
         $(".hamburger-btn-wrapper").css("z-index", "50");
-    });
-
-    // Features tabs click
-    $(".features-section .tab-button").on("click", function() {
-        $(".features-section .tab-button.active").removeClass("active");
-        $(this).addClass("active");
-
-        const tabId = $(this).data("tab-id");
-        if($(window).outerWidth() >= 1024) {
-            $(".features-section .desktop-tab-wrapper .tab-content.active").removeClass("active");
-            $(`.features-section .desktop-tab-wrapper #${tabId}`).addClass("active");
-        } else {
-            $(".features-section .mobile-tab-wrapper .tab-content").removeClass("active");
-            $(this).parent().find(".tab-content").addClass("active");
-        }
     });
 
     // Toggle footer menu on click

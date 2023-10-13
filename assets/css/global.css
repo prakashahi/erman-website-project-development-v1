@@ -157,7 +157,7 @@ Define the 'Graphik' font family with different weights */
     display: block;
 }
 
-a.underline-on-hover:hover :where(p:nth-child(2), span:first-child) {
+.underline-on-hover:hover :where(p:nth-child(2), span:first-child) {
     text-decoration: underline;
 }
 

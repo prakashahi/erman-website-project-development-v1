@@ -48,7 +48,9 @@ section .custom-video-modal {
 
 :where(.resources-section, .related-products-section) .swiper button[disabled] {
     cursor: no-drop;
-    opacity: 0.5;
+    color: rgb(107 114 128);
+    background: transparent;
+    border-color: rgb(209 213 219);
 }
 
 @media (min-width: 1024px) {

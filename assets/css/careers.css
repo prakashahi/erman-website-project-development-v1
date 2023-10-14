@@ -1,0 +1,32 @@
+/* Only careers page styling */
+
+.horizontal-tab-menu .tab-link.active {
+    border-color: rgb(217 70 239);
+}
+
+.horizontal-tab-menu .tab-link.active a {
+    font-weight: 500;
+}
+
+/* Hide the default arrow icon */
+.horizontal-tab-menu select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.our-teams-section .hidden-job-item {
+    display: none;
+}
+
+.our-teams-section .hidden-job-item.show {
+    display: flex;
+}
+
+section .custom-video-modal {
+    display: none;
+}
+
+.custom-video-modal.active {
+    display: flex;
+}

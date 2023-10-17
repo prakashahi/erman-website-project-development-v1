@@ -1,0 +1,28 @@
+/* Only company page styling */
+
+.horizontal-tab-menu .tab-link.active {
+    border-color: rgb(217 70 239);
+}
+
+.horizontal-tab-menu .tab-link.active a {
+    font-weight: 500;
+}
+
+/* Hide the default arrow icon */
+.horizontal-tab-menu select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.accordion-wrapper li .accordion-content {
+    display: none;
+}
+
+.accordion-wrapper li.active .accordion-content {
+    display: block;
+}
+  
+.accordion-wrapper li.active .icon {
+    transform: rotate(-180deg);
+}

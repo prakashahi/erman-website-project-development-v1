@@ -1055,7 +1055,7 @@
                 </a>
               </li>
               <li class="px-4">
-                <a href="#" class="flex items-center py-3 text-gray-600">
+                <a href="company.html" class="flex items-center py-3 text-gray-600">
                   Company
                 </a>
               </li>
@@ -1909,7 +1909,7 @@
                     </a>
                     <ul class="mt-5">
                       <li class="flex">
-                        <a href="#" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900 ">Company</a>
+                        <a href="company.html" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900 ">Company</a>
                       </li>
                       <li class="flex">
                         <a href="#" class="w-full px-4 py-1 text-gray-600 hover:text-gray-900 ">The Brand</a>
@@ -2133,7 +2133,7 @@
     </section>
 
     <!-- Sticky Horizontal Tab Menu -->
-    <nav class="horizontal-tab-menu sticky z-[9] top-[48.5px] lg:top-[65px] bg-white lg:border-b border-gray-300">
+    <nav class="horizontal-tab-menu sticky z-[9] top-[48.5px] lg:top-[64px] bg-white lg:border-b border-gray-300">
       <ul class="hidden lg:flex mx-auto max-w-screen-2xl">
         <li class="tab-link active border-b-[3px] border-transparent" data-section-id="curated-for-you">
           <a class="py-3 px-4 block" href="javascript:void(0)">Curated for you</a>
@@ -2153,7 +2153,7 @@
       </ul>
       <div class="relative flex justify-between items-center cursor-pointer lg:hidden bg-white shadow-lg transition-all hover:bg-gray-100">
         <select class="w-full bg-transparent cursor-pointer py-3 px-4 outline-none">
-          <option value="curated-for-you">Curated for you</option>
+          <option value="curated-for-you" selected>Curated for you</option>
           <option value="why-ibm">Why IBM</option>
           <option value="teams">Teams</option>
           <option value="join">Join</option>
@@ -2752,32 +2752,40 @@
           updateActiveSection(selectedSectionId)
         });
 
-        // Intersection Observer for tracking the currently visible section
-        const observer = new IntersectionObserver((entries) => {
-          entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                  const section = entry.target.id;
-                  const tabLink = $(`.horizontal-tab-menu .tab-link[data-section-id='${section}']`);
-                  
-                  if (tabLink.length > 0) {
-                      $(".horizontal-tab-menu .tab-link.active").removeClass("active");
-                      tabLink.addClass("active");
-                      $(".horizontal-tab-menu select option").each(function() {
-                        if ($(this).val() === section) {
-                            $(this).prop("selected", true);
-                        } else {
-                            $(this).prop("selected", false);
-                        }
-                      });
-                  }
-              }
-          });
-        }, { threshold: 0.40 });
+        // Function to update the active tab based on scroll position
+        function updateActiveTab() {
+          const windowHeight = window.innerHeight;
+          const scrollPosition = window.scrollY;
 
-        // Observe sections to track their intersection with the viewport
-        $("section").each(function() {
-          observer.observe($(this)[0]);
-        });
+          $("section").each(function() {
+            const section = $(this);
+            const sectionTop = section.offset().top;
+            const sectionHeight = section.outerHeight();
+
+            if(sectionTop <= scrollPosition + windowHeight * 0.35 && sectionTop + sectionHeight > scrollPosition + windowHeight * 0.35) {
+              const sectionId = section.attr("id");
+              const tabLink = $(`.horizontal-tab-menu .tab-link[data-section-id='${sectionId}']`);
+
+              if(tabLink.length <= 0) return;
+
+              $(".horizontal-tab-menu .tab-link.active").removeClass("active");
+              tabLink.addClass("active");
+
+              $(".horizontal-tab-menu select option").each(function () {
+                if ($(this).val() === sectionId) {
+                  $(this).prop("selected", true);
+                } else {
+                  $(this).prop("selected", false);
+                }
+              });
+            }
+          })
+        }
+
+        // Attach the scroll event listener to update the active tab
+        $(window).on("scroll", updateActiveTab);
+
+        updateActiveTab();
       });
     </script>
   </body>

@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NTCS - Nanofibers Perfected</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="assets/css/global.css">
-    <link rel="stylesheet" href="assets/css/services.css">
+    <link rel="stylesheet" href="assets/css/company.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="assets/js/global.js" defer></script>
@@ -2088,7 +2086,7 @@
         <li class="flex items-center text-gray-400 gap-1">
         <span class="text-xl material-symbols-rounded">chevron_right</span>
           <div class="flex items-center transition-all hover:text-fuchsia-500">
-            <a href="#">Services</a>
+            <a href="#">Company</a>
           </div>
         </li>
         <li class="flex items-center text-gray-400 gap-1">
@@ -2107,22 +2105,23 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-section">
-      <div class="top-row sm:py-14 py-10 max-sm:h-[70vh] h-[50vh] bg-black">
+    <section class="hero-section flex flex-col-reverse relative md:h-[55vh] max-md:pb-10">
+      <img class="h-full w-full object-cover" src="assets/images/company__hero-bg.jpg" alt="Hero Image">
+      <div class="md:absolute md:top-0 w-full h-full py-10">
         <div class="mx-auto max-w-screen-2xl h-full px-4">
           <div class="max-w-2xl flex flex-col justify-between h-full">
-            <h1 class="text-white max-sm:text-3xl text-5xl">IBM WebSphere Hybrid Edition</h1>
-            <div>
-              <h3 class="text-xl text-gray-300">
-                Discover how to drive cloud-native development, application modernization and support for existing applications with IBM® WebSphere® Hybrid Edition
+            <h1 class="max-sm:text-3xl text-5xl leading-snug">IBM Cloud Virtual Server for VPC</h1>
+            <div class="max-md:mt-10">
+              <h3 class="text-xl">
+                Highly scalable, single-tenant and multi-tenant virtual machines you can launch fast for maximum network isolation and control. Intel Xeon processors help make it simple, powerful and secure.
               </h3>
               <div class="flex gap-4 mt-7 max-sm:flex-col">
                 <a href="#" class="flex items-center py-2 text-white transition-all max-sm:w-full max-sm:justify-between bg-fuchsia-600 px-7 hover:bg-fuchsia-700">
-                  Booking a meeting
+                  Configure, price and quote
                   <span class="text-xl mt-0.5 ms-3 material-symbols-rounded"> east </span>
                 </a>
-                <a href="#" class="flex items-center py-2 transition-all border text-white max-sm:w-full max-sm:justify-between border-white px-7 hover:bg-white hover:text-black">
-                  Read the client story
+                <a href="#" class="flex items-center py-2 transition-all border text-fuchsia-500 max-sm:w-full max-sm:justify-between border-fuchsia-500 px-7 hover:bg-fuchsia-500 hover:text-white">
+                  Create an account
                   <span class="text-xl mt-0.5 ms-3 material-symbols-rounded"> east </span>
                 </a>
               </div>
@@ -2130,478 +2129,520 @@
           </div>
         </div>
       </div>
-      <div class="flex items-center justify-between mx-auto max-w-screen-2xl py-9 max-lg:py-10 px-4 max-lg:flex-col max-lg:items-start">
-        <h2 class="text-2xl max-w-2xl">
-          Startup cloud-native Java applications incredibly fast with Liberty InstantOn
-        </h2>
-        <div class="flex flex-col gap-4 flex-1 max-w-xs max-lg:mt-5 w-full max-sm:max-w-full">
-          <a href="#" class="flex items-center justify-between py-2 text-white transition-all max-sm:w-full bg-fuchsia-600 px-5 hover:bg-fuchsia-700">
-            Read the blog
-            <span class="text-xl material-symbols-rounded">book_3</span>
-          </a>
-          <a href="javascript:void(0)" class="video-modal-opener flex items-center justify-between py-2 transition-all border text-fuchsia-600 max-sm:w-full border-fuchsia-600 px-5 hover:bg-fuchsia-600 hover:text-white" data-video-id="hero-section-video">
-            Hear from an expert (5:11)
-            <span class="text-xl material-symbols-rounded">play_circle</span>
-          </a>
-        </div>
-      </div>
+    </section>
 
-      <!-- Video Modal Popup -->
-      <div class="custom-video-modal fixed top-0 left-0 z-30 w-full h-full bg-black bg-opacity-80 flex items-center justify-center px-2" id="hero-section-video">
-        <div class="relative bg-white aspect-video max-w-4xl w-full p-1 md:p-3">
-          <div class="close-btn absolute right-0 top-0 cursor-pointer bg-white flex items-center justify-center h-10 w-10">
-            <span class="material-symbols-rounded">close</span>
+    <!-- Sticky Horizontal Tab Menu -->
+    <nav class="horizontal-tab-menu sticky z-[9] top-[48.5px] lg:top-[64px] bg-white lg:border-b border-gray-300">
+      <ul class="hidden lg:flex mx-auto max-w-screen-2xl">
+        <li class="tab-link active border-b-[3px] border-transparent" data-section-id="our-purpose">
+          <a class="py-3 px-4 block" href="javascript:void(0)">Our purpose</a>
+        </li>
+        <li class="tab-link border-b-[3px] border-transparent" data-section-id="overview">
+          <a class="py-3 px-4 block" href="javascript:void(0)">Overview</a>
+        </li>
+        <li class="tab-link border-b-[3px] border-transparent" data-section-id="technology-education">
+          <a class="py-3 px-4 block" href="javascript:void(0)">Technology education</a>
+        </li>
+        <li class="tab-link border-b-[3px] border-transparent" data-section-id="communities">
+          <a class="py-3 px-4 block" href="javascript:void(0)">Communities</a>
+        </li>
+        <li class="tab-link border-b-[3px] border-transparent" data-section-id="whats-new">
+          <a class="tab-link py-3 px-4 block" href="javascript:void(0)">What's new</a>
+        </li>
+        <li class="tab-link border-b-[3px] border-transparent" data-section-id="key-priorites">
+          <a class="tab-link py-3 px-4 block" href="javascript:void(0)">Key priorites</a>
+        </li>
+        <li class="tab-link border-b-[3px] border-transparent" data-section-id="jobs">
+          <a class="tab-link py-3 px-4 block" href="javascript:void(0)">Jobs</a>
+        </li>
+        <li class="tab-link border-b-[3px] border-transparent" data-section-id="join">
+          <a class="tab-link py-3 px-4 block" href="javascript:void(0)">Join</a>
+        </li>
+      </ul>
+      <div class="relative flex justify-between items-center cursor-pointer lg:hidden bg-white shadow-lg transition-all hover:bg-gray-100">
+        <select class="w-full bg-transparent cursor-pointer py-3 px-4 outline-none">
+          <option value="our-purpose" selected>Our purpose</option>
+          <option value="overview">Overview</option>
+          <option value="technology-education">Technology education</option>
+          <option value="communities">Communities</option>
+          <option value="whats-new">What's new</option>
+          <option value="key-priorites">Key priorites</option>
+          <option value="jobs">Jobs</option>
+          <option value="join">Join</option>
+        </select>
+        <span class="absolute select-none pointer-events-none right-4 material-symbols-rounded">list</span>
+      </div>
+    </nav>
+
+    <!-- Our Purpose Section -->
+    <section class="our-purpose-section py-12 lg:my-16" id="our-purpose">
+      <div class="mx-auto max-w-screen-2xl px-4">
+        <div class="flex max-lg:flex-col max-lg:gap-7">
+          <div class="lg:w-1/4">
+            <h2 class="font-medium">Our Purpose</h2>
           </div>
-          <iframe class="w-full h-full" src="https://www.youtube.com/embed/IPwCsMG-JJg?si=h1-UuASEEKQXBGNl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <div class="flex flex-1 gap-32 max-lg:flex-col max-lg:gap-10">
+            <div class="w-2/3 max-lg:w-full">
+              <h3 class="text-3xl lg:text-5xl leading-snug">
+                To be the <span class="text-fuchsia-500">catalyst</span> that makes the world work better
+                <span class="translate-y-2 lg:translate-y-3 text-3xl lg:text-5xl text-fuchsia-500 rotate-[140deg] material-symbols-rounded select-none">switch_access_shortcut</span>
+              </h3>
+              <p class="mt-10 text-xl">
+                IBM aspires to make a lasting, positive impact on the world in business ethics, our environment, and the communities in which we work and live
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Overview Section -->
-    <section class="overview-section py-10 pb-20 bg-slate-100">
+    <section class="overview-section py-12 lg:my-16" id="overview">
       <div class="mx-auto max-w-screen-2xl px-4">
         <div class="flex max-lg:flex-col max-lg:gap-7">
-          <div class="w-1/4">
+          <div class="lg:w-1/4">
             <h2 class="font-medium">Overview</h2>
           </div>
           <div class="flex flex-1 gap-32 max-lg:flex-col max-lg:gap-10">
-            <div class="w-2/3 max-lg:w-full">
-              <h3 class="text-3xl">What is it?</h3>
-              <p class="my-6">
-                WebSphere Hybrid Edition is the comprehensive collection of WebSphere application runtimes and modernization tools that provides support for on-premise and major public cloud deployments, in virtual machines, containers and Kubernetes. Choose any WebSphere edition and deploy Liberty and application modernization tools to help you move to a cloud-native architecture, modernize your existing applications and support your existing WebSphere estate.
-              </p>
-              <a href="#" class="flex underline-on-hover items-center text-fuchsia-500 mt-5">
-                <span>Increase WebSphere ROI (250 KB)</span>
-                <span class="ml-3 material-symbols-rounded">east</span>
-              </a>
-            </div>
-            <div class="w-1/2 max-w-lg max-lg:w-full">
-              <img  src="assets/images/services__overview-img.jpg" alt="Overview Image">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Use Cases Section -->
-    <section class="use-cases-section py-10">
-      <div class="mx-auto max-w-screen-2xl px-4">
-        <div class="flex max-lg:flex-col max-lg:gap-7">
-          <div class="w-1/4">
-            <h2 class="font-medium">Use cases</h2>
-          </div>
-          <div class="flex flex-col flex-1">
-            <ul class="tab-button-list flex gap-8 max-lg:gap-0 max-lg:flex-col">
-              <li class="max-lg:border-t max-lg:border-t-gray-300">
-                <button class="tab-button active flex items-center justify-between text-left text-sm w-full lg:h-full lg:border-2 border-transparent py-2 max-lg:py-4 lg:focus:border-fuchsia-500 lg:hover:border-b-gray-300 transition-all" data-tab-id="cloud-native-development">
-                  <span>Cloud native development</span>
-                  <span class="lg:hidden icon material-symbols-rounded">expand_more</span>
-                </button>
-                <div class="tab-content active mt-6 mb-16 px-2" id="cloud-native-development">
-                  <div class="max-w-xl">
-                    <h3 class="text-3xl mb-5">Cloud native development</h3>
-                    <p>
-                      Build new cloud-native applications with WebSphere Liberty. The highly efficient runtime is ideal for container and Kubernetes-based deployments.
-                    </p>
-                    <a href="#" class="flex mt-10 underline-on-hover items-center text-fuchsia-500">
-                      <span>Explore Liberty</span>
-                      <span class="text-2xl ml-3 material-symbols-rounded">east</span>
-                    </a>
-                  </div>
-                  <img class="sm:w-9/12 mt-10" src="assets/images/services__usecases-img-1.jpg" alt="Cloud native development">
-                </div>
-              </li>
-              <li class="max-lg:border-t max-lg:border-t-gray-300">
-                <button class="tab-button flex items-center justify-between text-left text-sm w-full lg:h-full lg:border-2 border-transparent py-2 max-lg:py-4 lg:focus:border-fuchsia-500 lg:hover:border-b-gray-300 transition-all" data-tab-id="application-modernization">
-                  <span>Application modernization</span>
-                  <span class="lg:hidden icon material-symbols-rounded">expand_more</span>
-                </button>
-                <div class="tab-content mt-6 mb-16 px-2" id="application-modernization">
-                  <div class="max-w-xl">
-                    <h3 class="text-3xl mb-5">Application modernization</h3>
-                    <p>
-                      Reduce modernization risk, assess cloud readiness and refactor monolithic applications with IBM Cloud® Transformation Advisor and IBM Mono2Micro.
-                    </p>
-                    <a href="#" class="flex mt-10 underline-on-hover items-center text-fuchsia-500">
-                      <span>Read the customer story</span>
-                      <span class="text-2xl ml-3 material-symbols-rounded">east</span>
-                    </a>
-                  </div>
-                  <img class="sm:w-9/12 mt-10" src="assets/images/services__usecases-img-2.jpg" alt="Application modernization">
-                </div>
-              </li>
-              <li class="max-lg:border-y max-lg:border-y-gray-300">
-                <button class="tab-button flex items-center justify-between text-left text-sm w-full lg:h-full lg:border-2 border-transparent py-2 max-lg:py-4 lg:focus:border-fuchsia-500 lg:hover:border-b-gray-300 transition-all" data-tab-id="support-n-existing-apps">
-                  <span>Support and optimize existing applications</span>
-                  <span class="lg:hidden icon material-symbols-rounded">expand_more</span>
-                </button>
-                <div class="tab-content mt-6 mb-16 px-2" id="support-n-existing-apps">
-                  <div class="max-w-xl">
-                    <h3 class="text-3xl mb-5">Support and optimize existing applications</h3>
-                    <p>
-                      Get the most out of your existing and future applications by taking advantage of flexible entitlements and modernization tools.
-                    </p>
-                    <a href="#" class="flex mt-10 underline-on-hover items-center text-fuchsia-500">
-                      <span>Applications to receive ROI</span>
-                      <span class="text-2xl ml-3 material-symbols-rounded">east</span>
-                    </a>
-                  </div>
-                  <img class="sm:w-9/12 mt-10" src="assets/images/services__usecases-img-3.jpg" alt="Support and optimize existing applications">
-                </div>
-              </li>
-            </ul>
-            <ul class="tab-content-list max-lg:hidden mt-3">
-              <li class="tab-content active flex gap-10 mt-10 justify-between" id="cloud-native-development">
-                <img class="w-3/5" src="assets/images/services__usecases-img-1.jpg" alt="Cloud native development">
-                <div class="mt-6 max-w-xl">
-                  <h3 class="text-3xl mb-10">Cloud native development</h3>
-                  <p>
-                    Build new cloud-native applications with WebSphere Liberty. The highly efficient runtime is ideal for container and Kubernetes-based deployments.
-                  </p>
-                  <a href="#" class="flex mt-10 underline-on-hover items-center text-fuchsia-500">
-                    <span>Explore Liberty</span>
-                    <span class="text-2xl ml-3 material-symbols-rounded">east</span>
-                  </a>
-                </div>
-              </li>
-              <li class="tab-content flex gap-10 mt-10 justify-between" id="application-modernization">
-                <img class="w-3/5" src="assets/images/services__usecases-img-2.jpg" alt="Application modernization">
-                <div class="mt-6 max-w-xl">
-                  <h3 class="text-3xl mb-10">Application modernization</h3>
-                  <p>
-                    Reduce modernization risk, assess cloud readiness and refactor monolithic applications with IBM Cloud® Transformation Advisor and IBM Mono2Micro.
-                  </p>
-                  <a href="#" class="flex mt-10 underline-on-hover items-center text-fuchsia-500">
-                    <span>Read the customer story</span>
-                    <span class="text-2xl ml-3 material-symbols-rounded">east</span>
-                  </a>
-                </div>
-              </li>
-              <li class="tab-content flex gap-10 mt-10 justify-between" id="support-n-existing-apps">
-                <img class="w-3/5" src="assets/images/services__usecases-img-3.jpg" alt="Support and optimize existing applications">
-                <div class="mt-6 max-w-xl">
-                  <h3 class="text-3xl mb-10">Support and optimize existing applications</h3>
-                  <p>
-                    Get the most out of your existing and future applications by taking advantage of flexible entitlements and modernization tools.
-                  </p>
-                  <a href="#" class="flex mt-10 underline-on-hover items-center text-fuchsia-500">
-                    <span>Applications to receive ROI</span>
-                    <span class="text-2xl ml-3 material-symbols-rounded">east</span>
-                  </a>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Impact Section -->
-    <section class="impact-section py-12 lg:py-20 lg:pb-32">
-      <div class="mx-auto max-w-screen-2xl px-4">
-        <div class="flex max-lg:flex-col">
-          <div class="w-1/4 lg:pe-32 max-lg:w-full">
-            <h2 class="font-medium">Impact</h2>
-            <p class="text-sm mt-5">See how IBM WebSphere Hybrid Edition has benefited our customers</p>
-          </div>
-          <div class="flex flex-1 max-lg:mt-14">
-            <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-20">
-              <li>
-                <div class="flex flex-col justify-between mb-5 lg:h-3/4">
-                  <h3 class="text-3xl max-lg:text-2xl">Reduce time spent on code deployment</h3>
-                  <h3 class="text-6xl font-semibold max-lg:text-4xl max-lg:mt-7">70%</h3>
-                </div>
-                <p>Decreased time for Blue Cross Blue Shield of South Carolina</p>
-                <a href="#" class="flex mt-6 underline-on-hover items-center text-fuchsia-500">
-                  <span>Learn more</span>
-                  <span class="text-2xl ml-3 material-symbols-rounded">east</span>
-                </a>
-              </li>
-              <li class="max-sm:border-y max-sm:py-10 border-gray-300">
-                <div class="flex flex-col justify-between mb-5 lg:h-3/4">
-                  <h3 class="text-3xl max-lg:text-2xl">Reduce app modernization and migration efforts</h3>
-                  <h3 class="text-6xl font-semibold max-lg:text-4xl max-lg:mt-7"> >99%</h3>
-                </div>
-                <p>Reduced full deployment cycle for FlowFactor</p>
-                <a href="#" class="flex mt-6 underline-on-hover items-center text-fuchsia-500">
-                  <span>Learn more</span>
-                  <span class="text-2xl ml-3 material-symbols-rounded">east</span>
-                </a>
-              </li>
-              <li>
-                <div class="flex flex-col justify-between mb-5 lg:h-3/4">
-                  <h3 class="text-3xl max-lg:text-2xl">Infrastructure utilization</h3>
-                  <h3 class="text-6xl font-semibold max-lg:text-4xl max-lg:mt-7">50%</h3>
-                </div>
-                <p>Improved server utilization for Blue Cross Blue Shield of South Carolina</p>
-                <a href="#" class="flex mt-6 underline-on-hover items-center text-fuchsia-500">
-                  <span>Learn more</span>
-                  <span class="text-2xl ml-3 material-symbols-rounded">east</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Client Success Stories Section -->
-    <section class="client-success-stories-section bg-slate-100 py-12 lg:pb-32">
-      <div class="mx-auto max-w-screen-2xl px-4">
-        <div class="flex max-lg:flex-col">
-          <div class="w-1/4 lg:pe-32 max-lg:w-full">
-            <h2 class="font-medium">Client success stories</h2>
-            <p class="text-sm mt-5">See how IBM WebSphere Hybrid Edition helps run, modernize and create new Java applications</p>
-          </div>
-          <div class="flex flex-1 max-lg:mt-14">
-            <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-              <li class="h-full flex flex-col">
-                <h3 class="text-3xl mb-7">FlowFactor</h3>
-                <a class="h-full flex flex-col justify-between" href="#">
-                  <img src="assets/images/services__client-logo-1.jpg" alt="FlowFactor">
-                  <p class="mt-6">
-                    FlowFactor helped a transport provider modernize apps and cut deployment times >99% with WebSphere Hybrid Edition.
-                  </p>
-                  <a href="#" class="flex mt-8 underline-on-hover items-center text-fuchsia-500">
-                    <span>Read case study</span>
-                    <span class="text-2xl ml-3 material-symbols-rounded">east</span>
-                  </a>
-                </a>
-              </li>
-              <li class="h-full flex flex-col max-sm:border-y max-sm:py-10 border-gray-300">
-                <h3 class="text-3xl mb-7">Hera</h3>
-                <a class="h-full flex flex-col justify-between" href="#">
-                  <img src="assets/images/services__client-logo-2.jpg" alt="Hera">
-                  <p class="mt-6">
-                    WebSphere Liberty helped Hera convert a monolithic application to a flexible microservice architecture.
-                  </p>
-                  <a href="#" class="flex mt-8 underline-on-hover items-center text-fuchsia-500">
-                    <span>Read case study</span>
-                    <span class="text-2xl ml-3 material-symbols-rounded">east</span>
-                  </a>
-                </a>
-              </li>
-              <li class="h-full flex flex-col">
-                <h3 class="text-3xl mb-7">GBM</h3>
-                <a class="h-full flex flex-col justify-between" href="#">
-                  <img src="assets/images/services__client-logo-3.jpg" alt="GBM">
-                  <p class="mt-6">
-                    WebSphere Liberty helped GBM provide an environment for customers to modernize their applications.
-                  </p>
-                  <a href="#" class="flex mt-8 underline-on-hover items-center text-fuchsia-500">
-                    <span>Read case study</span>
-                    <span class="text-2xl ml-3 material-symbols-rounded">east</span>
-                  </a>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="testimonials-section py-10 lg:pb-20">
-      <div class="mx-auto max-w-screen-2xl px-4">
-        <div class="flex max-lg:flex-col max-lg:gap-7">
-          <div class="w-1/4">
-            <h2 class="font-medium">Testimonials</h2>
-          </div>
-          <div class="testimonials-swiper swiper flex w-full pb-32 flex-1 gap-32 max-lg:flex-col max-lg:gap-10">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide w-2/3 max-lg:w-full">
-                <h3 class="text-3xl">
-                  “WAS is a robust and extremely reliable product. There is, however, a new competitor and that is WebSphere Liberty.”
-                </h3>
-                <h4 class="mt-8 font-medium">Sean Boyd</h4>
-                <p>Architect at a large bank in Saudi Arabia</p>
-              </div>
-              <div class="swiper-slide w-2/3 max-lg:w-full">
-                <h3 class="text-3xl">
-                  “As soon as we start delivering some first candidates of the applications to be modernized, they notice the advantage.”
-                </h3>
-                <h4 class="mt-8 font-medium">Kilian Niemegeerts</h4>
-                <p>Co-founder, Belgium</p>
-              </div>
-              <div class="swiper-slide w-2/3 max-lg:w-full">
-                <h3 class="text-3xl">
-                  “With just one setup, we can provision and orchestrate many different environments. That reduces our operational expenses in this area by half.”
-                </h3>
-                <h4 class="mt-8 font-medium">Alex Mathews</h4>
-                <p>Business Services, Central America</p>
-              </div>
-            </div>
-            <div class="swiper-pagination lg:text-left"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Achievement Section -->
-    <section class="achievement-section py-12 pb-20 bg-slate-100">
-      <div class="mx-auto max-w-screen-2xl px-4">
-        <div class="flex max-lg:flex-col max-lg:gap-7">
-          <div class="w-1/4 lg:pe-32 max-lg:w-full">
-            <h2 class="font-medium">IBM WebSphere Hybrid Edition named G2 Leader</h2>
-          </div>
-          <div class="flex flex-1 gap-32 max-lg:flex-col-reverse max-lg:gap-10">
-            <div class="w-1/3 max-lg:w-full">
+            <div class="text-lg">
               <p>
-                G2 recognizes IBM WebSphere Hybrid Edition as a Leader in building, deploying and modernizing applications.
+                IBM's core values include a commitment to trust and personal responsibility and a pursuit of innovation that matters to our company and the world. Consistent with these principles, IBM is committed to leading on public policy issues that are relevant to IBM and the world. IBM Government and Regulatory Affairs (GRA) provides worldwide leadership and expertise in advocating and advancing the public policy interests of IBM, its shareholders and employees with governments.
               </p>
-              <a href="#" class="flex underline-on-hover items-center text-fuchsia-500 mt-5">
-                <span>Find out why and read the reviews</span>
+              <p class="my-5">
+                IBM also is committed to meaningful management, oversight, and accurate reporting with respect to our engagement with government officials, and we consistently seek to provide our stockholders with relevant data regarding our public policy engagement.
+              </p>
+              <p class="my-5">
+                Our values also reflect the corporation's long-standing policy against political contributions of any kind, even when permitted by law.
+              </p>
+              <p class="my-5">Therefore IBM:</p>
+              <ul class="list-disc ps-10">
+                <li>does not have a PAC (Political Action Committee),</li>
+                <li>does not engage in independent or electioneering communications as defined by law, and</li>
+                <li>does not provide any financial support to political parties or candidates, directly or indirectly.</li>
+              </ul>
+              <p class="my-5">IBM is proud of the consistently high ratings it has received from independent analysts who examine corporate practices on lobbying and political spending, such as:</p>
+              <ul class="list-disc ps-10">
+                <li>
+                  <a class="text-fuchsia-500 underline" href="#">
+                    The Center for Political Accountability, in conjunction with the Zicklin Center for Business Ethics Research at The Wharton School of the University of Pennsylvania
+                  </a>
+                </li>
+                <li>
+                  <a class="text-fuchsia-500 underline" href="#">
+                    Transparency International UK
+                  </a>
+                </li>
+              </ul>
+              <p class="my-5">
+                Read IBM's policies and practices with regard to public policy matters, including lobbying activities and expenditures, below.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technology Education Section -->
+    <section class="technology-education-section py-12 lg:py-16" id="technology-education">
+      <div class="mx-auto max-w-screen-2xl px-4">
+        <div class="flex max-lg:flex-col max-lg:gap-7">
+          <div class="lg:w-1/4">
+            <h2 class="font-medium">Technology education</h2>
+          </div>
+          <div class="flex flex-col flex-1 gap-16">
+            <div class="w-2/3 max-lg:w-full">
+              <h3 class="text-3xl lg:text-5xl">Learn generative AI</h3>
+              <p class="mt-10">
+                Learn the fundamental concepts for AI and generative AI, including prompt engineering and large language models. Explore the best open source tech (PyTorch, CodeFlare, Caikit, Ray/KubeRay, KServe/ModelMesh, and Hugging Face open source models) that serves as the foundation for the enterprise-ready AI platform (watsonx) so that you can accelerate the impact of AI on your business.
+              </p>
+            </div>
+            <div>
+              <h3 class="text-2xl">Hands-on learning for generative AI technologies</h3>
+              <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7 mt-8">
+                <li class="bg-slate-100 transition-all hover:bg-slate-200">
+                  <a href="#">
+                    <img class="aspect-video object-cover" src="assets/images/company__overview-img-1.jpg" alt="Overview Image 1">
+                    <p class="p-5 flex items-center">
+                      Learn to build with generative AI
+                      <span class="text-fuchsia-500 ml-3 material-symbols-rounded">east</span>
+                    </p>
+                  </a>
+                </li>
+                <li class="bg-slate-100 transition-all hover:bg-slate-200">
+                  <a href="#">
+                    <img class="aspect-video object-cover" src="assets/images/company__overview-img-2.jpg" alt="Overview Image 2">
+                    <p class="p-5 flex items-center">
+                      AI Fundamentals
+                      <span class="text-fuchsia-500 ml-3 material-symbols-rounded">east</span>
+                    </p>
+                  </a>
+                </li>
+                <li class="bg-slate-100 transition-all hover:bg-slate-200">
+                  <a href="#">
+                    <img class="aspect-video object-cover" src="assets/images/company__overview-img-3.jpeg" alt="Overview Image 3">
+                    <p class="p-5 flex items-center">
+                      Skill up on PyTorch
+                      <span class="text-fuchsia-500 ml-3 material-symbols-rounded">east</span>
+                    </p>
+                  </a>
+                </li>
+              </ul>
+              <a class="underline-on-hover text-fuchsia-500 flex items-center mt-10" href="#">
+                <span>View more AI learning content on cognitiveclass.ai</span>
                 <span class="ml-3 material-symbols-rounded">east</span>
               </a>
             </div>
-            <div class="w-3/4 max-lg:w-full aspect-video">
-              <img class="w-full h-full object-cover" src="assets/images/services__achievment-img.jpg" alt="Achivement Image">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Communities Section -->
+    <section class="communities-section lg:pt-64 pt-32 pb-12" id="communities">
+      <div class="bg-fuchsia-600">
+        <div class="mx-auto max-w-screen-2xl px-4">
+          <div class="flex gap-4 sm:gap-7 items-center justify-end -translate-y-24 sm:-translate-y-52">
+            <div class="max-w-full sm:max-w-[37.5%] lg:max-w-[25%]">
+              <img class="w-full object-cover" src="assets/images/company__communities-img-1.png" alt="Community Image 1">
+            </div>
+            <div class="max-w-full sm:max-w-[37.5%] lg:max-w-[30%]">
+              <img class="aspect-video object-cover w-full" src="assets/images/company__communities-img-2.png" alt="Community Image 2">
+            </div>
+          </div>
+          <div class="max-w-5xl sm:-translate-y-24">
+            <h3 class="text-3xl sm:text-4xl xl:text-5xl text-white font-light">
+              IBM is unmatched in the breadth of our open source involvement. From AI and quantum computing, to containers and operating systems, we are actively leading in today's most influential projects.
+            </h3>
+            <div class="inline-block max-sm:mb-14 mt-14">
+              <a class="flex items-center justify-center gap-4 p-4 text-white bg-gray-800 transition-all hover:bg-black" href="#">
+                IBM GitHub Org
+                <svg width="20" fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                  <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                </svg>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Resources Section -->
-    <section class="resources-section py-12 lg:py-16">
+    <!-- What's New Section -->
+    <section class="whats-new-section py-12 lg:py-16 px-4" id="whats-new">
+      <div class="mx-auto max-w-screen-2xl bg-slate-100">
+        <div class="flex justify-between max-lg:flex-col">
+          <div class="p-8 lg:max-w-[50%]">
+            <div class="max-w-lg">
+              <h2>What's new</h2>
+              <h3 class="text-4xl lg:text-6xl mt-5">The Power of AI: Security</h3>
+              <p class="mt-8">Stay ahead of cyber threats with faster incident detection and response using AI and automation technologies.</p>
+            </div>
+          </div>
+          <div class="lg:max-w-[50%] relative">
+            <img class="w-full" src="assets/images/company__whats-new-img.jpg" alt="What's New Image">
+            <div class="absolute right-0 sm:right-3 bottom-0">
+              <a class="bg-zinc-800 py-4 px-5 flex flex-col justify-between w-72 sm:w-96 transition-all hover:bg-zinc-700" href="#">
+                <p class="text-white">Read the report</p>
+                <span class="text-fuchsia-500 mt-28 material-symbols-rounded">east</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Policy Priorities Section -->
+    <section class="key-policy-priorities-section py-12 lg:my-16" id="key-priorites">
       <div class="mx-auto max-w-screen-2xl px-4">
         <div class="flex max-lg:flex-col max-lg:gap-7">
-          <div class="w-1/4">
-            <h2 class="font-medium">Resources</h2>
+          <div class="lg:w-1/4">
+            <h2 class="font-medium">Key Policy Priorities</h2>
           </div>
-          <div class="resources-swiper swiper flex flex-col w-full flex-1">
-            <ul class="swiper-wrapper">
-              <li class="swiper-slide h-auto bg-slate-100 transition-all hover:bg-slate-200">
-                <a class="video-modal-opener flex flex-col justify-between h-full gap-1" href="javascript:void(0)" data-video-id="resources-section-video">
-                  <img src="assets/images/services__resources-img-1.jpg" alt="IBM Cloud® Hyper Protect Crypto Services">
-                  <div class="p-5">
-                    <h3 class="text-2xl mb-10">IBM Cloud® Hyper Protect Crypto Services</h3>
-                    <p>Take exclusive control of encryption keys ina single-tenant key management system with hardware security modules (HSM).</p>
-                    <p class="flex items-center text-fuchsia-500 mt-10">
-                      <span>Watch video</span>
-                      <span class="ml-3 material-symbols-rounded">play_circle</span>
-                    </p>
+          <div class="flex flex-col flex-1 gap-10 max-lg:flex-col">
+            <ul class="accordion-wrapper">
+              <li class="border-t border-gray-300">
+                <button class="accordion-button flex w-full items-center justify-between py-2 lg:py-4 px-1 lg:px-3 border-2 border-transparent hover:bg-gray-200 focus:border-fuchsia-500">
+                  <h2 class="text-base lg:text-lg text-left font-medium">Accelerate American Innovation and Discovery</h2>
+                  <span class="icon transition-all text-2xl lg:text-3xl material-symbols-rounded">expand_more</span>
+                </button>
+                <div class="accordion-content text-base lg:text-lg px-3">
+                  <p class="my-3">
+                    Investments in America's ability to innovate and create entirely new industries lead to jobs and opportunities at home and a stronger and more resilient economy that is prepared to compete globally in cutting-edge technologies. The CHIPS and Science Act is an excellent example of how the nation can promote vitally important technology research in the United States. A supply chain crisis was the forcing function that underscored the urgency of building and designing semiconductors in America. We should act in other equally essential technology areas before the next crisis, and IBM calls on Congress and the Administration to do this by:
+                  </p>
+                  <ul class="my-5 list-disc">
+                    <li class="my-3">
+                      Fully implementing the CHIPS Act and funding the Science Title as authorized by Congress, including funding for the National Science Foundation to build the Technology, Innovation, and Partnerships (TIP) Directorate focusing on emerging technologies and scale a highly skilled workforce. The administration should also expeditiously build the National Semiconductor Technology Center (NSTC) as provided for in the Act.
+                    </li>
+                    <li class="my-3">
+                      Accelerating American R&D through initiatives like the National Artificial Intelligence Research Resource (NAIRR), which would build a data and computing superstructure that allows government, industry, and academia to accelerate AI R&D.
+                    </li>
+                    <li class="my-3">
+                      Prioritizing investments in Quantum Computing, because we should not wait for another crisis to focus on our technological leadership. In recent years Congress has passed bipartisan legislation to support quantum R&D and workforce building, including the National Quantum Initiative Act — which must be reauthorized in 2023 — and the QUEST Act and the Networking Act that will both need to be funded as part of CHIPS. We must continue to prioritize these investments that will spur public-private partnerships and ensure that America remains the unquestioned leader in this game-changing technology — and that we are prepared to address the security implications and threats that will be posed by our adversaries.
+                    </li>
+                    <li>
+                      Enacting R&D expensing, so innovative companies do not face cash flow issues from current laws that require capitalization over time and can instead focus on creating jobs and bolstering American economic prosperity and security.
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="border-t border-gray-300">
+                <button class="accordion-button flex w-full items-center justify-between py-2 lg:py-4 px-1 lg:px-3 border-2 border-transparent hover:bg-gray-200 focus:border-fuchsia-500">
+                  <h2 class="text-base lg:text-lg text-left font-medium">Build a More Resilient, Secure, and Modern Government</h2>
+                  <span class="icon transition-all text-2xl lg:text-3xl material-symbols-rounded">expand_more</span>
+                </button>
+                <div class="accordion-content text-base lg:text-lg px-3">
+                  <p class="my-3">
+                    At a time of conflict and uncertainty, it is more important than ever to fortify government IT systems, so they are robust, resilient, and well-defended against cyberattacks by hostile actors. In any IT system, over-reliance on a single technology exposes a single vector of attack. It then is harder to react to surges in demand and may lead to over-customization, making updates difficult and costly. Congress and the Administration should prioritize investments in technological resiliency. Our leaders can make investments now to ensure federal agencies' IT propels the country forward by:
+                  </p>
+                  <ul class="my-5 list-disc">
+                    <li class="my-3">
+                      Continuing to prioritize and invest in modern, secure, and resilient government IT, like hybrid cloud technology, which is inherently a more secure and flexible infrastructure for our critical missions including military readiness and modern customer service. It avoids the pitfall of a single point of attack, and provides flexible, cutting-edge tech capabilities everywhere from Washington, D.C to Washington state and to places worldwide where American forces are deployed.
+                    </li>
+                    <li class="my-3">
+                      Fully implementing the recently passed FedRAMP Authorization Act with a particular focus on ensuring reciprocity and streamlining the authorization process.
+                    </li>
+                    <li class="my-3">
+                      Focusing on IT that improves the government customer experience. Modern, secure, digital citizen services are paramount to a competitive society, especially when it comes to things like, administering student loans, processing Veterans' benefits, modernizing FEMA flood maps, or delivering programs that serve under-served communities. IBM urges agencies to adopt a hybrid cloud strategy that allows them to integrate the best available commercial platforms to enable modern, digital operations that enhance customer service and provide tools available to accomplish the mission.
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="border-t border-gray-300">
+                <button class="accordion-button flex w-full items-center justify-between py-2 lg:py-4 px-1 lg:px-3 border-2 border-transparent hover:bg-gray-200 focus:border-fuchsia-500">
+                  <h2 class="text-base lg:text-lg text-left font-medium">Strengthen and Diversify the Supply Chain</h2>
+                  <span class="icon transition-all text-2xl lg:text-3xl material-symbols-rounded">expand_more</span>
+                </button>
+                <div class="accordion-content text-base lg:text-lg px-3">
+                  <p class="my-3">
+                    A country's economic stability is only as strong as its supply chain. The recent baby formula shortage in the U.S. is a stark reminder that investing in and maintaining a diverse supply chain is critical to American security and success. However, the key to supply chain security is to use intelligent, targeted policies that protect national security, not overly broad or cumbersome rules that hurt only American firms while foreign competitors capture markets. IBM calls for “Precision Regulation” of the supply chain by:
+                  </p>
+                  <ul class="my-5 list-disc">
+                    <li class="my-3">
+                      Implementing precision export controls, in partnership with global allies, on new technologies like quantum computing, so we can protect our national security without hindering innovation.
+                    </li>
+                    <li class="my-3">
+                      Establishing tools for resilient and responsive software supply chains that provide greater security through understanding and insight into the foundational elements that comprise software (sometimes called a “software bill of materials”) used in critical infrastructure. These tools enable companies and organizations to understand what makes up their code to reach risk-informed decisions about software supply chains and if their software is affected by new vulnerabilities enabling the quick mitigation of any security risks.
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="border-t border-gray-300">
+                <button class="accordion-button flex w-full items-center justify-between py-2 lg:py-4 px-1 lg:px-3 border-2 border-transparent hover:bg-gray-200 focus:border-fuchsia-500">
+                  <h2 class="text-base lg:text-lg text-left font-medium">Build, Train, and Retain a Diverse Workforce</h2>
+                  <span class="icon transition-all text-2xl lg:text-3xl material-symbols-rounded">expand_more</span>
+                </button>
+                <div class="accordion-content text-base lg:text-lg px-3">
+                  <p class="my-3">
+                    American competitiveness relies on a highly skilled and diverse workforce, where a traditional bachelor's or postgraduate degree is not the only pathway to a well-paying career. Our workforce is essential to supporting, developing, and creating the technology solutions that will solve our society's most pressing problems. We can develop and grow a diverse workplace by:
+                  </p>
+                  <ul class="my-5 list-disc">
+                    <li class="my-3">
+                      Ensuring the Americans behind American innovation are supported by aligning key federal programs to focus on retraining and new job-relevant skills acquisition and making existing federal student aid funding and programs available for targeted learning opportunities such as apprenticeships, internships, or technology certificate programs, and for workers in retraining or upskilling programs.
+                    </li>
+                    <li class="my-3">
+                      Increasing job opportunities for more high skilled workers by reducing college degree mandates imposed on federal
+                    </li>
+                    <li class="my-3">
+                      Investing in workforce development, particularly through the regional technology hubs authorized in the CHIPS and Science Act, to expand the innovation economy beyond the coasts and increase career-enhancing experiential learning through programs that help train a skilled and diverse STEM workforce.
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="border-y border-gray-300">
+                <button class="accordion-button flex w-full items-center justify-between py-2 lg:py-4 px-1 lg:px-3 border-2 border-transparent hover:bg-gray-200 focus:border-fuchsia-500">
+                  <h2 class="text-base lg:text-lg text-left font-medium">Strengthen Trust in Technology</h2>
+                  <span class="icon transition-all text-2xl lg:text-3xl material-symbols-rounded">expand_more</span>
+                </button>
+                <div class="accordion-content text-base lg:text-lg px-3">
+                  <p class="my-3">
+                    We must also strengthen societal trust in technology to create a competitive technological economy. Consumers are understandably concerned about the use of today's rapidly changing technologies and the data that feeds into them. Still, we can drive progress and enhance consumer protections and business innovation by:
+                  </p>
+                  <ul class="my-5 list-disc">
+                    <li class="my-3">
+                      Advancing national privacy legislation that provides strong consistent consumer data protection through pre-emption of state laws and common-sense national privacy standards that enable beneficial use of data.
+                    </li>
+                    <li class="my-3">
+                      Avoiding provisions like a private right of action that creates uncertainty among consumers and businesses without creating strong consumer protection and that undermines the predictability of a national privacy standard. People, not plaintiff's attorneys, should benefit most from a national privacy law.
+                    </li>
+                    <li class="my-3">
+                      Continuing collaboration with Europe and other like-minded governments on targeted, risk-based regulation of technology like artificial intelligence that differentiates between software that automates everyday tasks and software that advises humans in sensitive areas like healthcare, finance, or safety, and placing robust regulations on those use cases of AI with the most potential to cause societal harm.
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <ul class="grid mt-32 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+          <li class="h-auto bg-slate-100 transition-all hover:bg-slate-200">
+            <a class="flex flex-col justify-between h-full gap-1" href="#">
+              <img src="assets/images/company__inside-ibm-img-1.jpg" alt="Inside IBM Image 1">
+              <div class="p-5">
+                <p>Careers at IBM</p>
+                <h3 class="text-2xl mt-2">From safer food supply to ethical AI, tackle the world's toughest problems</h3>
+                <span class="mt-10 text-fuchsia-500 material-symbols-rounded">east</span>
+              </div>
+            </a>
+          </li>
+          <li class="h-auto bg-slate-100 sm:border-l lg:border-x border-gray-300 transition-all hover:bg-slate-200">
+            <a class="flex flex-col justify-between h-full gap-1" href="#">
+              <img src="assets/images/company__inside-ibm-img-2.png" alt="Inside IBM Image 2">
+              <div class="p-5">
+                <p>IBM Research</p>
+                <h3 class="text-2xl mt-2">See the latest technology developed by IBM scientists and design thinkers</h3>
+                <span class="mt-10 text-fuchsia-500 material-symbols-rounded">east</span>
+              </div>
+            </a>
+          </li>
+          <li class="h-auto bg-slate-100 sm:border-r border-gray-300 transition-all hover:bg-slate-200">
+            <a class="flex flex-col justify-between h-full gap-1" href="#">
+              <img src="assets/images/company__inside-ibm-img-3.jpg" alt="Inside IBM Image 3">
+              <div class="p-5">
+                <p>Training and skills</p>
+                <h3 class="text-2xl mt-2">Power your future in tech with job skills, courses and credentials—for free</h3>
+                <span class="mt-10 text-fuchsia-500 material-symbols-rounded">east</span>
+              </div>
+            </a>
+          </li>
+          <li class="h-auto bg-slate-100 transition-all hover:bg-slate-200">
+            <a class="flex flex-col justify-between h-full gap-1" href="#">
+              <img src="assets/images/company__inside-ibm-img-4.jpg" alt="Inside IBM Image 4">
+              <div class="p-5">
+                <p>Corporate social responsibility</p>
+                <h3 class="text-2xl mt-2">IBM aspires to make a positive impact on the world and the places</h3>
+                <span class="mt-10 text-fuchsia-500 material-symbols-rounded">east</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Jobs Section -->
+    <section class="jobs-section py-12 lg:py-16 bg-slate-100" id="jobs">
+      <div class="mx-auto max-w-screen-2xl px-4">
+        <div class="flex max-lg:flex-col max-lg:gap-7">
+          <div class="lg:w-1/4">
+            <h2 class="font-medium">Jobs</h2>
+          </div>
+          <div class="flex flex-col flex-1 gap-10 max-lg:flex-col">
+            <div class="w-2/3 max-lg:w-full">
+              <h3 class="text-3xl lg:text-4xl">Featured Project Management jobs</h3>
+              <p class="mt-5 text-lg">Apply to recently posted jobs.</p>
+            </div>
+           <div>
+            <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+              <li>
+                <a class="h-full bg-white p-4 flex flex-col justify-between transition-all hover:bg-slate-200" href="#">
+                  <div>
+                    <p>Project Management</p>
+                    <h3 class="text-xl mt-2">Category Manager - Corporate & Professional Services</h3>
+                  </div>
+                  <div class="mt-14">
+                    <p>Experience: Professional</p>
+                    <p>Location: Multiple Cities</p>
+                    <span class="text-fuchsia-500 mt-5 material-symbols-rounded">east</span>
                   </div>
                 </a>
               </li>
-              <li class="swiper-slide h-auto bg-slate-100 transition-all hover:bg-slate-200">
-                <a class="flex flex-col justify-between h-full gap-1" href="#">
-                  <img src="assets/images/services__resources-img-2.jpg" alt="IBM Cloud® Hyper Protect Virtual Servers">
-                  <div class="p-5">
-                    <h3 class="text-2xl mb-10">IBM Cloud® Hyper Protect Virtual Servers</h3>
-                    <p>Gain complete authority over Linux?-based virtual servers for workloads with sensitive data and business IP in the cloud.</p>
-                    <p class="flex items-center text-fuchsia-500 mt-10">
-                      <span>Learn more</span>
-                      <span class="ml-3 material-symbols-rounded">east</span>
-                    </p>
+              <li>
+                <a class="h-full bg-white p-4 flex flex-col justify-between transition-all hover:bg-slate-200" href="#">
+                  <div>
+                    <p>Project Management</p>
+                    <h3 class="text-xl mt-2">Sponsorships & Conferences Manager</h3>
+                  </div>
+                  <div class="mt-14">
+                    <p>Experience: Professional</p>
+                    <p>Location: Multiple Cities</p>
+                    <span class="text-fuchsia-500 mt-5 material-symbols-rounded">east</span>
                   </div>
                 </a>
               </li>
-              <li class="swiper-slide h-auto bg-slate-100 transition-all hover:bg-slate-200">
-                <a class="flex flex-col justify-between h-full gap-1" href="#">
-                  <img src="assets/images/services__resources-img-3.jpg" alt="IBM Cloud® Hyper Protect DBaaS">
-                  <div class="p-5">
-                    <h3 class="text-2xl mb-10">IBM Cloud® Hyper Protect DBaaS</h3>
-                    <p>Provision, manage including MongoDB and  PostgreSQL, in a 100% tamper-proof environment.</p>
-                    <p class="flex items-center text-fuchsia-500 mt-10">
-                      <span>Learn more</span>
-                      <span class="ml-3 material-symbols-rounded">east</span>
-                    </p>
+              <li>
+                <a class="h-full bg-white p-4 flex flex-col justify-between transition-all hover:bg-slate-200" href="#">
+                  <div>
+                    <p>Project Management</p>
+                    <h3 class="text-xl mt-2">Sr. Salesforce Technical Project Manager</h3>
+                  </div>
+                  <div class="mt-14">
+                    <p>Experience: Professional</p>
+                    <p>Location: Multiple Cities</p>
+                    <span class="text-fuchsia-500 mt-5 material-symbols-rounded">east</span>
                   </div>
                 </a>
               </li>
-              <li class="swiper-slide h-auto bg-slate-100 transition-all hover:bg-slate-200">
-                <a class="flex flex-col justify-between h-full gap-1" href="#">
-                  <img src="assets/images/services__resources-img-4.jpg" alt="IBM® Secure Execution for Linux">
-                  <div class="p-5">
-                    <h3 class="text-2xl mb-10">IBM® Secure Execution for Linux</h3>
-                    <p>Isolate workloads at granularity, scale and protect them from cyber threats through a trusted execution environment (TEE).</p>
-                    <p class="flex items-center text-fuchsia-500 mt-10">
-                      <span>Learn more</span>
-                      <span class="ml-3 material-symbols-rounded">east</span>
-                    </p>
+              <li>
+                <a class="h-full bg-white p-4 flex flex-col justify-between transition-all hover:bg-slate-200" href="#">
+                  <div>
+                    <p>Project Management</p>
+                    <h3 class="text-xl mt-2">PRISM Training Specialist</h3>
+                  </div>
+                  <div class="mt-14">
+                    <p>Experience: Professional</p>
+                    <p>Location: Multiple Cities</p>
+                    <span class="text-fuchsia-500 mt-5 material-symbols-rounded">east</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="h-full bg-white p-4 flex flex-col justify-between transition-all hover:bg-slate-200" href="#">
+                  <div>
+                    <p>Project Management</p>
+                    <h3 class="text-xl mt-2">Senior Business Analyst</h3>
+                  </div>
+                  <div class="mt-14">
+                    <p>Experience: Professional</p>
+                    <p>Location: Multiple Cities</p>
+                    <span class="text-fuchsia-500 mt-5 material-symbols-rounded">east</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="h-full bg-white p-4 flex flex-col justify-between transition-all hover:bg-slate-200" href="#">
+                  <div>
+                    <p>Project Management</p>
+                    <h3 class="text-xl mt-2">Technical Product Manager - Security</h3>
+                  </div>
+                  <div class="mt-14">
+                    <p>Experience: Professional</p>
+                    <p>Location: Multiple Cities</p>
+                    <span class="text-fuchsia-500 mt-5 material-symbols-rounded">east</span>
                   </div>
                 </a>
               </li>
             </ul>
-            <div class="flex gap-3 mt-10 items-center justify-center md:justify-end">
-              <button class="swiper-custom-btn-prev rounded-sm h-10 w-10 border border-fuchsia-500 text-fuchsia-500 transition-all hover:bg-fuchsia-500 hover:text-white material-symbols-rounded">chevron_left</button>
-              <p class="swiper-pagination-counter"></p>
-              <button class="swiper-custom-btn-next rounded-sm h-10 w-10 border border-fuchsia-500 text-fuchsia-500 transition-all hover:bg-fuchsia-500 hover:text-white material-symbols-rounded">chevron_right</button>
+            <div class="inline-block mt-10">
+              <a href="#" class="flex items-center py-2 transition-all border text-white max-sm:w-full max-sm:justify-between px-5 bg-fuchsia-500 hover:bg-fuchsia-600">
+                See all jobs
+                <span class="text-xl mt-0.5 ms-3 material-symbols-rounded">east</span>
+              </a>
             </div>
+           </div>
           </div>
-        </div>
-      </div>
-
-      <!-- Video Modal Popup -->
-      <div class="custom-video-modal fixed top-0 left-0 z-30 w-full h-full bg-black bg-opacity-80 flex items-center justify-center px-2" id="resources-section-video">
-        <div class="relative bg-white aspect-video max-w-4xl w-full p-1 md:p-3">
-          <div class="close-btn absolute right-0 top-0 cursor-pointer bg-white flex items-center justify-center h-10 w-10">
-            <span class="material-symbols-rounded">close</span>
-          </div>
-          <iframe class="w-full h-full" src="https://www.youtube.com/embed/IPwCsMG-JJg?si=h1-UuASEEKQXBGNl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
       </div>
     </section>
 
-    <!-- Related Products Section -->
-    <section class="related-products-section py-12 lg:py-16">
+    <!-- Join Our Talent Section -->
+    <section class="join-our-talent-section py-12 lg:py-20" id="join">
       <div class="mx-auto max-w-screen-2xl px-4">
         <div class="flex max-lg:flex-col max-lg:gap-7">
-          <div class="max-sm:w-full w-1/4">
-            <h2 class="font-medium">Related products</h2>
+          <div class="lg:w-1/4">
+            <h2 class="font-medium">Join</h2>
           </div>
-          <div class="products-swiper swiper flex flex-col w-full flex-1">
-            <ul class="swiper-wrapper">
-              <li class="swiper-slide bg-slate-100 h-auto transition-all hover:bg-slate-200">
-                <a class="flex flex-col justify-between h-full gap-10  p-4" href="#">
-                  <h3 class="text-2xl mb-5">IBM WebSphere Automation</h3>
-                  <p>Reduce costs and security risks by automating threat identification and remediation for your entire WebSphere estate.</p>
-                  <span class="text-fuchsia-500 material-symbols-rounded">east</span>
-                </a>
-              </li>
-              <li class="swiper-slide bg-slate-100 h-auto transition-all hover:bg-slate-200">
-                <a class="flex flex-col justify-between h-full gap-10 p-4" href="#">
-                  <h3 class="text-2xl mb-5">IBM Mono2Micro</h3>
-                  <p>Utilize the power of AI to refactor Java monoliths into Liberty microservices</p>
-                  <span class="text-fuchsia-500 material-symbols-rounded">east</span>
-                </a>
-              </li>
-              <li class="swiper-slide bg-slate-100 h-auto transition-all hover:bg-slate-200">
-                <a class="flex flex-col justify-between h-full gap-10 p-4" href="#">
-                  <h3 class="text-2xl mb-5">IBM WebSphere Liberty</h3>
-                  <p>This cloud-native runtime leverages and extends your existing developer skills to deliver new cloud-native applications quickly, reliably and securely.</p>
-                  <span class="text-fuchsia-500 material-symbols-rounded">east</span>
-                </a>
-              </li>
-            </ul>
-            <div class="flex gap-3 mt-10 justify-center md:justify-end">
-              <button class="swiper-custom-btn-prev rounded-sm h-10 w-10 border border-fuchsia-500 text-fuchsia-500 transition-all hover:bg-fuchsia-500 hover:text-white material-symbols-rounded">chevron_left</button>
-              <button class="swiper-custom-btn-next rounded-sm h-10 w-10 border border-fuchsia-500 text-fuchsia-500 transition-all hover:bg-fuchsia-500 hover:text-white material-symbols-rounded">chevron_right</button>
+          <div class="max-w-xl">
+            <h2 class="text-3xl lg:text-6xl font-light leading-tight">Join our talent network</h2>
+            <p class="my-10">Stay up-to-date on career opportunities in Project Management that match your skills and interests.</p>
+            <div class="sm:inline-block">
+              <a href="#" class="flex items-center py-2 transition-all border text-white max-sm:w-full max-sm:justify-between px-5 bg-fuchsia-500 hover:bg-fuchsia-600">
+                Register
+                <span class="text-xl mt-0.5 ms-3 material-symbols-rounded">east</span>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Next Step Section -->
-    <section class="next-step-section bg-black py-9 max-lg:py-10">
-      <div class="flex items-center justify-between mx-auto max-w-screen-2xl px-4 max-lg:flex-col max-lg:items-start">
-        <div>
-          <h2 class="text-white text-2xl font-semibold">Next step</h2>
-          <h3 class="text-white text-2xl max-w-2xl mt-4">
-            Book a 1-on-1 consultation with an IBM expert to discuss how IBM WebSphere Hybrid Edition can help you create new Java applications.
-          </h3>
-        </div>
-        <div class="flex flex-col gap-4 flex-1 max-w-xs max-lg:mt-10 w-full max-sm:max-w-full">
-          <a href="#" class="flex items-center justify-between py-3 text-white transition-all max-sm:w-full bg-fuchsia-600 px-5 hover:bg-fuchsia-700">
-            Book a consultation
-            <span class="text-xl material-symbols-rounded">east</span>
-          </a>
-        </div>
-      </div>
-    </section>
-    
     <!-- Footer Section -->
     <footer class="bg-[#262626]">
       <div class="py-10 px-4 mx-auto text-white max-w-screen-2xl">
@@ -2711,110 +2752,73 @@
         </div>
       </div>
     </footer>
-    
+
     <script>
       $(document).ready(function() {
-        // Video modal opener or link click
-        $(".video-modal-opener").on("click", function() {
-          const videoId = $(this).data("video-id");
-          const videoModal = $(`.custom-video-modal#${videoId}`);
-          videoModal.addClass("active");
-
-          $(videoModal).find(".close-btn").on("click", function() {
-            videoModal.removeClass("active");
-          });
+        // Accordion content show hide function
+        $(".accordion-wrapper .accordion-button").on("click", function() {
+          $(this).parent().toggleClass("active");
         });
 
-        // Use cases section's tabs click
-        $(".use-cases-section .tab-button").on("click", function() {
-          $(".use-cases-section .tab-button.active").removeClass("active");
-          $(this).addClass("active");
-
-          const tabId = $(this).data("tab-id");
-          if($(window).outerWidth() >= 1024) {
-                $(".use-cases-section .tab-content-list .tab-content.active").removeClass("active");
-                $(`.use-cases-section .tab-content-list #${tabId}`).toggleClass("active");
-            } else {
-                $(".use-cases-section .tab-button-list .tab-content").removeClass("active");
-                $(this).parent().find(".tab-content").addClass("active");
-            }
-        });
-
-        // Initialize Testimonials Swiper slider
-        new Swiper('.testimonials-swiper', {
-          loop: true,
-          pagination: {
-            el: '.testimonials-swiper .swiper-pagination',
-            clickable: true
+        // Function to scroll to the selected section with an offset
+        function updateActiveSection(selectedSectionId) {
+          const selectedSection = $(`section#${selectedSectionId}`)[0];
+  
+          if (selectedSection) {
+            const sectionTop = $(selectedSection).offset().top;
+            window.scrollTo({
+              top: sectionTop - 100,
+              behavior: "smooth"
+            });
           }
-        });
-
-        // Initialize Resources Swiper slider
-        const resourcesSwiper = new Swiper('.resources-swiper', {
-          slidesPerView: 3,
-          slidesPerGroup: 3,
-          spaceBetween: 20,
-          navigation: {
-            nextEl: '.resources-swiper .swiper-custom-btn-next',
-            prevEl: '.resources-swiper .swiper-custom-btn-prev',
-          },
-          breakpoints: {
-            0: {
-              slidesPerView: 1,
-              slidesPerGroup: 1,
-              spaceBetween: 20,
-            },
-            768: {
-              slidesPerView: 2,
-              slidesPerGroup: 2,
-              spaceBetween: 20,
-            },
-            1024: {
-              slidesPerView: 3,
-              slidesPerGroup: 3,
-              spaceBetween: 20,
-            },
-          },
-          on: {
-            init: function () {
-              updateCounter(this);
-            },
-            slideChange: function () {
-              updateCounter(this);
-            }
-          },
-        });
-        
-        function updateCounter(swiper) {
-          const totalSlides = Math.ceil(swiper.slides.length / swiper.params.slidesPerGroup);
-          const currentSlide = Math.ceil(swiper.activeIndex / swiper.params.slidesPerGroup) + 1;
-          $('.swiper-pagination-counter').text(currentSlide + ' / ' + totalSlides);
         }
 
-        // Initialize Products Swiper slider
-        new Swiper('.products-swiper', {
-          slidesPerView: 3,
-          slidesPerGroup: 3,
-          spaceBetween: 20,
-          navigation: {
-            nextEl: '.products-swiper .swiper-custom-btn-next',
-            prevEl: '.products-swiper .swiper-custom-btn-prev',
-          },
-          breakpoints: {
-            0: {
-              slidesPerView: 1,
-              spaceBetween: 20,
-            },
-            768: {
-              slidesPerView: 2,
-              spaceBetween: 20,
-            },
-            1024: {
-              slidesPerView: 3,
-              spaceBetween: 20,
-            },
-          }
+        // Click handler for tab links in the horizontal tab menu
+        $(".horizontal-tab-menu .tab-link").on("click", function() {
+            const selectedSectionId = $(this).data("section-id");
+            updateActiveSection(selectedSectionId)
         });
+
+        // Change handler for the select element in the horizontal tab menu
+        $(".horizontal-tab-menu select").on("change", function() {
+          const selectedSectionId = $(this).val();
+          updateActiveSection(selectedSectionId)
+        });
+
+        // Function to update the active tab based on scroll position
+        function updateActiveTab() {
+          const windowHeight = window.innerHeight;
+          const scrollPosition = window.scrollY;
+
+          $("section").each(function() {
+            const section = $(this);
+            const sectionTop = section.offset().top;
+            const sectionHeight = section.outerHeight();
+
+            if(sectionTop <= scrollPosition + windowHeight * 0.35 && sectionTop + sectionHeight > scrollPosition + windowHeight * 0.35) {
+              const sectionId = section.attr("id");
+              const tabLink = $(`.horizontal-tab-menu .tab-link[data-section-id='${sectionId}']`);
+
+              if(tabLink.length <= 0) return;
+
+              $(".horizontal-tab-menu .tab-link.active").removeClass("active");
+              tabLink.addClass("active");
+
+              $(".horizontal-tab-menu select option").each(function () {
+                if ($(this).val() === sectionId) {
+                  $(this).prop("selected", true);
+                } else {
+                  $(this).prop("selected", false);
+                }
+              });
+            }
+          })
+        }
+
+        // Attach the scroll event listener to update the active tab
+        $(window).on("scroll", updateActiveTab);
+
+        updateActiveTab();
       });
     </script>
   </body>

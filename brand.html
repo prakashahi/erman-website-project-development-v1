@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NTCS - Nanofibers Perfected</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="assets/css/global.css">
-    <link rel="stylesheet" href="assets/css/company.css">
+    <link rel="stylesheet" href="assets/css/brand.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="assets/js/global.js" defer></script>
@@ -2086,7 +2088,7 @@
         <li class="flex items-center text-gray-400 gap-1">
         <span class="text-xl material-symbols-rounded">chevron_right</span>
           <div class="flex items-center transition-all hover:text-fuchsia-500">
-            <a href="#">Company</a>
+            <a href="#">Brand</a>
           </div>
         </li>
         <li class="flex items-center text-gray-400 gap-1">
@@ -2105,24 +2107,20 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-section flex flex-col-reverse relative md:h-[55vh] max-md:pb-10">
-      <img class="h-full w-full object-cover" src="assets/images/company__hero-bg.jpg" alt="Hero Image">
+    <section class="hero-section flex flex-col-reverse relative md:h-[55vh] max-sm:pb-0 max-md:pb-10 bg-zinc-950">
+      <img class="h-full w-full object-cover" src="assets/images/brand__hero-bg.jpg" alt="Hero Image">
       <div class="md:absolute md:top-0 w-full h-full py-10">
         <div class="mx-auto max-w-screen-2xl h-full px-4">
-          <div class="max-w-2xl flex flex-col justify-between h-full">
-            <h1 class="max-sm:text-3xl text-5xl leading-snug">IBM Cloud Virtual Server for VPC</h1>
+          <div class="max-w-xl flex flex-col justify-between h-full">
+            <h1 class="max-sm:text-3xl text-5xl leading-snug text-white">IBM Quantum systems</h1>
             <div class="max-md:mt-10">
-              <h3 class="text-xl">
-                Highly scalable, single-tenant and multi-tenant virtual machines you can launch fast for maximum network isolation and control. Intel Xeon processors help make it simple, powerful and secure.
+              <h3 class="text-xl text-white">
+                IBM Quantum leads the world in quantum computing systems. We have over 20 systems worldwide, based on our iconic System One.
               </h3>
-              <div class="flex gap-4 mt-7 max-sm:flex-col">
-                <a href="#" class="flex items-center py-2 text-white transition-all max-sm:w-full max-sm:justify-between bg-fuchsia-600 px-7 hover:bg-fuchsia-700">
-                  Configure, price and quote
-                  <span class="text-xl mt-0.5 ms-3 material-symbols-rounded"> east </span>
-                </a>
-                <a href="#" class="flex items-center py-2 transition-all border text-fuchsia-500 max-sm:w-full max-sm:justify-between border-fuchsia-500 px-7 hover:bg-fuchsia-500 hover:text-white">
-                  Create an account
-                  <span class="text-xl mt-0.5 ms-3 material-symbols-rounded"> east </span>
+              <div class="mt-7 inline-block max-w-xs">
+                <a href="#" class="flex items-center py-2 text-white transition-all bg-fuchsia-600 px-5 hover:bg-fuchsia-700">
+                  See our new development roadmap
+                  <span class="text-xl mt-0.5 ms-3 material-symbols-rounded">play_circle</span>
                 </a>
               </div>
             </div>
@@ -2134,26 +2132,20 @@
     <!-- Sticky Horizontal Tab Menu -->
     <nav class="horizontal-tab-menu sticky z-[9] top-[48.5px] lg:top-[64px] bg-white lg:border-b border-gray-300">
       <ul class="hidden lg:flex mx-auto max-w-screen-2xl">
-        <li class="tab-link active border-b-[3px] border-transparent" data-section-id="our-purpose">
-          <a class="py-3 px-4 block" href="javascript:void(0)">Our purpose</a>
-        </li>
-        <li class="tab-link border-b-[3px] border-transparent" data-section-id="overview">
+        <li class="tab-link active border-b-[3px] border-transparent" data-section-id="overview">
           <a class="py-3 px-4 block" href="javascript:void(0)">Overview</a>
         </li>
-        <li class="tab-link border-b-[3px] border-transparent" data-section-id="technology-education">
-          <a class="py-3 px-4 block" href="javascript:void(0)">Technology education</a>
+        <li class="tab-link border-b-[3px] border-transparent" data-section-id="significant-figures">
+          <a class="py-3 px-4 block" href="javascript:void(0)">Significant figures</a>
         </li>
-        <li class="tab-link border-b-[3px] border-transparent" data-section-id="communities">
-          <a class="py-3 px-4 block" href="javascript:void(0)">Communities</a>
+        <li class="tab-link border-b-[3px] border-transparent" data-section-id="browse-technology">
+          <a class="py-3 px-4 block" href="javascript:void(0)">Browse Technology</a>
         </li>
-        <li class="tab-link border-b-[3px] border-transparent" data-section-id="whats-new">
-          <a class="tab-link py-3 px-4 block" href="javascript:void(0)">What's new</a>
+        <li class="tab-link border-b-[3px] border-transparent" data-section-id="brand">
+          <a class="py-3 px-4 block" href="javascript:void(0)">Brand</a>
         </li>
-        <li class="tab-link border-b-[3px] border-transparent" data-section-id="key-priorites">
-          <a class="tab-link py-3 px-4 block" href="javascript:void(0)">Key priorites</a>
-        </li>
-        <li class="tab-link border-b-[3px] border-transparent" data-section-id="jobs">
-          <a class="tab-link py-3 px-4 block" href="javascript:void(0)">Jobs</a>
+        <li class="tab-link border-b-[3px] border-transparent" data-section-id="innovations">
+          <a class="tab-link py-3 px-4 block" href="javascript:void(0)">Innovations</a>
         </li>
         <li class="tab-link border-b-[3px] border-transparent" data-section-id="join">
           <a class="tab-link py-3 px-4 block" href="javascript:void(0)">Join</a>
@@ -2161,40 +2153,16 @@
       </ul>
       <div class="relative flex justify-between items-center cursor-pointer lg:hidden bg-white shadow-lg transition-all hover:bg-gray-100">
         <select class="w-full bg-transparent cursor-pointer py-3 px-4 outline-none">
-          <option value="our-purpose" selected>Our purpose</option>
-          <option value="overview">Overview</option>
-          <option value="technology-education">Technology education</option>
-          <option value="communities">Communities</option>
-          <option value="whats-new">What's new</option>
-          <option value="key-priorites">Key priorites</option>
-          <option value="jobs">Jobs</option>
+          <option value="overview" selected>Overview</option>
+          <option value="significant-figures">Significant figures</option>
+          <option value="browse-technology">Browse Technology</option>
+          <option value="brand">Brand</option>
+          <option value="innovations">Innovations</option>
           <option value="join">Join</option>
         </select>
         <span class="absolute select-none pointer-events-none right-4 material-symbols-rounded">list</span>
       </div>
     </nav>
-
-    <!-- Our Purpose Section -->
-    <section class="our-purpose-section py-12 lg:my-16" id="our-purpose">
-      <div class="mx-auto max-w-screen-2xl px-4">
-        <div class="flex max-lg:flex-col max-lg:gap-7">
-          <div class="lg:w-1/4">
-            <h2 class="font-medium">Our Purpose</h2>
-          </div>
-          <div class="flex flex-1 gap-32 max-lg:flex-col max-lg:gap-10">
-            <div class="w-2/3 max-lg:w-full">
-              <h3 class="text-3xl lg:text-5xl leading-snug">
-                To be the <span class="text-fuchsia-500">catalyst</span> that makes the world work better
-                <span class="translate-y-2 lg:translate-y-3 text-3xl lg:text-5xl text-fuchsia-500 rotate-[140deg] material-symbols-rounded select-none">switch_access_shortcut</span>
-              </h3>
-              <p class="mt-10 text-xl">
-                IBM aspires to make a lasting, positive impact on the world in business ethics, our environment, and the communities in which we work and live
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- Overview Section -->
     <section class="overview-section py-12 lg:my-16" id="overview">
@@ -2203,38 +2171,17 @@
           <div class="lg:w-1/4">
             <h2 class="font-medium">Overview</h2>
           </div>
-          <div class="flex flex-1 gap-32 max-lg:flex-col max-lg:gap-10">
-            <div class="text-lg">
-              <p>
+          <div class="flex flex-1 max-w-3xl">
+            <div>
+              <h3 class="text-3xl lg:text-5xl mb-10">The largest, highest performing fleet of quantum systems in the world</h3>
+              <p class="lg:py-3">
                 IBM's core values include a commitment to trust and personal responsibility and a pursuit of innovation that matters to our company and the world. Consistent with these principles, IBM is committed to leading on public policy issues that are relevant to IBM and the world. IBM Government and Regulatory Affairs (GRA) provides worldwide leadership and expertise in advocating and advancing the public policy interests of IBM, its shareholders and employees with governments.
               </p>
-              <p class="my-5">
-                IBM also is committed to meaningful management, oversight, and accurate reporting with respect to our engagement with government officials, and we consistently seek to provide our stockholders with relevant data regarding our public policy engagement.
+              <p class="py-3">
+                Today, IBM Quantum System One is the backbone of our global fleet, with additional systems deployed on-site with strategic partners on three continents.
               </p>
-              <p class="my-5">
-                Our values also reflect the corporation's long-standing policy against political contributions of any kind, even when permitted by law.
-              </p>
-              <p class="my-5">Therefore IBM:</p>
-              <ul class="list-disc ps-10">
-                <li>does not have a PAC (Political Action Committee),</li>
-                <li>does not engage in independent or electioneering communications as defined by law, and</li>
-                <li>does not provide any financial support to political parties or candidates, directly or indirectly.</li>
-              </ul>
-              <p class="my-5">IBM is proud of the consistently high ratings it has received from independent analysts who examine corporate practices on lobbying and political spending, such as:</p>
-              <ul class="list-disc ps-10">
-                <li>
-                  <a class="text-fuchsia-500 underline" href="#">
-                    The Center for Political Accountability, in conjunction with the Zicklin Center for Business Ethics Research at The Wharton School of the University of Pennsylvania
-                  </a>
-                </li>
-                <li>
-                  <a class="text-fuchsia-500 underline" href="#">
-                    Transparency International UK
-                  </a>
-                </li>
-              </ul>
-              <p class="my-5">
-                Read IBM's policies and practices with regard to public policy matters, including lobbying activities and expenditures, below.
+              <p class="py-3">
+                As our quantum processors become larger, modular, and more powerful, we are introducing the IBM Quantum System Two to support the next generation of quantum computers.
               </p>
             </div>
           </div>
@@ -2242,401 +2189,337 @@
       </div>
     </section>
 
-    <!-- Technology Education Section -->
-    <section class="technology-education-section py-12 lg:py-16" id="technology-education">
+    <!-- Significant Figures Section -->
+    <section class="significant-figures-section py-12 lg:my-16" id="significant-figures">
       <div class="mx-auto max-w-screen-2xl px-4">
         <div class="flex max-lg:flex-col max-lg:gap-7">
           <div class="lg:w-1/4">
-            <h2 class="font-medium">Technology education</h2>
+            <h2 class="font-medium">Significant figures</h2>
           </div>
-          <div class="flex flex-col flex-1 gap-16">
-            <div class="w-2/3 max-lg:w-full">
-              <h3 class="text-3xl lg:text-5xl">Learn generative AI</h3>
-              <p class="mt-10">
-                Learn the fundamental concepts for AI and generative AI, including prompt engineering and large language models. Explore the best open source tech (PyTorch, CodeFlare, Caikit, Ray/KubeRay, KServe/ModelMesh, and Hugging Face open source models) that serves as the foundation for the enterprise-ready AI platform (watsonx) so that you can accelerate the impact of AI on your business.
-              </p>
-            </div>
-            <div>
-              <h3 class="text-2xl">Hands-on learning for generative AI technologies</h3>
-              <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7 mt-8">
-                <li class="bg-slate-100 transition-all hover:bg-slate-200">
-                  <a href="#">
-                    <img class="aspect-video object-cover" src="assets/images/company__overview-img-1.jpg" alt="Overview Image 1">
-                    <p class="p-5 flex items-center">
-                      Learn to build with generative AI
-                      <span class="text-fuchsia-500 ml-3 material-symbols-rounded">east</span>
+          <div class="flex flex-1">
+            <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 border border-gray-200">
+              <li>
+                <a class="p-4 h-full flex flex-col transition-all hover:bg-slate-200 max-lg:border-b sm:border-r max-sm:border-gray-300" href="#">
+                  <h3 class="text-2xl">2.2 trillion+</h3>
+                  <div class="flex flex-col justify-between h-full mt-12">
+                    <p>
+                      Our 450,000+ member userbase has run 2.2 trillion+ circuits on our quantum systems. Read the Qiskit blog to see what they're doing.
                     </p>
-                  </a>
-                </li>
-                <li class="bg-slate-100 transition-all hover:bg-slate-200">
-                  <a href="#">
-                    <img class="aspect-video object-cover" src="assets/images/company__overview-img-2.jpg" alt="Overview Image 2">
-                    <p class="p-5 flex items-center">
-                      AI Fundamentals
-                      <span class="text-fuchsia-500 ml-3 material-symbols-rounded">east</span>
+                    <span class="text-fuchsia-500 mt-4 text-2xl material-symbols-rounded">east</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="p-4 h-full flex flex-col transition-all hover:bg-slate-200 max-sm:border-b max-sm:border-gray-300 lg:border-r" href="#">
+                  <h3 class="text-2xl">512</h3>
+                  <div class="flex flex-col justify-between h-full mt-12">
+                    <p>
+                      Quantum volume achieved on our Egret R1 processor.
                     </p>
-                  </a>
-                </li>
-                <li class="bg-slate-100 transition-all hover:bg-slate-200">
-                  <a href="#">
-                    <img class="aspect-video object-cover" src="assets/images/company__overview-img-3.jpeg" alt="Overview Image 3">
-                    <p class="p-5 flex items-center">
-                      Skill up on PyTorch
-                      <span class="text-fuchsia-500 ml-3 material-symbols-rounded">east</span>
+                    <span class="text-fuchsia-500 mt-4 text-2xl material-symbols-rounded">east</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="p-4 h-full flex flex-col transition-all hover:bg-slate-200" href="#">
+                  <h3 class="text-2xl">433</h3>
+                  <div class="flex flex-col justify-between h-full mt-12">
+                    <p>
+                      Qubits on the Osprey chip, our latest processor announced in November 2022. Learn about Osprey.
                     </p>
-                  </a>
-                </li>
-              </ul>
-              <a class="underline-on-hover text-fuchsia-500 flex items-center mt-10" href="#">
-                <span>View more AI learning content on cognitiveclass.ai</span>
-                <span class="ml-3 material-symbols-rounded">east</span>
-              </a>
-            </div>
+                    <span class="text-fuchsia-500 mt-4 text-2xl material-symbols-rounded">east</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Communities Section -->
-    <section class="communities-section pt-32 sm:pt-64 pb-12" id="communities">
-      <div class="bg-fuchsia-600">
-        <div class="mx-auto max-w-screen-2xl px-4">
-          <div class="flex gap-4 sm:gap-7 items-center justify-end -translate-y-24 sm:-translate-y-52">
-            <div class="max-w-full sm:max-w-[37.5%] lg:max-w-[25%]">
-              <img class="w-full object-cover" src="assets/images/company__communities-img-1.png" alt="Community Image 1">
-            </div>
-            <div class="max-w-full sm:max-w-[37.5%] lg:max-w-[30%]">
-              <img class="aspect-video object-cover w-full" src="assets/images/company__communities-img-2.png" alt="Community Image 2">
-            </div>
+    <!-- Browse Technology Section -->
+    <section class="browse-technology-section py-12 lg:my-16" id="browse-technology">
+      <div class="mx-auto max-w-screen-2xl px-4">
+        <div class="flex max-lg:flex-col gap-10 justify-between">
+          <h2 class="text-3xl lg:text-5xl">Browse our technology</h2>
+          <div class="max-w-3xl">
+            <p class="lg:text-xl">
+              From our flagship products for enterprise <a class="text-fuchsia-500 hover:underline" href="#">hybrid cloud infrastructure</a> to next-generation AI, security and storage solutions, find the answer to your business challenge.
+            </p>
+            <a href="#" class="flex underline-on-hover items-center text-fuchsia-500 mt-10">
+              <span>View all products</span>
+              <span class="ml-3 material-symbols-rounded">east</span>
+            </a>
           </div>
-          <div class="max-w-5xl sm:-translate-y-24">
-            <h3 class="text-3xl sm:text-4xl xl:text-5xl text-white font-light">
-              IBM is unmatched in the breadth of our open source involvement. From AI and quantum computing, to containers and operating systems, we are actively leading in today's most influential projects.
-            </h3>
-            <div class="inline-block max-sm:mb-14 mt-14">
-              <a class="flex items-center justify-center gap-4 p-4 text-white bg-gray-800 transition-all hover:bg-black" href="#">
-                IBM GitHub Org
-                <svg width="20" fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
-                  <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+        </div>
+        <div class="mt-20 lg:mt-28">
+          <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 border border-gray-300">
+            <li>
+              <a class="group p-4 block h-full max-lg:border-b border-gray-300 transition-all hover:bg-slate-200" href="#">
+                <svg width="60" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                  <path d="M515-826q124.709 12.047 212.355 98.523Q815-641 827-516H579q-9-22-25.5-38T515-577.863V-826Zm28 32v196q17 10 31 23.5t23 30.5h198q-20-95-88.5-163.5T543-794Zm-96-32v247.663Q415-567 396-539.806t-19 60Q377-447 396.5-421t50.5 37.348V-134q-134-14-224-112.5t-90-233.621q0-135.121 90-234.5Q313-814 447-826Zm-28 32q-113 21-185.5 110T161-480q0 115 72.5 204T419-166v-200q-30-20-50-49.5t-20-65q0-35.5 19.5-65.5t50.5-50v-198Zm160 348h248q-12.201 124.626-99.788 212.212Q639.626-146.201 515-134v-249.819q22.698-7.862 38.849-24.021Q570-424 579-446Zm18 28q-11 16-24 29.5T543-366v200q96-19 164-87.5T795-418H597Zm-248-62Zm248-64Zm0 126Z">
                 </svg>
+                <div class="flex items-center justify-between mt-20">
+                  <div class="relative flex items-center w-full pr-4">
+                    <h3 class="absolute transition-all duration-500 delay-75 group-hover:delay-0 group-hover:opacity-0 group-hover:translate-y-5">AI & machine learning</h3>
+                    <h3 class="absolute -translate-y-7 opacity-0 transition-all delay-0 group-hover:delay-75 duration-500 group-hover:-translate-y-0 group-hover:opacity-100 pb-4">Use IBM Watsonx's AI or build your own machine learning models</h3>
+                  </div>
+                  <span class="ml-3 material-symbols-rounded">east</span>
+                </div>
               </a>
-            </div>
-          </div>
+            </li>
+            <li>
+              <a class="group p-4 block h-full max-lg:border-b max-sm:border-l-0 max-lg:border-r-0 border-x border-gray-300 transition-all hover:bg-slate-200" href="#">
+                <svg width="60" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                  <path d="M146-146v-43l28-28v71h-28Zm160 0v-203l28-28v231h-28Zm160 0v-231l28 29v202h-28Zm160 0v-202l28-28v230h-28Zm160 0v-363l28-28v391h-28ZM146-390v-39l254-254 160 160 254-254v39L560-484 400-644 146-390Z">
+                </svg>
+                <div class="flex items-center justify-between mt-20">
+                  <div class="relative flex items-center w-full pr-4">
+                    <h3 class="absolute transition-all duration-500 delay-75 group-hover:delay-0 group-hover:opacity-0 group-hover:translate-y-5">Analytics</h3>
+                    <h3 class="absolute -translate-y-7 opacity-0 transition-all delay-0 group-hover:delay-75 duration-500 group-hover:-translate-y-0 group-hover:opacity-100">Aggregate and analyze large datasets</h3>
+                  </div>
+                  <span class="ml-3 material-symbols-rounded">east</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="group p-4 block h-full max-sm:border-b border-gray-300 transition-all hover:bg-slate-200" href="#">
+                <svg width="60" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                  <path d="M300.118-662Q286-662 276-652.118q-10 9.883-10 24Q266-614 275.882-604q9.883 10 24 10Q314-594 324-603.882q10-9.883 10-24Q334-642 324.118-652q-9.883-10-24-10Zm0 336Q286-326 276-316.118q-10 9.883-10 24Q266-278 275.882-268q9.883 10 24 10Q314-258 324-267.882q10-9.883 10-24Q334-306 324.118-316q-9.883-10-24-10ZM200-756h560q11.9 0 19.95 7.978 8.05 7.978 8.05 19.772V-534q0 15-8.05 24.5T760-500H200q-11.9 0-19.95-9.5Q172-519 172-534v-194.25q0-11.794 8.05-19.772Q188.1-756 200-756Zm0 28v200h560v-200H200Zm0 308h558q14 0 22 9.2t8 22.8v188q0 17-8 26.5t-22 9.5H202q-14 0-22-9.5t-8-26.5v-188q0-13.6 7-22.8 7-9.2 21-9.2Zm0 28v200h560v-200H200Zm0-336v200-200Zm0 336v200-200Z">
+                </svg>
+                <div class="flex items-center justify-between mt-20">
+                  <div class="relative flex items-center w-full pr-4">
+                    <h3 class="absolute transition-all duration-500 delay-75 group-hover:delay-0 group-hover:opacity-0 group-hover:translate-y-5">Compute & servers</h3>
+                    <h3 class="absolute -translate-y-7 opacity-0 transition-all delay-0 group-hover:delay-75 duration-500 group-hover:-translate-y-0 group-hover:opacity-100 pb-4">Run workloads on hybrid cloud infrastructure</h3>
+                  </div>
+                  <span class="ml-3 material-symbols-rounded">east</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="group p-4 block h-full sm:border-l border-gray-300 transition-all hover:bg-slate-200" href="#">
+                <svg width="60" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                  <path d="M480-172q-137 0-222.5-32.5T172-290v-390q0-45 90-76.5T480-788q128 0 218 31.5t90 76.5v390q0 53-85.5 85.5T480-172Zm0-434q85 0 171.5-23.5T757-681q-18-30-103.5-54.5T480-760q-86 0-173.5 23.5T201-685q17 30 103.5 54.5T480-606Zm0 202q41 0 81-4t76.5-12q36.5-8 67.5-20t55-27v-177q-24 15-55 27t-67.5 20q-36.5 8-76.5 12t-81 4q-43 0-83.5-4.5T320-598q-36-8-66.5-19.5T200-644v177q23 15 53.5 26.5T320-421q36 8 76.5 12.5T480-404Zm0 204q53 0 99-5.5t82-16q36-10.5 61.5-25.5t37.5-33v-159q-24 15-55 27t-67.5 20q-36.5 8-76.5 12t-81 4q-43 0-83.5-4.5T320-393q-36-8-66.5-19.5T200-439v159q12 19 37.5 33.5t61.5 25q36 10.5 82 16t99 5.5Z">
+                </svg>
+                <div class="flex items-center justify-between mt-20">
+                  <div class="relative flex items-center w-full pr-4">
+                    <h3 class="absolute transition-all duration-500 delay-75 group-hover:delay-0 group-hover:opacity-0 group-hover:translate-y-5">Databases</h3>
+                    <h3 class="absolute -translate-y-7 opacity-0 transition-all delay-0 group-hover:delay-75 duration-500 group-hover:-translate-y-0 group-hover:opacity-100">Store, query and analyze structured data</h3>
+                  </div>
+                  <span class="ml-3 material-symbols-rounded">east</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="group p-4 block h-full border-t border-gray-300 transition-all hover:bg-slate-200" href="#">
+                <svg width="60" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                  <path d="M336-256h28v-80h80v-28h-80v-80h-28v80h-80v28h80v80Zm200-30h168v-28H536v28Zm0-100h168v-28H536v28Zm28-160 56-56 56 56 20-20-56-56 56-56-20-20-56 56-56-56-20 20 56 56-56 56 20 20Zm-298-62h168v-28H266v28Zm-34 436q-26 0-43-17t-17-43v-496q0-26 17-43t43-17h496q26 0 43 17t17 43v496q0 26-17 43t-43 17H232Zm0-28h496q12 0 22-10t10-22v-496q0-12-10-22t-22-10H232q-12 0-22 10t-10 22v496q0 12 10 22t22 10Zm-32-560v560-560Z">
+                </svg>
+                <div class="flex items-center justify-between mt-20">
+                  <div class="relative flex items-center w-full pr-4">
+                    <h3 class="absolute transition-all duration-500 delay-75 group-hover:delay-0 group-hover:opacity-0 group-hover:translate-y-5">DevOps</h3>
+                    <h3 class="absolute -translate-y-7 opacity-0 transition-all delay-0 group-hover:delay-75 duration-500 group-hover:-translate-y-0 group-hover:opacity-100 pb-4">Manage infrastructure, environments and deployments</h3>
+                  </div>
+                  <span class="ml-3 material-symbols-rounded">east</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="group p-4 block h-full border-x max-sm:border-l-0 max-lg:border-r-0 border-t border-gray-300 transition-all hover:bg-slate-200" href="#">
+                <svg width="60" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                  <path d="M626-146v-120H466v-400H334v120H106v-268h228v120h292v-120h228v268H626v-120H494v372h132v-120h228v268H626ZM134-786v212-212Zm520 400v212-212Zm0-400v212-212Zm0 212h172v-212H654v212Zm0 400h172v-212H654v212ZM134-574h172v-212H134v212Z">
+                </svg>
+                <div class="flex items-center justify-between mt-20">
+                  <div class="relative flex items-center w-full pr-4">
+                    <h3 class="absolute transition-all duration-500 delay-75 group-hover:delay-0 group-hover:opacity-0 group-hover:translate-y-5">IT automation</h3>
+                    <h3 class="absolute -translate-y-7 opacity-0 transition-all delay-0 group-hover:delay-75 duration-500 group-hover:-translate-y-0 group-hover:opacity-100">Automate IT infrastructure management</h3>
+                  </div>
+                  <span class="ml-3 material-symbols-rounded">east</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="group p-4 block h-full border-t border-gray-300 transition-all hover:bg-slate-200" href="#">
+                <svg width="60" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                  <path d="M198-172v-28h80v-588h296v40h108v230h-28v-202h-80v264h-28v-304H306v560h188v28H198Zm496 18-2-27q-26-5-42-15t-30-25l-24 13-18-24 23-18q-9-24-9-46t9-46l-23-18 18-24 24 13q14-15 30-25t42-15l2-27h28l2 27q26 5 42 15t30 25l24-13 18 24-23 18q9 24 9 46t-9 46l23 18-18 24-24-13q-14 15-30 25t-42 15l-2 27h-28Zm13.788-54Q744-208 770-233.788q26-25.787 26-62Q796-332 770.212-358q-25.787-26-62-26Q672-384 646-358.212q-26 25.787-26 62Q620-260 645.788-234q25.787 26 62 26ZM466-452q-11 0-19.5-8.5T438-480q0-11 8.5-19.5T466-508q11 0 19.5 8.5T494-480q0 11-8.5 19.5T466-452ZM306-200v-560 560Z">
+                </svg>
+                <div class="flex items-center justify-between mt-20">
+                  <div class="relative flex items-center w-full pr-4">
+                    <h3 class="absolute transition-all duration-500 delay-75 group-hover:delay-0 group-hover:opacity-0 group-hover:translate-y-5">Quantum</h3>
+                    <h3 class="absolute -translate-y-7 opacity-0 transition-all delay-0 group-hover:delay-75 duration-500 group-hover:-translate-y-0 group-hover:opacity-100 pb-4">Run code on real quantum systems using a full-stack SDK</h3>
+                  </div>
+                  <span class="ml-3 material-symbols-rounded">east</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="group overflow-y-hidden p-4 block border-t sm:border-l border-gray-300 h-full transition-all hover:bg-slate-200" href="#">
+                <svg width="60" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                  <path d="M160-302v70q0 12 10 22t22 10h576q12 0 22-10t10-22v-70H160Zm172-366v-60q0-26 17-43t43-17h176q26 0 43 17t17 43v60h140q26 0 43 17t17 43v376q0 26-17 43t-43 17H192q-26 0-43-17t-17-43v-376q0-26 17-43t43-17h140ZM160-378h640v-230q0-12-10-22t-22-10H628v60h-28v-60H360v60h-28v-60H192q-12 0-22 10t-10 22v230Zm200-290h240v-60q0-12-10-22t-22-10H392q-12 0-22 10t-10 22v60ZM160-232v-408 60-60 60-60h32q-12 0-22 10t-10 22v376q0 12 10 22t22 10h-32v-32Z">
+                </svg>
+                <div class="flex items-center justify-between mt-20">
+                  <div class="relative flex items-center w-full pr-4">
+                    <h3 class="absolute transition-all duration-500 delay-75 group-hover:delay-0 group-hover:opacity-0 group-hover:translate-y-5">Security & identity</h3>
+                    <h3 class="absolute -translate-y-7 opacity-0 transition-all delay-0 group-hover:delay-75 duration-500 group-hover:-translate-y-0 group-hover:opacity-100 pb-4">Cloud-native software to secure resources and simplify compliance</h3>
+                  </div>
+                  <span class="ml-3 material-symbols-rounded">east</span>
+                </div>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <!-- What's New Section -->
-    <section class="whats-new-section py-12 lg:py-16 px-4" id="whats-new">
-      <div class="mx-auto max-w-screen-2xl bg-slate-100">
-        <div class="flex justify-between max-lg:flex-col">
-          <div class="p-8 lg:max-w-[50%]">
-            <div class="max-w-lg">
-              <h2>What's new</h2>
-              <h3 class="text-4xl lg:text-6xl mt-5">The Power of AI: Security</h3>
-              <p class="mt-8">Stay ahead of cyber threats with faster incident detection and response using AI and automation technologies.</p>
-            </div>
-          </div>
-          <div class="lg:max-w-[50%] relative">
-            <img class="w-full" src="assets/images/company__whats-new-img.jpg" alt="What's New Image">
-            <div class="absolute right-0 sm:right-3 bottom-0">
-              <a class="bg-zinc-800 py-4 px-5 flex flex-col justify-between w-72 sm:w-96 transition-all hover:bg-zinc-700" href="#">
-                <p class="text-white">Read the report</p>
-                <span class="text-fuchsia-500 mt-28 material-symbols-rounded">east</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Key Policy Priorities Section -->
-    <section class="key-policy-priorities-section py-12 lg:my-16" id="key-priorites">
+    <!-- Brand Section -->
+    <section class="brand-section py-12 lg:my-16" id="brand">
       <div class="mx-auto max-w-screen-2xl px-4">
-        <div class="flex max-lg:flex-col max-lg:gap-7">
+        <div class="flex max-lg:flex-col max-lg:gap-16">
           <div class="lg:w-1/4">
-            <h2 class="font-medium">Key Policy Priorities</h2>
+            <h2 class="font-medium">Brand</h2>
           </div>
-          <div class="flex flex-col flex-1 gap-10 max-lg:flex-col">
-            <ul class="accordion-wrapper">
-              <li class="border-t border-gray-300">
-                <button class="accordion-button flex w-full items-center justify-between py-2 lg:py-4 px-1 lg:px-3 border-2 border-transparent hover:bg-gray-200 focus:border-fuchsia-500">
-                  <h2 class="text-base lg:text-lg text-left font-medium">Accelerate American Innovation and Discovery</h2>
-                  <span class="icon transition-all text-2xl lg:text-3xl material-symbols-rounded">expand_more</span>
-                </button>
-                <div class="accordion-content text-base lg:text-lg px-3">
-                  <p class="my-3">
-                    Investments in America's ability to innovate and create entirely new industries lead to jobs and opportunities at home and a stronger and more resilient economy that is prepared to compete globally in cutting-edge technologies. The CHIPS and Science Act is an excellent example of how the nation can promote vitally important technology research in the United States. A supply chain crisis was the forcing function that underscored the urgency of building and designing semiconductors in America. We should act in other equally essential technology areas before the next crisis, and IBM calls on Congress and the Administration to do this by:
-                  </p>
-                  <ul class="my-5 list-disc">
-                    <li class="my-3">
-                      Fully implementing the CHIPS Act and funding the Science Title as authorized by Congress, including funding for the National Science Foundation to build the Technology, Innovation, and Partnerships (TIP) Directorate focusing on emerging technologies and scale a highly skilled workforce. The administration should also expeditiously build the National Semiconductor Technology Center (NSTC) as provided for in the Act.
-                    </li>
-                    <li class="my-3">
-                      Accelerating American R&D through initiatives like the National Artificial Intelligence Research Resource (NAIRR), which would build a data and computing superstructure that allows government, industry, and academia to accelerate AI R&D.
-                    </li>
-                    <li class="my-3">
-                      Prioritizing investments in Quantum Computing, because we should not wait for another crisis to focus on our technological leadership. In recent years Congress has passed bipartisan legislation to support quantum R&D and workforce building, including the National Quantum Initiative Act — which must be reauthorized in 2023 — and the QUEST Act and the Networking Act that will both need to be funded as part of CHIPS. We must continue to prioritize these investments that will spur public-private partnerships and ensure that America remains the unquestioned leader in this game-changing technology — and that we are prepared to address the security implications and threats that will be posed by our adversaries.
-                    </li>
-                    <li>
-                      Enacting R&D expensing, so innovative companies do not face cash flow issues from current laws that require capitalization over time and can instead focus on creating jobs and bolstering American economic prosperity and security.
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="border-t border-gray-300">
-                <button class="accordion-button flex w-full items-center justify-between py-2 lg:py-4 px-1 lg:px-3 border-2 border-transparent hover:bg-gray-200 focus:border-fuchsia-500">
-                  <h2 class="text-base lg:text-lg text-left font-medium">Build a More Resilient, Secure, and Modern Government</h2>
-                  <span class="icon transition-all text-2xl lg:text-3xl material-symbols-rounded">expand_more</span>
-                </button>
-                <div class="accordion-content text-base lg:text-lg px-3">
-                  <p class="my-3">
-                    At a time of conflict and uncertainty, it is more important than ever to fortify government IT systems, so they are robust, resilient, and well-defended against cyberattacks by hostile actors. In any IT system, over-reliance on a single technology exposes a single vector of attack. It then is harder to react to surges in demand and may lead to over-customization, making updates difficult and costly. Congress and the Administration should prioritize investments in technological resiliency. Our leaders can make investments now to ensure federal agencies' IT propels the country forward by:
-                  </p>
-                  <ul class="my-5 list-disc">
-                    <li class="my-3">
-                      Continuing to prioritize and invest in modern, secure, and resilient government IT, like hybrid cloud technology, which is inherently a more secure and flexible infrastructure for our critical missions including military readiness and modern customer service. It avoids the pitfall of a single point of attack, and provides flexible, cutting-edge tech capabilities everywhere from Washington, D.C to Washington state and to places worldwide where American forces are deployed.
-                    </li>
-                    <li class="my-3">
-                      Fully implementing the recently passed FedRAMP Authorization Act with a particular focus on ensuring reciprocity and streamlining the authorization process.
-                    </li>
-                    <li class="my-3">
-                      Focusing on IT that improves the government customer experience. Modern, secure, digital citizen services are paramount to a competitive society, especially when it comes to things like, administering student loans, processing Veterans' benefits, modernizing FEMA flood maps, or delivering programs that serve under-served communities. IBM urges agencies to adopt a hybrid cloud strategy that allows them to integrate the best available commercial platforms to enable modern, digital operations that enhance customer service and provide tools available to accomplish the mission.
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="border-t border-gray-300">
-                <button class="accordion-button flex w-full items-center justify-between py-2 lg:py-4 px-1 lg:px-3 border-2 border-transparent hover:bg-gray-200 focus:border-fuchsia-500">
-                  <h2 class="text-base lg:text-lg text-left font-medium">Strengthen and Diversify the Supply Chain</h2>
-                  <span class="icon transition-all text-2xl lg:text-3xl material-symbols-rounded">expand_more</span>
-                </button>
-                <div class="accordion-content text-base lg:text-lg px-3">
-                  <p class="my-3">
-                    A country's economic stability is only as strong as its supply chain. The recent baby formula shortage in the U.S. is a stark reminder that investing in and maintaining a diverse supply chain is critical to American security and success. However, the key to supply chain security is to use intelligent, targeted policies that protect national security, not overly broad or cumbersome rules that hurt only American firms while foreign competitors capture markets. IBM calls for “Precision Regulation” of the supply chain by:
-                  </p>
-                  <ul class="my-5 list-disc">
-                    <li class="my-3">
-                      Implementing precision export controls, in partnership with global allies, on new technologies like quantum computing, so we can protect our national security without hindering innovation.
-                    </li>
-                    <li class="my-3">
-                      Establishing tools for resilient and responsive software supply chains that provide greater security through understanding and insight into the foundational elements that comprise software (sometimes called a “software bill of materials”) used in critical infrastructure. These tools enable companies and organizations to understand what makes up their code to reach risk-informed decisions about software supply chains and if their software is affected by new vulnerabilities enabling the quick mitigation of any security risks.
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="border-t border-gray-300">
-                <button class="accordion-button flex w-full items-center justify-between py-2 lg:py-4 px-1 lg:px-3 border-2 border-transparent hover:bg-gray-200 focus:border-fuchsia-500">
-                  <h2 class="text-base lg:text-lg text-left font-medium">Build, Train, and Retain a Diverse Workforce</h2>
-                  <span class="icon transition-all text-2xl lg:text-3xl material-symbols-rounded">expand_more</span>
-                </button>
-                <div class="accordion-content text-base lg:text-lg px-3">
-                  <p class="my-3">
-                    American competitiveness relies on a highly skilled and diverse workforce, where a traditional bachelor's or postgraduate degree is not the only pathway to a well-paying career. Our workforce is essential to supporting, developing, and creating the technology solutions that will solve our society's most pressing problems. We can develop and grow a diverse workplace by:
-                  </p>
-                  <ul class="my-5 list-disc">
-                    <li class="my-3">
-                      Ensuring the Americans behind American innovation are supported by aligning key federal programs to focus on retraining and new job-relevant skills acquisition and making existing federal student aid funding and programs available for targeted learning opportunities such as apprenticeships, internships, or technology certificate programs, and for workers in retraining or upskilling programs.
-                    </li>
-                    <li class="my-3">
-                      Increasing job opportunities for more high skilled workers by reducing college degree mandates imposed on federal
-                    </li>
-                    <li class="my-3">
-                      Investing in workforce development, particularly through the regional technology hubs authorized in the CHIPS and Science Act, to expand the innovation economy beyond the coasts and increase career-enhancing experiential learning through programs that help train a skilled and diverse STEM workforce.
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="border-y border-gray-300">
-                <button class="accordion-button flex w-full items-center justify-between py-2 lg:py-4 px-1 lg:px-3 border-2 border-transparent hover:bg-gray-200 focus:border-fuchsia-500">
-                  <h2 class="text-base lg:text-lg text-left font-medium">Strengthen Trust in Technology</h2>
-                  <span class="icon transition-all text-2xl lg:text-3xl material-symbols-rounded">expand_more</span>
-                </button>
-                <div class="accordion-content text-base lg:text-lg px-3">
-                  <p class="my-3">
-                    We must also strengthen societal trust in technology to create a competitive technological economy. Consumers are understandably concerned about the use of today's rapidly changing technologies and the data that feeds into them. Still, we can drive progress and enhance consumer protections and business innovation by:
-                  </p>
-                  <ul class="my-5 list-disc">
-                    <li class="my-3">
-                      Advancing national privacy legislation that provides strong consistent consumer data protection through pre-emption of state laws and common-sense national privacy standards that enable beneficial use of data.
-                    </li>
-                    <li class="my-3">
-                      Avoiding provisions like a private right of action that creates uncertainty among consumers and businesses without creating strong consumer protection and that undermines the predictability of a national privacy standard. People, not plaintiff's attorneys, should benefit most from a national privacy law.
-                    </li>
-                    <li class="my-3">
-                      Continuing collaboration with Europe and other like-minded governments on targeted, risk-based regulation of technology like artificial intelligence that differentiates between software that automates everyday tasks and software that advises humans in sensitive areas like healthcare, finance, or safety, and placing robust regulations on those use cases of AI with the most potential to cause societal harm.
-                    </li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
+          <div class="flex flex-1 flex-col gap-20 lg:gap-56">
+            <div class="flex gap-10 lg:gap-20 max-lg:flex-col max-lg:items-center">
+              <img class="max-w-2xl w-full lg:w-1/2 max-h-[428px] object-cover" src="assets/images/brand__brand-img-1.jpg" alt="Brand Image 1">
+              <div class="w-full">
+                <h2 class="text-3xl font-medium">DuPont Names Recipients of 2023 Lavoisier Medal and Pedersen Award</h2>
+                <p class="mt-10">
+                  “Each year we honor DuPont innovators whose work and commitment have had significant results for our business, our customers and the world. Deyan, Paul, Reiyao, and Jon are passionate trailblazers who are bringing new ideas and game-changing innovations to life,” said Alexa Dembek, DuPont Chief Technology and Sustainability Officer. “It's an honor to call them colleagues and work side-by-side with them as we continue to deliver on our purpose to empower the world with essential innovations to thrive.”
+                </p>
+                <a href="#" class="flex underline-on-hover items-center text-fuchsia-500 mt-10">
+                  <span>Learn more</span>
+                  <span class="ml-3 material-symbols-rounded">east</span>
+                </a>
+              </div>
+            </div>
+            <div class="flex gap-10 lg:gap-20 max-lg:flex-col max-lg:items-center flex-row-reverse">
+              <img class="max-w-2xl w-full lg:w-1/2 max-h-[428px] object-cover" src="assets/images/brand__brand-img-2.jpg" alt="Brand Image 2">
+              <div class="w-full">
+                <h2 class="text-3xl font-medium">DuPont Wins Four R&D100 Awards</h2>
+                <p class="mt-10">
+                  “We're honored to be recognized for our teams' unwavering commitment to excellence, helping our customers address their most pressing sustainability challenges - from clean water to sustainable shelter to next-gen automotive,” said Alexa Dembek, DuPont Chief Technology & Sustainability Officer. “Receiving these awards exemplifies the commitment and dedication our teams display every day to deliver essential innovations to thrive.”
+                </p>
+                <a href="#" class="flex underline-on-hover items-center text-fuchsia-500 mt-10">
+                  <span>Learn more</span>
+                  <span class="ml-3 material-symbols-rounded">east</span>
+                </a>
+              </div>
+            </div>
+            <div class="flex gap-10 lg:gap-20 max-lg:flex-col max-lg:items-center">
+              <img class="max-w-2xl w-full lg:w-1/2 max-h-[428px] object-cover" src="assets/images/brand__brand-img-3.jpg" alt="Brand Image 3">
+              <div class="w-full">
+                <h2 class="text-3xl font-medium">DuPont Completes Acquisition of Spectrum Plastics Group</h2>
+                <p class="mt-10">
+                  “We are excited to add Spectrum's best-in-class advanced manufacturing capabilities, and decades-long customer relationships with the largest medical device OEMs to our existing healthcare portfolio," said Ed Breen, DuPont Executive Chairman and Chief Executive Officer. 
+                </p>
+                <a href="#" class="flex underline-on-hover items-center text-fuchsia-500 mt-10">
+                  <span>Learn more</span>
+                  <span class="ml-3 material-symbols-rounded">east</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-        <ul class="grid mt-32 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
-          <li class="h-auto bg-slate-100 transition-all hover:bg-slate-200">
-            <a class="flex flex-col justify-between h-full gap-1" href="#">
-              <img src="assets/images/company__inside-ibm-img-1.jpg" alt="Inside IBM Image 1">
-              <div class="p-5">
-                <p>Careers at IBM</p>
-                <h3 class="text-2xl mt-2">From safer food supply to ethical AI, tackle the world's toughest problems</h3>
-                <span class="mt-10 text-fuchsia-500 material-symbols-rounded">east</span>
-              </div>
-            </a>
-          </li>
-          <li class="h-auto bg-slate-100 sm:border-l lg:border-x border-gray-300 transition-all hover:bg-slate-200">
-            <a class="flex flex-col justify-between h-full gap-1" href="#">
-              <img src="assets/images/company__inside-ibm-img-2.png" alt="Inside IBM Image 2">
-              <div class="p-5">
-                <p>IBM Research</p>
-                <h3 class="text-2xl mt-2">See the latest technology developed by IBM scientists and design thinkers</h3>
-                <span class="mt-10 text-fuchsia-500 material-symbols-rounded">east</span>
-              </div>
-            </a>
-          </li>
-          <li class="h-auto bg-slate-100 sm:border-r border-gray-300 transition-all hover:bg-slate-200">
-            <a class="flex flex-col justify-between h-full gap-1" href="#">
-              <img src="assets/images/company__inside-ibm-img-3.jpg" alt="Inside IBM Image 3">
-              <div class="p-5">
-                <p>Training and skills</p>
-                <h3 class="text-2xl mt-2">Power your future in tech with job skills, courses and credentials—for free</h3>
-                <span class="mt-10 text-fuchsia-500 material-symbols-rounded">east</span>
-              </div>
-            </a>
-          </li>
-          <li class="h-auto bg-slate-100 transition-all hover:bg-slate-200">
-            <a class="flex flex-col justify-between h-full gap-1" href="#">
-              <img src="assets/images/company__inside-ibm-img-4.jpg" alt="Inside IBM Image 4">
-              <div class="p-5">
-                <p>Corporate social responsibility</p>
-                <h3 class="text-2xl mt-2">IBM aspires to make a positive impact on the world and the places</h3>
-                <span class="mt-10 text-fuchsia-500 material-symbols-rounded">east</span>
-              </div>
-            </a>
-          </li>
-        </ul>
       </div>
     </section>
 
-    <!-- Jobs Section -->
-    <section class="jobs-section py-12 lg:py-16 bg-slate-100" id="jobs">
+    <!-- Innovations Section -->
+    <section class="innovations-section py-12 lg:my-16" id="innovations">
       <div class="mx-auto max-w-screen-2xl px-4">
-        <div class="flex max-lg:flex-col max-lg:gap-7">
-          <div class="lg:w-1/4">
-            <h2 class="font-medium">Jobs</h2>
-          </div>
-          <div class="flex flex-col flex-1 gap-10 max-lg:flex-col">
-            <div class="w-2/3 max-lg:w-full">
-              <h3 class="text-3xl lg:text-4xl">Featured Project Management jobs</h3>
-              <p class="mt-5 text-lg">Apply to recently posted jobs.</p>
+        <div class="flex flex-col items-center">
+          <h2 class="text-3xl lg:text-4xl font-medium max-sm:text-center">We make essential innovations the world needs now.</h2>
+          <div class="my-10 h-0.5 w-16 bg-fuchsia-500"></div>
+          <p class="max-w-3xl text-center">From protective equipment, to delivering clean water and enabling smarter, faster electronics, see how we use science and innovation to make so many of the things you use every day possible:</p>
+        </div>
+        <div class="mt-24">
+          <h3>What our innovations enable today</h3>
+          <div class="group relative innovation-swiper-slider">
+            <div class="mt-10 swiper">
+              <ul class="swiper-wrapper pb-10">
+                <li class="swiper-slide shadow-xl h-auto flex flex-col">
+                  <div class="flex">
+                    <img class="w-36 sm:w-48 xl:w-60 aspect-square object-cover" src="assets/images/brand__innovation-img-1.jpg" alt="Innovation Image 1">
+                    <h3 class="text-lg sm:text-2xl xl:text-3xl p-5">Electornic</h3>
+                  </div>
+                  <p class="bg-green-500 max-sm:text-xs h-full text-white p-5 xl:p-10">Enabling connectivity, smart technologies, and next-generation semiconductor chips and printed circuit boards.</p>
+                </li>
+                <li class="swiper-slide shadow-xl h-auto flex flex-col">
+                  <div class="flex">
+                    <img class="w-36 sm:w-48 xl:w-60 aspect-square object-cover" src="assets/images/brand__innovation-img-2.jpg" alt="Innovation Image 2">
+                    <h3 class="text-lg sm:text-2xl xl:text-3xl p-5">Next Generation Automotive</h3>
+                  </div>
+                  <p class="bg-orange-500 max-sm:text-xs h-full text-white p-5 xl:p-10">Transforming mobility by advancing electric vehicles and advanced safety systems.</p>
+                </li>
+                <li class="swiper-slide shadow-xl h-auto flex flex-col">
+                  <div class="flex">
+                    <img class="w-36 sm:w-48 xl:w-60 aspect-square object-cover" src="assets/images/brand__innovation-img-3.jpg" alt="Innovation Image 3">
+                    <h3 class="text-lg sm:text-2xl xl:text-3xl p-5">Water</h3>
+                  </div>
+                  <p class="bg-red-500 max-sm:text-xs h-full text-white p-5 xl:p-10">Addressing water scarcity with solutions for clean water and sustainable use.</p>
+                </li>
+                <li class="swiper-slide shadow-xl h-auto flex flex-col">
+                  <div class="flex">
+                    <img class="w-36 sm:w-48 xl:w-60 aspect-square object-cover" src="assets/images/brand__innovation-img-4.jpg" alt="Innovation Image 4">
+                    <h3 class="text-lg sm:text-2xl xl:text-3xl p-5">Protection</h3>
+                  </div>
+                  <p class="bg-blue-500 max-sm:text-xs h-full text-white p-5 xl:p-10">Protecting workers and enabling sustainable buildings.</p>
+                </li>
+                <li class="swiper-slide shadow-xl h-auto flex flex-col">
+                  <div class="flex">
+                    <img class="w-36 sm:w-48 xl:w-60 aspect-square object-cover" src="assets/images/brand__innovation-img-5.jpg" alt="Innovation Image 5">
+                    <h3 class="text-lg sm:text-2xl xl:text-3xl p-5">Industrial Techonologies</h3>
+                  </div>
+                  <p class="bg-gray-500 max-sm:text-xs h-full text-white p-5 xl:p-10">Specialized materials for demanding environments including healthcare, aerospace, defense, and clean energy.</p>
+                </li>
+              </ul>
+              <div class="swiper-scrollbar"></div>
             </div>
-           <div>
-            <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-              <li>
-                <a class="h-full bg-white p-4 flex flex-col justify-between transition-all hover:bg-slate-200" href="#">
-                  <div>
-                    <p>Project Management</p>
-                    <h3 class="text-xl mt-2">Category Manager - Corporate & Professional Services</h3>
-                  </div>
-                  <div class="mt-14">
-                    <p>Experience: Professional</p>
-                    <p>Location: Multiple Cities</p>
-                    <span class="text-fuchsia-500 mt-5 material-symbols-rounded">east</span>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="h-full bg-white p-4 flex flex-col justify-between transition-all hover:bg-slate-200" href="#">
-                  <div>
-                    <p>Project Management</p>
-                    <h3 class="text-xl mt-2">Sponsorships & Conferences Manager</h3>
-                  </div>
-                  <div class="mt-14">
-                    <p>Experience: Professional</p>
-                    <p>Location: Multiple Cities</p>
-                    <span class="text-fuchsia-500 mt-5 material-symbols-rounded">east</span>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="h-full bg-white p-4 flex flex-col justify-between transition-all hover:bg-slate-200" href="#">
-                  <div>
-                    <p>Project Management</p>
-                    <h3 class="text-xl mt-2">Sr. Salesforce Technical Project Manager</h3>
-                  </div>
-                  <div class="mt-14">
-                    <p>Experience: Professional</p>
-                    <p>Location: Multiple Cities</p>
-                    <span class="text-fuchsia-500 mt-5 material-symbols-rounded">east</span>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="h-full bg-white p-4 flex flex-col justify-between transition-all hover:bg-slate-200" href="#">
-                  <div>
-                    <p>Project Management</p>
-                    <h3 class="text-xl mt-2">PRISM Training Specialist</h3>
-                  </div>
-                  <div class="mt-14">
-                    <p>Experience: Professional</p>
-                    <p>Location: Multiple Cities</p>
-                    <span class="text-fuchsia-500 mt-5 material-symbols-rounded">east</span>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="h-full bg-white p-4 flex flex-col justify-between transition-all hover:bg-slate-200" href="#">
-                  <div>
-                    <p>Project Management</p>
-                    <h3 class="text-xl mt-2">Senior Business Analyst</h3>
-                  </div>
-                  <div class="mt-14">
-                    <p>Experience: Professional</p>
-                    <p>Location: Multiple Cities</p>
-                    <span class="text-fuchsia-500 mt-5 material-symbols-rounded">east</span>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="h-full bg-white p-4 flex flex-col justify-between transition-all hover:bg-slate-200" href="#">
-                  <div>
-                    <p>Project Management</p>
-                    <h3 class="text-xl mt-2">Technical Product Manager - Security</h3>
-                  </div>
-                  <div class="mt-14">
-                    <p>Experience: Professional</p>
-                    <p>Location: Multiple Cities</p>
-                    <span class="text-fuchsia-500 mt-5 material-symbols-rounded">east</span>
-                  </div>
-                </a>
-              </li>
-            </ul>
-            <div class="inline-block mt-10">
-              <a href="#" class="flex items-center py-2 transition-all border text-white max-sm:w-full max-sm:justify-between px-5 bg-fuchsia-500 hover:bg-fuchsia-600">
-                See all jobs
-                <span class="text-xl mt-0.5 ms-3 material-symbols-rounded">east</span>
-              </a>
-            </div>
-           </div>
+            <button class="swiper-custom-btn-prev opacity-0 group-hover:opacity-100 absolute -left-5 top-40 z-10 rounded-sm h-12 w-12 bg-fuchsia-500 transition-all hover:bg-fuchsia-600 text-white text-3xl material-symbols-rounded invisible md:visible material-symbols-rounded">chevron_left</button>
+            <button class="swiper-custom-btn-next opacity-0 group-hover:opacity-100 absolute -right-5 top-40 z-10 rounded-sm h-12 w-12 bg-fuchsia-500 transition-all hover:bg-fuchsia-600 text-white text-3xl material-symbols-rounded invisible md:visible material-symbols-rounded">chevron_right</button>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Join Our Talent Section -->
-    <section class="join-our-talent-section py-12 lg:py-20" id="join">
+    <!-- Monthly Newsletter Section -->
+    <section class="monthly-newsletter-section py-12 lg:py-20 bg-slate-100" id="join">
       <div class="mx-auto max-w-screen-2xl px-4">
         <div class="flex max-lg:flex-col max-lg:gap-7">
           <div class="lg:w-1/4">
             <h2 class="font-medium">Join</h2>
           </div>
-          <div class="max-w-xl">
-            <h2 class="text-3xl lg:text-6xl font-light leading-tight">Join our talent network</h2>
-            <p class="my-10">Stay up-to-date on career opportunities in Project Management that match your skills and interests.</p>
-            <div class="sm:inline-block">
-              <a href="#" class="flex items-center py-2 transition-all border text-white max-sm:w-full max-sm:justify-between px-5 bg-fuchsia-500 hover:bg-fuchsia-600">
-                Register
-                <span class="text-xl mt-0.5 ms-3 material-symbols-rounded">east</span>
-              </a>
+          <div class="max-w-3xl">
+            <div>
+              <h2 class="text-3xl lg:text-6xl font-light">Subscribe to our monthly newsletters</h2>
+              <p class="my-10">Receive our newsletters that deliver thoughtful insights on emerging trends.</p>
+              <div class="flex gap-4 mt-7 max-sm:flex-col">
+                <a href="#" class="flex items-center py-2 text-white transition-all max-sm:w-full max-sm:justify-between bg-fuchsia-600 px-5 hover:bg-fuchsia-700">
+                  Subscribe now
+                  <span class="text-xl mt-0.5 ms-3 material-symbols-rounded"> east </span>
+                </a>
+                <a href="#" class="flex items-center py-2 transition-all border text-fuchsia-600 max-sm:w-full max-sm:justify-between border-fuchsia-600 px-5 hover:bg-fuchsia-600 hover:text-white">
+                  Know more
+                  <span class="text-xl mt-0.5 ms-3 material-symbols-rounded"> east </span>
+                </a>
+              </div>
+            </div>
+            <div class="mt-16 grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-20">
+              <div class="max-sm:pb-10 max-sm:border-b border-gray-300">
+                <h3 class="font-medium mb-3">Contact our team</h3>
+                <p>Connect with our diverse group of IBM experts that can help you make your next big move.</p>
+                <a href="#" class="flex underline-on-hover items-center text-fuchsia-500 mt-10">
+                  <span>Email us</span>
+                  <span class="ml-3 material-symbols-rounded">mail</span>
+                </a>
+              </div>
+              <div>
+                <h3 class="font-medium mb-3">Explore career opportunities</h3>
+                <p>Join our team of dedicated, innovative people who are bringing positive change to work and the world.</p>
+                <a href="#" class="flex underline-on-hover items-center text-fuchsia-500 mt-10">
+                  <span>Register now</span>
+                  <span class="ml-3 material-symbols-rounded">east</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -2755,9 +2638,35 @@
 
     <script>
       $(document).ready(function() {
-        // Accordion content show hide function
-        $(".accordion-wrapper .accordion-button").on("click", function() {
-          $(this).parent().toggleClass("active");
+        // Initialize Testimonials Swiper slider
+        new Swiper('.innovation-swiper-slider .swiper', {
+          slidesPerView: 3,
+          slidesPerGroup: 3,
+          spaceBetween: 20,
+          scrollbar: {
+            el: '.innovation-swiper-slider .swiper-scrollbar',
+          },
+          navigation: {
+            nextEl: '.innovation-swiper-slider .swiper-custom-btn-next',
+            prevEl: '.innovation-swiper-slider .swiper-custom-btn-prev',
+          },
+          breakpoints: {
+            0: {
+              slidesPerView: 1,
+              slidesPerGroup: 1,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 2,
+              slidesPerGroup: 2,
+              spaceBetween: 20,
+            },
+            1024: {
+              slidesPerView: 3,
+              slidesPerGroup: 3,
+              spaceBetween: 20,
+            },
+          },
         });
 
         // Function to scroll to the selected section with an offset
